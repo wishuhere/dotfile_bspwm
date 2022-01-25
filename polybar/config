@@ -1,0 +1,177 @@
+[bar/top]
+monitor = ${env:MONITOR:}
+width = 100%
+height = 22
+
+wm-restack = bspwm
+
+background = #00000000
+foreground = #ccffffff
+
+line-color = ${bar/bottom.background}
+line-size = 16
+
+tray-position = right
+tray-maxsize = 14
+
+spacing = 
+padding-right = 5
+module-margin = 4
+
+font-0 = NotoSans:style:Bold:size=11;2
+font-1 = MaterialIcons:size=10;2
+font-2 = Termsynu:size=8:antialias=false;-2
+font-3 = Font Awesome 5 Free Regular:size=10;2
+font-4 = Font Awesome 5 Free Solid:size=10;2
+font-5 = Font Awesome 5 Brands Regular:size=10;2
+font-6 = unifont:size=6;-3
+font-7 = Termsynu:size=8:antialias=false;0
+font-8 = Symbols Nerd Font:style=2048-em:size=13;4
+
+modules-left = powermenu bspwm 
+modules-right = memory wireless-network wired-network pulseaudio ibus 
+modules-center = popup-calendar battery 
+#modules-center = i3
+
+[module/ibus]
+type = custom/script
+exec = $HOME/.config/polybar/ibus-switch.sh
+tail = true 
+click-left = $HOME/.config/polybar/ibus-switch.sh --toggle &
+
+[module/bluetooth]
+type = custom/script
+exec = $HOME/.config/polybar/bluetooth.sh
+tail = true
+click-left = $HOME/.config/polybar/bluetooth.sh --toggle &
+click-right = blueman-manager
+
+[module/battery]
+type = internal/battery
+full-at = 98
+
+format-charging = <animation-charging> <label-charging>
+format-discharging = <ramp-capacity> <label-discharging>
+format-full = <ramp-capacity> <label-full>
+
+ramp-capacity-0 = 
+ramp-capacity-0-foreground = #f53c3c
+ramp-capacity-1 = 
+ramp-capacity-1-foreground = #ffa900
+ramp-capacity-2 = 
+ramp-capacity-3 = 
+ramp-capacity-4 = 
+
+bar-capacity-width = 10
+bar-capacity-format = %{+u}%{+o}%fill%%empty%%{-u}%{-o}
+bar-capacity-fill = █
+bar-capacity-fill-foreground = #ddffffff
+bar-capacity-fill-font = 3
+bar-capacity-empty = █
+bar-capacity-empty-font = 3
+bar-capacity-empty-foreground = #44ffffff
+
+animation-charging-0 = 
+animation-charging-1 = 
+animation-charging-2 = 
+animation-charging-3 = 
+animation-charging-4 = 
+animation-charging-framerate = 750
+
+[module/bspwm]
+type = internal/bspwm
+
+label-focused = %name%
+label-focused-background = ${colors.alter1}
+label-focused-padding = 2
+label-focused-underline = ${colors.alter2}
+
+label-occupied = %name%
+label-occupied-padding = 2
+
+label-urgent = %name%!
+label-urgent-background = ${colors.alert}
+label-urgent-padding = 2
+
+label-empty = %name%
+label-empty-foreground = ${colors.foreground-alt}
+label-empty-padding = 2
+
+#Separator in between workspaces
+label-separator = |
+
+[module/cpu]
+type = internal/cpu
+interval = 0.5
+format = <label>
+label =  %percentage%
+
+[module/popup-calendar]
+type = custom/script
+exec = $HOME/.config/polybar/popup-calendar.sh
+interval = 0 
+click-left = $HOME/.config/polybar/popup-calendar.sh --popup &
+
+[module/memory]
+type = internal/memory
+format = <label>
+interval = 1 
+label = %{T9} %{T-} %percentage_used% %
+
+[module/wireless-network]
+type = internal/network
+interface = wlp3s0 
+interval = 1.0
+ping-interval = 10
+
+format-connected = <label-connected>
+label-connected =   %downspeed%    %upspeed%
+label-disconnected-foreground = #66
+
+[module/wired-network]
+type = internal/network
+interface = enp2s0 
+interval = 3.0
+
+format-connected = <label-connected>
+label-connected =  %downspeed%    %upspeed%
+
+[module/pulseaudio]
+type = custom/script
+tail = true
+format-underline = ${colors.cyan}
+label-padding = 2
+label-foreground = ${colors.foreground}
+
+# Icons mixed from Font Awesome 5 and Material Icons
+# You can copy-paste your options for each possible action, which is more
+# trouble-free but repetitive, or apply only the relevant ones (for example
+# --sink-blacklist is only needed for next-sink).
+exec = $HOME/.config/polybar/pulseaudio-control.sh --icons-volume " , " --icon-muted " " --sink-nicknames-from "device.description" --sink-nickname "alsa_output.pci-0000_00_1b.0.analog-stereo:🔈  Speakers" --sink-nickname "alsa_output.usb-Kingston_HyperX_Virtual_Surround_Sound_00000000-00.analog-stereo:🎧  Headphones" listen
+click-right = exec pavucontrol &
+click-left = $HOME/.config/polybar/pulseaudio-control.sh togmute
+;click-middle = $HOME/.config/polybar/pulseaudio-control.sh --sink-blacklist "alsa_output.pci-0000_01_00.1.hdmi-stereo-extra2" next-sink
+scroll-up = $HOME/.config/polybar/pulseaudio-control.sh --volume-max 130 up
+scroll-down = $HOME/.config/polybar/pulseaudio-control.sh --volume-max 130 down
+
+[module/powermenu]
+type = custom/menu
+format-padding = 4 
+
+label-open = %{T9}%{F#00CCFF}
+label-close =       
+label-separator = |
+
+menu-0-0 = Log out
+menu-0-0-foreground = #fba922 
+#menu-0-0-exec = i3-msg exit
+menu-0-0-exec = bspc quit
+menu-0-1 = Reboot
+menu-0-1-foreground = #fba922
+menu-0-1-exec = systemctl reboot
+menu-0-2 = Power off
+menu-0-2-foreground = #FF0000 
+menu-0-2-exec = systemctl poweroff
+
+; vim:ft=dosini
+

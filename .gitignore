@@ -1,0 +1,19 @@
+remmina/
+Thunar/
+vozflix/
+xfce4/
+systemd/
+freerdp/
+flameshot/
+filezilla/
+dconf/
+Code-oss/
+Code - OSS/
+obs-studio/
+procps/
+user-dirs*
+Electron/
+gtk-3.0
+htop
+ibus*
+mimeapps.list

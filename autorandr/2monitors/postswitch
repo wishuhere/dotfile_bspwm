@@ -1,0 +1,8 @@
+#!/bin/bash
+
+if [ "$DESKTOP_SESSION" == "bspwm" ]
+then
+    $HOME/.fehbg
+    $HOME/.config/polybar/launch.sh
+    $HOME/.config/bspwm/bspwm_reorder-docked-work
+fi
