@@ -7,7 +7,7 @@ ibus-daemon -rdxR
 picom &
 feh --bg-scale $HOME/.config/bspwm/ign_waifu.png
 nm-applet
-monitor
+
 
 #bspc monitor -d I II III IV V VI VII VIII IX X
 # Config when switch from 1 monitor to 2 monitor
@@ -16,7 +16,7 @@ m=$(bspc query -M | wc -l)
 
 if [ "$m" = 1 ]; then
 	bspc monitor "HDMI2" -r
-	bspc monitor "eDP1" -d I II III IV V VI VII VIII IX X
+	bspc monitor "eDP1" -d I II III IV V VI VII
 elif ["$m" = 2 ]; then
 	bspc monitor "eDP1" -d VII VIII IX X
 	bspc monitor "HDMI2" -d I II III IV V VI
@@ -27,13 +27,14 @@ fi
 
 bspc config border_width         1
 bspc config window_gap           5
+#bspc config border_radius	0.5
 
 bspc config split_ratio          0.52
 bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 #bspc config focus_follows_pointer true
 
-bspc rule -a Firefox desktop='^1'
+#bspc rule -a Firefox desktop='^1'
 #bspc rule -a mplayer2 state=floating
 #bspc rule -a Kupfer.py focus=on
 #bspc rule -a Screenkey manage=off
