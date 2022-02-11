@@ -10,19 +10,22 @@ nm-applet
 
 
 #bspc monitor -d I II III IV V VI VII VIII IX X
+bspc monitor "eDP1" -d VII VIII IX X
+bspc monitor "HDMI2" -d I II III IV V VI
+
 # Config when switch from 1 monitor to 2 monitor
 # and vice versa
-m=$(bspc query -M | wc -l)
+#m=$(bspc query -M | wc -l)
 
-if [ "$m" = 1 ]; then
-	bspc monitor "HDMI2" -r
-	bspc monitor "eDP1" -d I II III IV V VI VII
-elif ["$m" = 2 ]; then
-	bspc monitor "eDP1" -d VII VIII IX X
-	bspc monitor "HDMI2" -d I II III IV V VI
-else
-	bspc monitor "eDP1" -d ""
-fi
+#if [ "$m" = 1 ]; then
+#	bspc monitor "HDMI2" -r
+#	bspc monitor "eDP1" -d I II III IV V VI VII
+#elif ["$m" = 2 ]; then
+#	bspc monitor "eDP1" -d VII VIII IX X
+#	bspc monitor "HDMI2" -d I II III IV V VI
+#else
+#	bspc monitor "eDP1" -d ""
+#fi
 
 
 bspc config border_width         1
