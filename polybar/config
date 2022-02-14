@@ -29,7 +29,7 @@ font-7 = Termsynu:size=8:antialias=false;0
 font-8 = Symbols Nerd Font:style=2048-em:size=13;4
 
 modules-left = powermenu bspwm 
-modules-right = battery memory wireless-network wired-network pulseaudio ibus 
+modules-right = battery memory wireless-network pulseaudio ibus 
 modules-center = popup-calendar
 #modules-center = i3
 
@@ -52,7 +52,7 @@ full-at = 98
 
 format-charging = <animation-charging> <label-charging>
 format-discharging = <ramp-capacity> <label-discharging>
-format-full = <ramp-capacity> <label-full>
+format-full = <ramp-capacity> 
 
 ramp-capacity-0 = 
 ramp-capacity-0-foreground = #f53c3c
@@ -125,7 +125,8 @@ interval = 1.0
 ping-interval = 10
 
 format-connected = <label-connected>
-label-connected =   %downspeed%    %upspeed%
+label-connected  = %essid%
+#label-connected =   %downspeed%    %upspeed%
 label-disconnected-foreground = #66
 
 [module/wired-network]
@@ -133,8 +134,9 @@ type = internal/network
 interface = enp2s0 
 interval = 3.0
 
-format-connected = <label-connected>
-label-connected =  %downspeed%    %upspeed%
+#format-connected = <label-connected>
+#label-connected =  %downspeed%    %upspeed%
+#label-connected = %linkspeed%
 
 [module/pulseaudio]
 type = custom/script
@@ -147,7 +149,8 @@ label-foreground = ${colors.foreground}
 # You can copy-paste your options for each possible action, which is more
 # trouble-free but repetitive, or apply only the relevant ones (for example
 # --sink-blacklist is only needed for next-sink).
-exec = $HOME/.config/polybar/pulseaudio-control.sh --icons-volume " , " --icon-muted " " --sink-nicknames-from "device.description" --sink-nickname "alsa_output.pci-0000_00_1f.3.analog-stereo:%{T9}蓼%{T-}" --sink-nickname "alsa_output.usb-Kingston_HyperX_Virtual_Surround_Sound_00000000-00.analog-stereo:🎧  Headphones" listen
+#exec = $HOME/.config/polybar/pulseaudio-control.sh --icons-volume " , " --icon-muted " " --sink-nicknames-from "device.description" --sink-nickname "alsa_output.pci-0000_00_1f.3.analog-stereo:%{T9}🎧%{T-}" --sink-nickname "alsa_output.usb-Kingston_HyperX_Virtual_Surround_Sound_00000000-00.analog-stereo:🎧  Headphones" listen
+exec = $HOME/.config/polybar/pulseaudio-control.sh --icons-volume " , " --icon-muted " " --sink-nicknames-from "device.description" --sink-nickname "alsa_output.pci-0000_00_1f.3.analog-stereo:%{T9}%{T-}" --sink-nickname "bluez_sink.A0_20_00_01_9B_77.a2dp_sink:%{T9}﫽" listen
 click-right = exec pavucontrol &
 click-left = $HOME/.config/polybar/pulseaudio-control.sh togmute
 ;click-middle = $HOME/.config/polybar/pulseaudio-control.sh --sink-blacklist "alsa_output.pci-0000_01_00.1.hdmi-stereo-extra2" next-sink
