@@ -28,7 +28,7 @@ bspc monitor "HDMI2" -d I II III IV V VI
 #fi
 
 
-bspc config border_width         1
+bspc config border_width         0.5
 bspc config window_gap           5
 #bspc config border_radius	0.5
 
