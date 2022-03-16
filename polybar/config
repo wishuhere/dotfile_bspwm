@@ -1,3 +1,6 @@
+[settings]
+pseudo-transparency = true
+
 [bar/top]
 monitor = ${env:MONITOR:}
 width = 100%
@@ -8,8 +11,9 @@ wm-restack = bspwm
 background = #00000000
 foreground = #ccffffff
 
-line-color = ${bar/bottom.background}
+#line-color = ${bar/bottom.background}
 line-size = 16
+pseudo-transparency=false
 
 tray-position = right
 tray-maxsize = 14
