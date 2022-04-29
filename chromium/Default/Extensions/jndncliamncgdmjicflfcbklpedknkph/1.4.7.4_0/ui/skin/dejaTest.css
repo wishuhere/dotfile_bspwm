@@ -1,0 +1,58 @@
+section,details {
+    clear: both;
+    padding-bottom: 10px;
+}
+
+span.customerInfo {
+    float: left;
+}
+
+img.customerInfo {
+    float: right;
+}
+
+span.field {
+    text-align: left;
+    width: 120px;
+    float: left;
+}
+
+.column1 {
+    float: left;
+    width: 33%;
+}
+
+.column2 {
+    float: left;
+    width: 67%;
+}
+
+.rightAlign {
+    float: right;
+    margin-right: 2px;
+}
+
+button.ui-button-icon-only {
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+}
+
+button#connectionButton {
+    float: right;
+}
+
+button.secure .lock-icon {
+    background-image: url(images/dc_locked_sm.png);
+    background-position: 0px 0px;
+}
+
+button.insecure .lock-icon {
+    background-image: url(images/dc_unlocked_sm.png);
+    background-position: 0px 0px;
+}
+
+button.ui-button .changeuser-icon {
+    background-image: url(images/dc_switchuser_sm.png);
+    background-position: 0px 0px;
+}

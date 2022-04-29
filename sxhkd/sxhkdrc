@@ -2,9 +2,9 @@
 # wm independent hotkeys
 #
 
-#Play music
-#ctrl + alt + q
-#	englishmusic
+#Reload monitor
+ctrl + alt + q
+	$HOME/.config/bspwm/monitor.sh
 
 #print screen
 Print

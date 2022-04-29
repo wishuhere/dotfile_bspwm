@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+
+    <link rel="stylesheet" href="../skin/jquery-ui.css"></link>
+    <script src="jquery.js"></script>
+    <script src="jquery-ui.js"></script>
+
+    <link rel="stylesheet" href="../skin/dejaUrlMask.css"></link>
+    <script src="dejaUi.js"></script>
+    <script src="dejaUrlMask.js"></script>
+  </head>
+  <body>
+    <div id="description"></div>
+    <div>
+      <label for="matchText">deja_urlmask_url</label>
+      <input id="matchText" type="text" title="deja_urlmask_urlTooltip"></input>
+    </div>
+
+    <fieldset>
+      <legend>deja_urlmask_options</legend>
+      <div class="column1">
+        <div>deja_urlmask_matchType</div>
+        <div class="indent1">
+          <input id="plainText" type="radio" name="matchType" value="1" title="deja_urlmask_plainTextTooltip"></input>
+          <label for="plainText">deja_urlmask_plainText</label>
+        </div>
+        <div class="indent1">
+          <input id="regexp" type="radio" name="matchType" value="2" title="deja_urlmask_regExpTooltip"></input>
+          <label for="regexp">deja_urlmask_regExp</label>
+          <a id="regexpHelp" title="deja_urlmask_regExpHelpTooltip">deja_urlmask_regExpHelp</a>
+        </div>
+      </div>
+      <div class="column2">
+        <div>deja_urlmask_actionType</div>
+        <div class="indent1">
+          <input id="ignore" type="radio" name="actionType" value="1" title="deja_urlmask_ignoreTooltip"></input>
+          <label for="ignore">deja_urlmask_ignore</label>
+        </div>
+        <div class="indent1">
+          <input id="block" type="radio" name="actionType" value="2" title="deja_urlmask_blockTooltip"></input>
+          <label for="block">deja_urlmask_block</label>
+        </div>
+      </div>
+    </fieldset>
+    <div>
+      <button id="apply">deja_global_btn_ok</button>
+      <button id="remove">deja_global_btn_remove</button>
+      <button id="cancel">deja_global_btn_cancel</button>
+    </div>
+  </body>
+</html>

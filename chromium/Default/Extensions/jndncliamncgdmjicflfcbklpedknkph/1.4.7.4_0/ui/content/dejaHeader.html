@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+
+    <link rel="stylesheet" href="../skin/jquery-ui.css"></link>
+    <script src="jquery.js"></script>
+    <script src="jquery-ui.js"></script>
+
+    <script src="dejaUi.js"></script>
+    <script src="dejaHeader.js"></script>
+  </head>
+  <body>
+    <div id="description"></div>
+    <div>
+      <label for="headerName">deja_header_name</label>
+      <input id="headerName" type="text" title="deja_header_nameTooltip"></input>
+    </div>
+    <div>
+      <label for="headerValue">deja_header_value</label>
+      <input id="headerValue" type="text" title="deja_header_valueTooltip"></input>
+    </div>
+    <fieldset>
+      <legend>deja_header_options</legend>
+      <div>
+        <span>deja_header_mergeType</span>
+        <input id="merge" type="radio" name="mergeType" value="1" title="deja_header_mergeTooltip"></input>
+        <label for="merge">deja_header_merge</label>
+        <input id="replace" type="radio" name="mergeType" value="2" title="deja_header_replaceTooltip"></input>
+        <label for="replace">deja_header_replace</label>
+      </div>
+    </fieldset>
+    <div>
+      <button id="apply">deja_global_btn_ok</button>
+      <button id="remove">deja_global_btn_remove</button>
+      <button id="cancel">deja_global_btn_cancel</button>
+    </div>
+  </body>
+</html>

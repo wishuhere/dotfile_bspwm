@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>deja_properties_title</title>
+
+     <link rel="stylesheet" href="../skin/jquery-ui.css">
+     <script src="jquery.js"></script>
+     <script src="jquery-ui.js"></script>
+
+     <link rel="stylesheet" href="../skin/dejaGlobal.css">
+     <link rel="stylesheet" href="../skin/dejaProperties.css">
+     <link rel="stylesheet" href="../skin/dejaVariableSelector.css"></link>
+     <script src="dejaUiFrame.js"></script>
+     <script src="dejaProperties.js"></script>
+  </head>
+  <body>
+    <div id="accordion">
+      <h3 class="fold script subscript action event basic">deja_properties_descriptionFold</h3>
+      <section>
+        <label id="descriptionLabel" for="descriptionInput"></label>
+        <textarea id="descriptionInput" rows="3"></textarea>
+        <div>
+          <button id="descriptionClearButton">deja_properties_clearButton</button>
+          <button id="descriptionApplyButton">deja_properties_applyButton</button>
+        </div>
+      </section>
+
+      <h3 id="eventInputFold" class="fold script event play basic">deja_properties_eventInputFold</h3>
+      <section id="eventInputSection">
+        <div id="eventInputUrlDiv">
+          <div><label for="eventInputUrl">deja_properties_editUrlTarget</label></div>
+          <textarea id="eventInputUrl" rows="1"></textarea>
+        </div>
+        <div id="eventInputTextDiv">
+          <div id="eventInputTextScriptLabel">deja_properties_textInput</div>
+          <div id="eventInputTextAreaDiv">
+            <label id="eventInputTextAreaLabel" for="eventInputTextArea">deja_properties_textInput</label>
+            <textarea id="eventInputTextArea" rows="1"></textarea>
+          </div>
+          <div id="eventInputPasswordDiv">
+            <div><label for="eventInputPassword">deja_properties_textInput</label></div>
+            <input id="eventInputPassword" type="password">
+          </div>
+          <div id="eventInputUseKeystrokesDiv">
+            <input id="eventInputUseKeystrokes" type="checkbox">
+            <label for="eventInputUseKeystrokes">deja_properties_useKeystrokes</label>
+          </div>
+          <div id="eventInputShowPasswordDiv">
+            <input id="eventInputShowPassword" type="checkbox">
+            <label for="eventInputShowPassword">deja_properties_showPassword</label>
+          </div>
+        </div>
+
+        <div id="eventInputScriptVarDiv" class="variable-selector">
+          <div class="use-variable">
+            <input id="eventInputUseVariable" type="checkbox">
+            <label for="eventInputUseVariable">deja_properties_useVariable</label>
+          </div>
+          <div id="eventInputScriptVarSelectionDiv" class="variable-details variable-actions">
+            <select id="eventInputScriptVar" class="select-variable"></select>
+            <button id="eventInputAddVariable" class="add-variable">deja_properties_addVariable</button>
+            <button id="eventInputEditVariable" class="edit-variable">deja_properties_editVariable</button>
+          </div>
+        </div>
+
+        <div id="eventInputOptionDiv">
+          <div>deja_properties_selectBy</div>
+          <div>
+            <input id="eventInputPosition" name="eventInputOptions" type="radio" value="position" checked="true">
+            <label for="eventInputPosition">deja_properties_position</label>
+            <input id="eventInputName" name="eventInputOptions" type="radio" value="itemname">
+            <label for="eventInputName">deja_properties_name</label>
+            <input id="eventInputValue" name="eventInputOptions" type="radio" value="itemval">
+            <label for="eventInputValue">deja_properties_value</label>
+          </div>
+        </div>
+        <div id="eventInputSelectDiv">
+          <label id="eventInputSelectLabel" for="eventInputSelect">deja_properties_selectOne</label>
+          <div>
+            <select id="eventInputSelect" class="fullWidth"></select>
+          </div>
+          <div id="eventInputAllowMultipleDiv">
+            <input id="eventInputAllowMultiple" type="checkbox">
+            <label for="eventInputAllowMultiple">deja_properties_allowMultiple</label>
+          </div>
+        </div>
+        <div>
+          <button id="eventInputReset">deja_properties_resetButton</button>
+          <button id="eventInputApply">deja_properties_applyButton</button>
+        </div>
+      </section>
+
+<!--
+      <h3 id="notesFold" class="fold script action event basic">deja_properties_scriptNotesFold</h3>
+      <section>
+        The script notes.
+      </section>
+-->
+
+      <h3 class="fold action event basic">deja_properties_keywordValidationFold</h3>
+      <section id="keywordValidationSection">
+        <div id="keywordValidationDescription"></div>
+        <select id="keywordValidationList" class="fullWidth" size="5"></select>
+        <div>
+          <button id="keywordValidationAdd">deja_properties_addButton</button>
+          <button id="keywordValidationEdit">deja_properties_editButton</button>
+          <button id="keywordValidationRemove">deja_properties_removeButton</button>
+        </div>
+      </section>
+
+<!--
+      <h3 class="fold action event basic">deja_properties_imageValidationFold</h3>
+      <section>
+        Image validations.
+      </section>
+-->
+
+      <h3 class="fold action event advanced">deja_properties_javascriptValidationFold</h3>
+      <section id="javascriptValidationSection">
+        <div id="javascriptValidationDescription"></div>
+        <select id="javascriptValidationList" class="fullWidth" size="5"></select>
+        <div>
+          <button id="javascriptValidationAdd">deja_properties_addButton</button>
+          <button id="javascriptValidationEdit">deja_properties_editButton</button>
+          <button id="javascriptValidationRemove">deja_properties_removeButton</button>
+        </div>
+      </section>
+
+      <h3 class="fold play basic">deja_properties_replayAdvisorFold</h3>
+      <section id="replayAdvisorSection">
+        <div id="replayAdvisorDescription">deja_properties_replayAdvisorDescription</div>
+        <div>
+          <input id="replayAdvisorPrompt" type="checkbox">
+          <label for="replayAdvisorPrompt">deja_properties_replayAdvisorPrompt</label>
+        </div>
+        <div>
+          <input id="replayAdvisorRepair" type="checkbox">
+          <label for="replayAdvisorRepair">deja_properties_replayAdvisorRepair</label>
+        </div>
+        <div id="replayAdvisorPromptDiv">
+          <div id="replayAdvisorPromptWhen">deja_properties_replayAdvisorPromptWhen</div>
+          <div>
+            <input id="replayAdvisorEventTimeout" type="checkbox">
+            <label for="replayAdvisorEventTimeout">deja_properties_replayAdvisorEventTimeout</label>
+          </div>
+<!--
+          <div>
+            <input id="replayAdvisorResponseTimeout" type="checkbox">
+            <label for="replayAdvisorResponseTimeout">deja_properties_replayAdvisorResponseTimeout</label>
+          </div>
+-->
+          <div>
+            <input id="replayAdvisorLocationTimeout" type="checkbox">
+            <label for="replayAdvisorLocationTimeout">deja_properties_replayAdvisorLocationTimeout</label>
+          </div>
+          <div>
+            <input id="replayAdvisorNetworkTimeout" type="checkbox">
+            <label for="replayAdvisorNetworkTimeout">deja_properties_replayAdvisorNetworkTimeout</label>
+          </div>
+<!--
+          <div>
+            <input id="replayAdvisorNavigationTimeout" type="checkbox">
+            <label for="replayAdvisorNavigationTimeout">deja_properties_replayAdvisorNavigationTimeout</label>
+          </div>
+-->
+          <div>
+            <input id="replayAdvisorContentStartTimeout" type="checkbox">
+            <label for="replayAdvisorContentStartTimeout">deja_properties_replayAdvisorContentStartTimeout</label>
+          </div>
+          <div>
+            <input id="replayAdvisorContentStopTimeout" type="checkbox">
+            <label for="replayAdvisorContentStopTimeout">deja_properties_replayAdvisorContentStopTimeout</label>
+          </div>
+          <div>
+            <input id="replayAdvisorStartUrl" type="checkbox">
+            <label for="replayAdvisorStartUrl">deja_properties_replayAdvisorStartUrl</label>
+          </div>
+          <div>
+            <input id="replayAdvisorEmbeddedObject" type="checkbox">
+            <label for="replayAdvisorEmbeddedObject">deja_properties_replayAdvisorEmbeddedObject</label>
+          </div>
+<!--
+          <div>
+            <input id="replayAdvisorBrowserResize" type="checkbox">
+            <label for="replayAdvisorBrowserResize">deja_properties_replayAdvisorBrowserResize</label>
+          </div>
+          <div>
+            <input id="replayAdvisorFileUpload" type="checkbox">
+            <label for="replayAdvisorFileUpload">deja_properties_replayAdvisorFileUpload</label>
+          </div>
+-->
+        </div>
+        <div>
+          <button id="replayAdvisorReset">deja_properties_resetButton</button>
+          <button id="replayAdvisorApply">deja_properties_applyButton</button>
+        </div>
+      </section>
+
+      <h3 class="fold script event play basic">deja_properties_eventTimeoutFold</h3>
+      <section id="eventTimeoutSection">
+        <div id="eventTimeoutDescription">deja_properties_eventTimeoutDescriptionGeneral</div>
+        <div class="indent1">
+          <input id="eventTimeoutSeconds" type="number" min="0" max="999">
+          <label for="eventTimeoutSeconds">deja_properties_eventTimeoutSeconds</label>
+        </div>
+        <div id="eventTimeoutUserPauseDiv" class="indent1">
+          <input id="eventTimeoutUserPause" type="checkbox">
+          <label for="eventTimeoutUserPause">deja_properties_eventTimeoutUserPause</label>
+        </div>
+        <div>deja_properties_eventTimeoutAction</div>
+        <div class="indent1">
+          <input id="eventTimeoutSkip" name="eventTimeoutAction" type="radio" value="false" checked="true">
+          <label for="eventTimeoutSkip">deja_properties_eventTimeoutSkip</label>
+          <input id="eventTimeoutError" name="eventTimeoutAction" type="radio" value="true">
+          <label for="eventTimeoutError">deja_properties_eventTimeoutError</label>
+        </div>
+        <div>
+          <button id="eventTimeoutReset">deja_properties_resetButton</button>
+          <button id="eventTimeoutApply">deja_properties_applyButton</button>
+        </div>
+      </section>
+
+      <h3 class="fold script event play basic">deja_properties_pauseIntervalsFold</h3>
+      <section id="pauseIntervalsSection">
+        <div>deja_properties_pauseIntervalsDescription</div>
+        <div>
+          <input id="pauseIntervalsEnable" type="checkbox">
+          <label for="pauseIntervalsEnable">deja_properties_pauseIntervalsEnable</label>
+        </div>
+        <div id="pauseIntervalsDurationDiv" class="indent1">
+          <input id="pauseIntervalsDuration" type="number" min="0" max="99999">
+          <label for="pauseIntervalsDuration">deja_properties_pauseIntervalsMilliseconds</label>
+        </div>
+        <div id="pauseIntervalsScreenDiv">
+          <input id="pauseIntervalsEnableScreen" type="checkbox">
+          <label for="pauseIntervalsEnableScreen">deja_properties_pauseIntervalsEnableScreen</label>
+        </div>
+        <div id="pauseIntervalsSpeedDiv" class="indent1">
+          <label for="pauseIntervalsSpeed">deja_properties_pauseIntervalsSpeed</label>
+          <input id="pauseIntervalsSpeed" type="number" min="1" max="999">
+          <label for="pauseIntervalsSpeed">deja_properties_pauseIntervalsPercent</label>
+        </div>
+        <div>
+          <button id="pauseIntervalsReset">deja_properties_resetButton</button>
+          <button id="pauseIntervalsApply">deja_properties_applyButton</button>
+        </div>
+      </section>
+
+      <h3 class="fold script play advanced">deja_properties_skippedEventsFold</h3>
+      <section id="skippedEventsSection">
+        <div>deja_properties_skippedEventsDescription</div>
+        <div>
+          <input id="skippedEventsEnable" type="checkbox">
+          <label for="skippedEventsEnable">deja_properties_skippedEventsEnable</label>
+        </div>
+        <div class="indent1">
+          <input id="skippedEventsCount" type="number" min="1" max="999">
+          <label for="skippedEventsCount">deja_properties_skippedEventsCount</label>
+        </div>
+        <div>
+          <button id="skippedEventsReset">deja_properties_resetButton</button>
+          <button id="skippedEventsApply">deja_properties_applyButton</button>
+        </div>
+      </section>
+
+      <h3 class="fold event basic">deja_properties_dialogPromptsFold</h3>
+      <section id="dialogPromptsSection">
+        <div id="dialogPromptsDescription">deja_properties_dialogPromptsDescription</div>
+        <select id="dialogPromptsList" class="fullWidth" size="5"></select>
+        <div>
+          <button id="dialogPromptsAdd">deja_properties_addButton</button>
+          <button id="dialogPromptsEdit">deja_properties_editButton</button>
+          <button id="dialogPromptsRemove">deja_properties_removeButton</button>
+        </div>
+      </section>
+
+      <h3 class="fold script event play advanced">deja_properties_matchOptionsFold</h3>
+      <section id="matchOptionsSection">
+        <div id="matchOptionsDescription"></div>
+        <div>
+          <input id="matchOptionsEnableStopReplay" type="checkbox">
+          <label for="matchOptionsEnableStopReplay">deja_properties_matchOptionsEnableStopReplay</label>
+        </div>
+        <div class="indent1">
+          <input id="matchOptionsStopReplay" type="number" min="1" max="100">
+          <label for="matchOptionsStopReplay">deja_properties_matchOptionsPercent</label>
+        </div>
+        <div>
+          <input id="matchOptionsEnableDetectErrors" type="checkbox">
+          <label for="matchOptionsEnableDetectErrors">deja_properties_matchOptionsEnableDetectErrors</label>
+        </div>
+        <div class="indent1">
+          <input id="matchOptionsErrorThreshold" type="number" min="1" max="100">
+          <label for="matchOptionsErrorThreshold">deja_properties_matchOptionsPercent</label>
+        </div>
+        <div>
+          <input id="matchOptionsIgnoreNamedAttributes" type="checkbox">
+          <label for="matchOptionsIgnoreNamedAttributes">deja_properties_matchOptionsIgnoreNamedAttributes</label>
+        </div>
+        <div id="matchOptionsMatchTypeDiv">
+          <div>
+            <label for="matchOptionsMatchType">deja_properties_matchOptionsMatchType</label>
+            <select id="matchOptionsMatchType">
+              <option value="optimized">deja_properties_matchOptionsOptimized</option>
+              <option value="intensive">deja_properties_matchOptionsIntensive</option>
+              <option value="custom">deja_properties_matchOptionsCustom</option>
+            </select>
+          </div>
+          <div class="indent1">
+            <input id="matchOptionsFingerprint" type="checkbox">
+            <label for="matchOptionsFingerprint">deja_properties_matchOptionsFingerprint</label>
+          </div>
+          <div class="indent1">
+            <input id="matchOptionsElementPath" type="checkbox">
+            <label for="matchOptionsElementPath">deja_properties_matchOptionsElementPath</label>
+            <a id="matchOptionsEditElementPath">deja_properties_matchOptionsEdit</a>
+          </div>
+          <div class="indent1">
+            <input id="matchOptionsBreadcrumbs" type="checkbox">
+            <label for="matchOptionsBreadcrumbs">deja_properties_matchOptionsBreadcrumbs</label>
+          </div>
+        </div>
+        <div>
+          <button id="matchOptionsReset">deja_properties_resetButton</button>
+          <button id="matchOptionsApply">deja_properties_applyButton</button>
+        </div>
+      </section>
+
+      <h3 class="fold script event play basic">deja_properties_replayTimingsFold</h3>
+      <section id="replayTimingsSection">
+        <div id="replayTimingsDescription"></div>
+        <div>
+          <label for="replayTimingsSpeed">deja_properties_replayTimingsSpeed</label>
+          <select id="replayTimingsSpeed">
+            <option value="FASTER">deja_properties_replayTimingsFaster</option>
+            <option value="NORMAL">deja_properties_replayTimingsNormal</option>
+            <option value="SLOWER">deja_properties_replayTimingsSlower</option>
+            <option value="CUSTOM" class="advancedOnly">deja_properties_replayTimingsCustom</option>
+          </select>
+        </div>
+        <div class="indent1 advancedOnly">
+          <label for="replayTimingsEventDelay">deja_properties_replayTimingsEventDelay</label>
+          <div class="indent1">
+            <input id="replayTimingsEventDelay" type="number" min="0" max="99999">
+            <label for="replayTimingsEventDelay">deja_properties_replayTimingsMilliseconds</label>
+          </div>
+          <label for="replayTimingsDispatchDelay">deja_properties_replayTimingsDispatchDelay</label>
+          <div class="indent1">
+            <input id="replayTimingsDispatchDelay" type="number" min="0" max="99999">
+            <label for="replayTimingsDispatchDelay">deja_properties_replayTimingsMilliseconds</label>
+          </div>
+          <label for="replayTimingsReadyTimeout">deja_properties_replayTimingsReadyTimeout</label>
+          <div class="indent1">
+            <input id="replayTimingsReadyTimeout" type="number" min="0" max="99999">
+            <label for="replayTimingsReadyTimeout">deja_properties_replayTimingsMilliseconds</label>
+          </div>
+        </div>
+<!--
+        <div class="diagnosticOnly">deja_properties_replayTimingsDescriptionInternal</div>
+        <div class="indent1 diagnosticOnly">
+          <label for="replayTimingsResponseTimeout">deja_properties_replayTimingsResponseTimeout</label>
+          <div class="indent1">
+            <input id="replayTimingsResponseTimeout" type="number" min="0" max="99999">
+            <label for="replayTimingsResponseTimeout">deja_properties_replayTimingsMilliseconds</label>
+          </div>
+          <label for="replayTimingsMaxScriptTime">deja_properties_replayTimingsMaxScriptTime</label>
+          <div class="indent1">
+            <input id="replayTimingsMaxScriptTime" type="number" min="0" max="999">
+            <label for="replayTimingsMaxScriptTime">deja_properties_replayTimingsSeconds</label>
+          </div>
+        </div>
+-->
+        <div>
+          <button id="replayTimingsReset">deja_properties_resetButton</button>
+          <button id="replayTimingsApply">deja_properties_applyButton</button>
+        </div>
+      </section>
+
+      <h3 class="fold play advanced">deja_properties_variableOptionsFold</h3>
+      <section id="variableOptionsSection">
+        <div>deja_properties_variableOptionsCounterDescription</div>
+        <div>
+          <label for="variableOptionsCounter">deja_properties_variableOptionsCounterLabel</label>
+          <input id="variableOptionsCounter" type="number" min="0">
+        </div>
+        <div>deja_properties_variableOptionsLocationDescription</div>
+        <div>
+          <label for="variableOptionsLocation">deja_properties_variableOptionsLocationLabel</label>
+          <input id="variableOptionsLocation" type="text">
+        </div>
+        <div>
+          <button id="variableOptionsReset">deja_properties_resetButton</button>
+          <button id="variableOptionsApply">deja_properties_applyButton</button>
+        </div>
+      </section>
+
+      <h3 class="fold script basic">deja_properties_variablesFold</h3>
+      <section id="variablesSection">
+        <div>deja_properties_variablesDescription</div>
+        <select id="variablesSelect" class="fullWidth" size="5"></select>
+        <a id="replaceLocationID" class="inactive">deja_properties_variablesReplaceLocationID</a>
+
+        <div>
+          <button id="variablesAdd">deja_properties_addButton</button>
+          <button id="variablesEdit">deja_properties_editButton</button>
+          <button id="variablesRemove">deja_properties_removeButton</button>
+        </div>
+      </section>
+
+<!--
+      <h3 class="fold script basic">deja_properties_datasetsFold</h3>
+      <section>
+        The datasets.
+      </section>
+-->
+
+
+      <h3 class="fold script advanced">deja_properties_browserPreferencesFold</h3>
+      <section id="browserPrefsSection">
+        <div>deja_properties_browserPreferencesDescription</div>
+        <div>
+          <input id="useProxySettings" type="checkbox">
+          <label for="useProxySettings">deja_properties_customProxySettings</label>
+        </div>  
+        <div id="editProxySettings" class="indent1">
+		  <li><a id="editProxySettings2" title="deja_global_editProxySettings">deja_properties_editProxySettings</a></li>
+        </div>	
+        <div>
+          <button id="proxyReset">deja_properties_resetButton</button>
+          <button id="proxyApply">deja_properties_applyButton</button>
+        </div>		
+      </section>
+
+
+
+      <h3 class="fold script advanced">deja_properties_customHeadersFold</h3>
+      <section id="headersSection">
+        <div>deja_properties_headersDescription</div>
+        <select id="headersList" class="fullWidth" size="5"></select>
+        <div>
+          <button id="headersAdd">deja_properties_addButton</button>
+          <button id="headersEdit">deja_properties_editButton</button>
+          <button id="headersRemove">deja_properties_removeButton</button>
+        </div>
+      </section>
+
+
+      <h3 class="fold script advanced">deja_properties_urlExclusionsFold</h3>
+      <section id="urlMasksSection">
+        <div>deja_properties_urlMasksDescription</div>
+        <select id="urlMasksList" class="fullWidth" size="5"></select>
+        <div>
+          <button id="urlMasksAdd">deja_properties_addButton</button>
+          <button id="urlMasksEdit">deja_properties_editButton</button>
+          <button id="urlMasksRemove">deja_properties_removeButton</button>
+        </div>
+      </section>
+
+      <h3 class="fold script action event basic">deja_properties_contentViewsFold</h3>
+      <section id="contentViewsSection">
+        <div id="contentViewsDescription"></div>
+        <select id="contentViewsList" class="fullWidth" size="5"></select>
+        <div>
+          <button id="contentViewsAdd">deja_properties_addButton</button>
+          <button id="contentViewsEdit">deja_properties_editButton</button>
+          <button id="contentViewsRemove">deja_properties_removeButton</button>
+        </div>
+      </section>
+
+<!--
+      <h3 class="fold script event play advanced">deja_properties_ueFold</h3>
+      <section>
+        The user experience options.
+      </section>
+-->
+
+      <h3 class="fold script action event advanced">deja_properties_branchesFold</h3>
+      <section id="branchesSection">
+        <div id="branchesDescription"></div>
+        <select id="branchesList" class="fullWidth" size="5"></select>
+        <div>
+          <button id="branchesAdd">deja_global_btn_add</button>
+          <button id="branchesEdit">deja_global_btn_edit</button>
+          <button id="branchesRemove">deja_global_btn_remove</button>
+        </div>
+      </section>
+
+      <h3 class="fold record basic">deja_properties_newVisitorFold</h3>
+      <section id="newVisitorSection">
+        <div>deja_properties_newVisitorDescription</div>
+        <div>
+          <input id="newVisitorEnable" type="checkbox">
+          <label for="newVisitorEnable">deja_properties_newVisitorEnable</label>
+        </div>
+        <div id="newVisitorOptions" class="indent1 advancedOnly">
+          <div>
+            <input id="newVisitorHideCookies" type="checkbox">
+            <label for="newVisitorHideCookies" title="deja_properties_newVisitorHideCookiesTitle">deja_properties_newVisitorHideCookies</label>
+          </div>
+          <div>
+            <input id="newVisitorClearBrowser" type="checkbox">
+            <label for="newVisitorClearBrowser" title="deja_properties_newVisitorClearBrowserTitle">deja_properties_newVisitorClearBrowser</label>
+          </div>
+          <div>
+            <input id="newVisitorClearPasswords" type="checkbox">
+            <label for="newVisitorClearPasswords" title="deja_properties_newVisitorClearPasswordsTitle">deja_properties_newVisitorClearPasswords</label>
+          </div>
+          <div>
+            <input id="newVisitorClearFormData" type="checkbox">
+            <label for="newVisitorClearFormData" title="deja_properties_newVisitorClearFormDataTitle">deja_properties_newVisitorClearFormData</label>
+          </div>
+          <div>
+            <input id="newVisitorClearCertificates" type="checkbox">
+            <label for="newVisitorClearCertificates" title="deja_properties_newVisitorClearCertificatesTitle">deja_properties_newVisitorClearCertificates</label>
+          </div>
+          <div>
+            <input id="newVisitorClearLocalStorage" type="checkbox">
+            <label for="newVisitorClearLocalStorage" title="deja_properties_newVisitorClearLocalStorageTitle">deja_properties_newVisitorClearLocalStorage</label>
+          </div>
+          <div>
+            <input id="newVisitorClearFileSystems" type="checkbox">
+            <label for="newVisitorClearFileSystems" title="deja_properties_newVisitorClearFileSystemsTitle">deja_properties_newVisitorClearFileSystems</label>
+          </div>
+          <div>
+            <input id="newVisitorClearAppCache" type="checkbox">
+            <label for="newVisitorClearAppCache" title="deja_properties_newVisitorClearAppCacheTitle">deja_properties_newVisitorClearAppCache</label>
+          </div>
+          <div>
+            <input id="newVisitorClearIndexedDb" type="checkbox">
+            <label for="newVisitorClearIndexedDb" title="deja_properties_newVisitorClearIndexedDbTitle">deja_properties_newVisitorClearIndexedDb</label>
+          </div>
+          <div>
+            <input id="newVisitorClearWebSql" type="checkbox">
+            <label for="newVisitorClearWebSql" title="deja_properties_newVisitorClearWebSqlTitle">deja_properties_newVisitorClearWebSql</label>
+          </div>
+          <div>
+            <input id="newVisitorClearPluginData" type="checkbox">
+            <label for="newVisitorClearPluginData" title="deja_properties_newVisitorClearPluginDataTitle">deja_properties_newVisitorClearPluginData</label>
+          </div>
+        </div>
+        <div>
+          <button id="newVisitorReset">deja_properties_resetButton</button>
+          <button id="newVisitorApply">deja_properties_applyButton</button>
+        </div>
+      </section>
+
+<!--
+      <h3 class="fold record basic">deja_properties_trueScreenFold</h3>
+      <section>
+        The TrueScreen options.
+      </section>
+-->
+
+      <h3 class="fold record basic">deja_properties_blockingFold</h3>
+      <section id="blockOptionsSection">
+        <div>deja_properties_blockOptionsDescription</div>
+        <div>
+          <input id="blockOptionsPopups" type="checkbox">
+          <label for="blockOptionsPopups">deja_properties_blockOptionsPopups</label>
+        </div>
+        <div>
+          <input id="blockOptionsCookies" type="checkbox">
+          <label for="blockOptionsCookies">deja_properties_blockOptionsCookies</label>
+        </div>
+        <div>
+          <button id="blockOptionsReset">deja_properties_resetButton</button>
+          <button id="blockOptionsApply">deja_properties_applyButton</button>
+        </div>
+      </section>
+
+<!--
+      <h3 class="fold record basic">deja_properties_browserFold</h3>
+      <section id="browserOptionsSection">
+        <div>deja_properties_browserOptionsDescription</div>
+        <div>
+          <input id="browserOptionsWinTabOpen" type="checkbox">
+          <label for="browserOptionsWinTabOpen">deja_properties_browserOptionsWinTabOpen</label>
+        </div>
+        <div>
+          <input id="browserOptionsWinTabClose" type="checkbox">
+          <label for="browserOptionsWinTabClose">deja_properties_browserOptionsWinTabClose</label>
+        </div>
+        <div>
+          <input id="browserOptionsBrowseHistory" type="checkbox">
+          <label for="browserOptionsBrowseHistory">deja_properties_browserOptionsBrowseHistory</label>
+        </div>
+        <div>deja_properties_browserOptionsBlockInfo</div>
+        <div>
+          <input id="browserOptionsBlockSwitch" type="checkbox">
+          <label for="browserOptionsBlockSwitch">deja_properties_browserOptionsBlockSwitch</label>
+        </div>
+        <div>
+          <button id="browserOptionsReset">deja_properties_resetButton</button>
+          <button id="browserOptionsApply">deja_properties_applyButton</button>
+        </div>
+      </section>
+-->
+
+      <h3 class="fold record basic">deja_properties_inputFold</h3>
+      <section id="inputOptionsSection">
+        <div>deja_properties_inputOptionsLabel</div>
+        <div>
+          <input id="inputOptionsForceFocus" type="checkbox">
+          <label for="inputOptionsForceFocus">deja_properties_inputOptionsForceFocus</label>
+        </div>
+        <div>
+          <button id="inputOptionsReset">deja_properties_resetButton</button>
+          <button id="inputOptionsApply">deja_properties_applyButton</button>
+        </div>
+      </section>
+
+<!--
+      <h3 class="fold script event play record advanced">deja_properties_flashFold</h3>
+      <section id="flashOptionsSection">
+        <div>deja_properties_flashOptionsHideDescription</div>
+        <div>
+          <input id="flashOptionsHide" type="checkbox">
+          <label for="flashOptionsHide">deja_properties_flashOptionsHide</label>
+        </div>
+        <div>deja_properties_flashOptionsWmodeDescription</div>
+        <div>
+          <input id="flashOptionsWmode" type="checkbox">
+          <label for="flashOptionsWmode">deja_properties_flashOptionsWmode</label>
+        </div>
+        <div class="indent1 flashOptionsWmodeOnly">
+          <label for="flashOptionsOverride">deja_properties_flashOptionsOverride</label>
+          <select id="flashOptionsOverride">
+            <option value="opaque" selected="true">deja_properties_flashOptionsOpaque</option>
+            <option value="transparent">deja_properties_flashOptionsTransparent</option>
+            <option value="window">deja_properties_flashOptionsWindow</option>
+          </select>
+        </div>
+        <div class="indent1 flashOptionsWmodeOnly">
+          <label for="flashOptionsDelay">deja_properties_flashOptionsDelay</label>
+          <input id="flashOptionsDelay" type="number" min="0" max="9999">
+          <label for="flashOptionsDelay">deja_properties_flashOptionsMilliseconds</label>
+        </div>
+        <div>
+          <button id="flashOptionsReset">deja_properties_resetButton</button>
+          <button id="flashOptionsApply">deja_properties_applyButton</button>
+        </div>
+      </section>
+-->
+
+      <h3 class="fold script event play advanced">deja_properties_locationChangesFold</h3>
+      <section id="locationChangesSection">
+        <div id="locationChangesDescription">deja_properties_locationChangesDescription</div>
+        <div class="indent1">
+          <input id="locationChangesUse" type="checkbox">
+          <label for="locationChangesUse">deja_properties_locationChangesUse</label>
+        </div>
+        <div id="locationChangesCountDiv" class="indent1">
+          <input id="locationChangesCount" type="number" min="0" max="99">
+          <label for="locationChangesCount">deja_properties_locationChangesCount</label>
+        </div>
+        <div class="indent1">
+          <div>deja_properties_locationChangesWaitDescription</div>
+          <div class="indent1">
+            <input id="locationChangesWait" type="number" min="0" max="360">
+            <label for="locationChangesWait">deja_properties_locationChangesSeconds</label>
+          </div>
+        </div>
+        <div>
+          <button id="locationChangesReset">deja_properties_resetButton</button>
+          <button id="locationChangesApply">deja_properties_applyButton</button>
+        </div>
+      </section>
+
+      <h3 class="fold script event play advanced">deja_properties_contentChangesFold</h3>
+      <section id="contentChangesSection">
+        <div id="contentChangesDescription">deja_properties_contentChangesDescription</div>
+        <div>
+          <input id="contentChangesUse" type="checkbox">
+          <label for="contentChangesUse">deja_properties_contentChangesUse</label>
+        </div>
+        <div id="contentChangesSettings" class="indent1">
+          <label for="contentChangesStartTime">deja_properties_contentChangesStartTime</label>
+          <div class="indent1">
+            <input id="contentChangesStartTime" type="number" min="0" max="999">
+            <label for="contentChangesStartTime">deja_properties_contentChangesSeconds</label>
+          </div>
+          <label for="contentChangesStopTime">deja_properties_contentChangesStopTime</label>
+          <div class="indent1">
+            <input id="contentChangesStopTime" type="number" min="0" max="999">
+            <label for="contentChangesStopTime">deja_properties_contentChangesSeconds</label>
+          </div>
+          <label for="contentChangesPeriod">deja_properties_contentChangesPeriod</label>
+          <div class="indent1">
+            <input id="contentChangesPeriod" type="number" min="0" max="99999">
+            <label for="contentChangesPeriod">deja_properties_contentChangesMilliseconds</label>
+          </div>
+          <div>
+            <input id="contentChangesUseMinimum" type="checkbox">
+            <label for="contentChangesUseMinimum">deja_properties_contentChangesUseMinimum</label>
+          </div>
+          <div class="indent1">
+            <input id="contentChangesMinimum" type="number" min="0" max="999999">
+            <label for="contentChangesMinimum">deja_properties_contentChangesMinimum</label>
+          </div>
+        </div>
+        <div>
+          <button id="contentChangesReset">deja_properties_resetButton</button>
+          <button id="contentChangesApply">deja_properties_applyButton</button>
+        </div>
+      </section>
+
+      <h3 class="fold script event play advanced">deja_properties_networkActivityFold</h3>
+      <section id="networkActivitySection">
+        <div>deja_properties_networkActivityDescription</div>
+        <div>
+          <input id="networkActivityUseHints" type="checkbox">
+          <label for="networkActivityUseHints">deja_properties_networkActivityUseHints</label>
+        </div>
+        <div>
+          <input id="networkActivityFullpage" type="checkbox">
+          <label for="networkActivityFullpage">deja_properties_networkActivityFullpage</label>
+        </div>
+<!--
+        <div class="diagnosticOnly">
+          <input id="networkActivityAutoClose" type="checkbox">
+          <label for="networkActivityAutoClose">deja_properties_networkActivityAutoClose</label>
+        </div>
+-->
+        <div>deja_properties_networkActivityTimeout</div>
+        <div class="indent1">
+          <input id="networkActivityTimeout" type="number" min="0" max="999">
+          <label for="networkActivityTimeout">deja_properties_networkActivitySeconds</label>
+        </div>
+<!--
+        <div class="diagnosticOnly">deja_properties_networkActivityPrune</div>
+        <div class="indent1 diagnosticOnly">
+          <input id="networkActivityPrune" type="number" min="0" max="999">
+          <label for="networkActivityPrune">deja_properties_networkActivitySeconds</label>
+        </div>
+-->
+        <div>
+          <button id="networkActivityReset">deja_properties_resetButton</button>
+          <button id="networkActivityApply">deja_properties_applyButton</button>
+        </div>
+      </section>
+
+      <h3 class="fold script event play diagnostic">deja_properties_captureDataFold</h3>
+      <section id="captureDataSection">
+        <div>deja_properties_captureDataWhen</div>
+        <div class="indent1">
+          <input id="captureDataOff" name="captureDataWhen" type="radio" value="off">
+          <label for="captureDataOff">deja_properties_captureDataOff</label>
+        </div>
+        <div class="indent1">
+          <input id="captureDataError" name="captureDataWhen" type="radio" value="err">
+          <label for="captureDataError">deja_properties_captureDataError</label>
+        </div>
+        <div class="indent1">
+          <input id="captureDataAction" name="captureDataWhen" type="radio" value="act">
+          <label for="captureDataAction">deja_properties_captureDataAction</label>
+        </div>
+        <div class="indent1">
+          <input id="captureDataEvent" name="captureDataWhen" type="radio" value="evt">
+          <label for="captureDataEvent">deja_properties_captureDataEvent</label>
+        </div>
+        <div>deja_properties_captureDataTypes</div>
+        <div class="indent1">
+          <input id="captureDataImage" type="checkbox">
+          <label for="captureDataImage">deja_properties_captureDataImage</label>
+        </div>
+        <div class="indent1">
+          <input id="captureDataSource" type="checkbox">
+          <label for="captureDataSource">deja_properties_captureDataSource</label>
+        </div>
+        <div class="indent1">
+          <input id="captureDataDocHeaders" type="checkbox">
+          <label for="captureDataDocHeaders">deja_properties_captureDataDocHeaders</label>
+        </div>
+        <div class="indent1">
+          <input id="captureDataObjHeaders" type="checkbox">
+          <label for="captureDataObjHeaders">deja_properties_captureDataObjHeaders</label>
+        </div>
+        <div>deja_properties_captureDataImageFormat</div>
+        <div class="indent1">
+          <input id="captureDataPng" name="captureDataFormat" type="radio" value="image/png">
+          <label for="captureDataPng">deja_properties_captureDataPng</label>
+          <input id="captureDataJpeg" name="captureDataFormat" type="radio" value="image/jpeg">
+          <label for="captureDataJpeg">deja_properties_captureDataJpeg</label>
+        </div>
+        <div>
+          <button id="captureDataReset">deja_properties_resetButton</button>
+          <button id="captureDataApply">deja_properties_applyButton</button>
+        </div>
+      </section>
+
+      <h3 class="fold record basic">deja_properties_mobileOptionsFold</h3>
+      <section id="mobileOptionsSection" class="mobile-options-section">
+        <div class="option-description">deja_properties_mobileOptionsDescription</div>
+        <div class="active-devices-area">
+          <div class="active-devices-title">deja_properties_mobileOptionsActiveDevices</div>
+          <div class="active-devices">
+            <select name="" size="10" id="mobileOptionsActiveDevices" class="active-devices-list"></select>
+          </div>
+          <div class="active-devices-actions">
+            <button id="mobileOptionsAddDevice" class="add">deja_global_btn_add</button>
+            <button id="mobileOptionsEditDevice" class="edit">deja_global_btn_edit</button>
+            <button id="mobileOptionsRemoveDevice" class="remove">deja_global_btn_remove</button>
+            <button id="mobileOptionsMoveUpDevice" class="move-up">deja_global_btn_moveUp</button>
+            <button id="mobileOptionsMoveDownDevice" class="move-down">deja_global_btn_moveDown</button>
+          </div>
+        </div>
+        <div class="available-devices">
+          <select name="" id="mobileOptionsAvailableDevices" class="available-devices-list">
+            <option value="" selected disabled>deja_properties_mobileOptionsAvailableDevices</option>
+          </select>
+        </div>
+        <div class="option-actions">
+          <button id="mobileOptionsReset" class="reset">deja_properties_resetButton</button>
+          <button id="mobileOptionsApply" class="apply">deja_properties_applyButton</button>
+        </div>
+      </section>
+
+      <h3 class="fold record basic">deja_properties_contentViewOptionsFold</h3>
+      <section id="contentViewOptionsSection" class="cv-options-section">
+        <div class="cv-predefined-items-area">
+          <div class="cv-predefined-items-title">deja_properties_contentViewOptionsDescription</div>
+          <div class="cv-predefined-items">
+            <select name="" size="10" id="contentViewOptionsPredefinedItems" class="cv-predefined-item-list"></select>
+          </div>
+          <div class="cv-predefined-item-actions">
+            <button id="contentViewOptionsAddItem" class="add">deja_global_btn_add</button>
+            <button id="contentViewOptionsEditItem" class="edit">deja_global_btn_edit</button>
+            <button id="contentViewOptionsRemoveItem" class="remove">deja_global_btn_remove</button>
+          </div>
+        </div>
+        <div class="option-actions">
+          <button id="contentViewOptionsReset" class="reset">deja_properties_resetButton</button>
+          <button id="contentViewListOptionsApply" class="apply">deja_properties_applyButton</button>
+        </div>
+      </section>
+
+      <h3 class="fold play basic">deja_properties_securityFold</h3>
+      <section id="securitySection">
+        <div>
+          <input id="securityLocal" type="checkbox">
+          <label for="securityLocal">deja_properties_securityLocal</label>
+        </div>
+        <div>
+          <input id="securityRemote" type="checkbox">
+          <label for="securityRemote">deja_properties_securityRemote</label>
+        </div>
+        <div>
+          <input id="securityAllInput" type="checkbox">
+          <label for="securityAllInput">deja_properties_securityAllInput</label>
+        </div>
+        <div>
+          <button id="securityReset">deja_properties_resetButton</button>
+          <button id="securityApply">deja_properties_applyButton</button>
+        </div>
+      </section>
+
+      <h3 class="fold script event play record diagnostic">deja_properties_loggingOptionsFold</h3>
+      <section id="logOptionsSection">
+        <div>deja_properties_logOptionsDescription</div>
+        <div class="column1">
+          <div>
+            <input id="logOptionsFailures" type="checkbox">
+            <label for="logOptionsFailures">deja_properties_logOptionsFailures</label>
+          </div>
+          <div>
+            <input id="logOptionsWarnings" type="checkbox">
+            <label for="logOptionsWarnings">deja_properties_logOptionsWarnings</label>
+          </div>
+          <div>
+            <input id="logOptionsInformation" type="checkbox">
+            <label for="logOptionsInformation">deja_properties_logOptionsInformation</label>
+          </div>
+        </div>
+        <div class="column2">
+          <div><label for="logOptionsDebug">deja_properties_logOptionsDebugCategories</label></div>
+          <select id="logOptionsDebug" multiple="true" size="5">
+            <option value="pro">deja_properties_logOptionsGeneral</option>
+            <option value="act">deja_properties_logOptionsHttpActivity</option>
+            <option value="net">deja_properties_logOptionsNetworkActivity</option>
+            <option value="pen">deja_properties_logOptionsPendingActivity</option>
+            <option value="scr">deja_properties_logOptionsScreenEvents</option>
+            <option value="sea">deja_properties_logOptionsTargetSearch</option>
+            <option value="url">deja_properties_logOptionsUrlBlocking</option>
+            <option value="tim">deja_properties_logOptionsHttpTimings</option>
+            <option value="hea">deja_properties_logOptionsHttpHeaders</option>
+          </select>
+          <div>
+            <input id="logOptionsAllDebug" type="checkbox">
+            <label for="logOptionsAllDebug">deja_properties_logOptionsAllDebug</label>
+          </div>
+        </div>
+        <div>
+          <button id="logOptionsReset">deja_properties_resetButton</button>
+          <button id="logOptionsApply">deja_properties_applyButton</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

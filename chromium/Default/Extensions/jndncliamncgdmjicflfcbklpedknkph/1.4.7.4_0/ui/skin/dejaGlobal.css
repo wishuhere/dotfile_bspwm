@@ -1,0 +1,77 @@
+/*================================
+    Global styles
+================================*/
+label,
+button {
+    cursor: pointer;
+}
+
+/*
+    Helpers
+*/
+.clearfix:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.pseudo-disabled-element {
+    position: relative;
+    z-index: 5;
+}
+.pseudo-disabled-element:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    opacity: 0.5;
+}
+
+/*
+    Custom elements. Jstree
+*/
+.jstree.tree-container,
+.jstree.jstree-default.tree-container,
+.jstree.jstree-focused.tree-container {
+    background: none;
+}
+.jstree.tree-container-checkbox > ul {
+    position: relative;
+    padding-left: 15px;
+}
+.jstree.tree-container-checkbox .jstree-checkbox {
+    position: absolute;
+    left: 0;
+    width: auto;
+    height: auto;
+    background: none;
+    text-align: center;
+    font-size: 1.25em;
+    cursor: pointer;
+}
+.jstree.tree-container-checkbox .jstree-checkbox:after {
+    content: '\2713';
+    display: inline-block;
+    margin-left: -0.25em;
+    line-height: 1;
+}
+.jstree.tree-container-checkbox .jstree-unchecked > a > .jstree-checkbox:after {
+    opacity: 0.1;
+}
+.tree-container li {
+    overflow: hidden;
+}
+.tree-container .jstree-icon {
+    cursor: pointer;
+}
+.tree-container a {
+    cursor: default;
+}
+.tree-container [category=root] > .jstree-hovered {
+    border-color: transparent;
+    background: none;
+}

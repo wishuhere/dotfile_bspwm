@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+
+  <link rel="stylesheet" href="../skin/jquery-ui.css">
+  <script src="jquery.js"></script>
+  <script src="jquery-ui.js"></script>
+
+  <link rel="stylesheet" href="../../thirdparty/jstree/themes/default/style.css">
+  <script src="../../thirdparty/jstree/jquery.jstree.js"></script>
+
+  <link rel="stylesheet" href="../skin/dejaGlobal.css">
+  <link rel="stylesheet" href="../skin/dejaGlobalForms.css">
+  <link rel="stylesheet" href="../skin/dejaGlobalDialogs.css">
+  <link rel="stylesheet" href="../skin/dejaContentViewHints.css">
+  <script src="dejaUi.js"></script>
+  <script src="dejaContentViewHints.js"></script>
+</head>
+<body class="dialog content-view-hints-dialog">
+
+  <div class="hints-container form-group clearfix">
+    <div class="hints-selection-area clearfix">
+      <div class="available-items">
+        <div class="label">deja_contentViewHints_available</div>
+        <div id="componentsTreeContainer" class="tree-container hints"></div>
+      </div>
+
+      <div class="include">
+        <button id="includeComponent" class="include-component">deja_contentViewHints_include_arrow</button>
+      </div>
+
+      <div class="included-items">
+        <div class="label">deja_contentViewHints_included</div>
+        <div class="hints">
+          <select name="" size="10" id="includedItemList" class="included-item-list"></select>
+        </div>
+      </div>
+    </div>
+
+    <div class="component-actions">
+      <button id="add" class="add">deja_global_btn_new</button>
+      <button id="edit" class="edit">deja_global_btn_edit</button>
+      <button id="clone" class="clone">deja_global_btn_clone</button>
+      <button id="remove" class="remove">deja_global_btn_remove</button>
+      <button id="moveUp" class="move-up">deja_global_btn_moveUp</button>
+      <button id="moveDown" class="move-down">deja_global_btn_moveDown</button>
+    </div>
+  </div>
+
+  <div class="dialog-actions form-group">
+    <button id="apply">deja_javascript_apply</button>
+    <button id="cancel">deja_javascript_cancel</button>
+  </div>
+
+</body>
+</html>

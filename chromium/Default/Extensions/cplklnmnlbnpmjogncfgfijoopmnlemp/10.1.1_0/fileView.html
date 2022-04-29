@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <title>iMacros</title>
+    <link rel="stylesheet" type="text/css"
+          href="skin/common.css" />
+    <link rel="stylesheet" type="text/css"
+          href="skin/treeView.css" />
+    <link rel="stylesheet"
+          href="vendor/jstree/themes/default/style.css" />
+    <script src="vendor/jQuery/jquery-2.2.1.min.js"></script>
+    <script src="vendor/jstree/jstree.min.js"></script>
+    <script src="fileView.js"></script>
+    <script src="utils.js"></script>
+    <script src="AsyncFileIO.js"></script>
+
+  </head>
+  <body treetype="files">
+	<div id="no-file-io-message" hidden="true">
+      <p id="no-file-io-paragraph">        
+		File access is not available in the freeware version.
+		<br><br>
+    See <span id="comparison" class="a-link no-bold-link">the feature comparison chart</span>.
+    <br><br>
+    <span id="customer" class="a-link no-bold-link">Already a customer?</span>
+      </p>
+    </div>
+    <div id="loading_message" hidden="true">
+      Scanning directory...
+    </div>
+    
+    <ul id="jstree" class="tree-menu">
+    </ul>
+
+    <div id="imacros-bookmark-div" style="display:none">
+      <textarea id="imacros-macro-container"></textarea>
+    </div>
+  </body>
+
+</html>

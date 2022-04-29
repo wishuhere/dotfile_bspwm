@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+
+    <link rel="stylesheet" href="../skin/jquery-ui.css"></link>
+    <script src="jquery.js"></script>
+    <script src="jquery-ui.js"></script>
+
+    <link rel="stylesheet" href="../skin/dejaGlobal.css">
+    <link rel="stylesheet" href="../skin/dejaProxySettings.css"></link>
+    <script src="dejaUi.js"></script>
+    <script src="dejaDisplayLevelSelector.js"></script>
+    <script src="dejaProxySettings.js"></script>
+  </head>
+  <body>
+    <div id="description"></div>
+<!--
+    <div id="configureProxiesDiv">
+      <label for="configureProxiesDiv">deja_proxy_configure</label>
+      <textarea id="configureProxiesDiv"></textarea>
+    </div>
+-->	
+    <fieldset id="proxyParams" class="form-group">
+       <legend>deja_proxy_configure</legend>
+
+       <div class="form-field">
+         <input name="proxysetting" type="radio" id="noProxyConfigured" value="1"/>
+	     <label for="noProxyConfigured">deja_proxy_none</label>
+       </div>
+
+       <div class="form-field">
+         <input name="proxysetting" type="radio" id="autoDetectProxy" value="2"/>
+	     <label for="autoDetectProxy">deja_proxy_auto_detect</label>
+       </div>
+
+       <div class="form-field">
+         <input name="proxysetting" type="radio" id="useSystemProxy" value="3"/>
+	     <label for="useSystemProxy">deja_proxy_use_system</label>
+       </div>
+       <div class="form-field">
+         <input name="proxysetting" type="radio" id="manualProxy" value="4"/>
+	     <label for="manualProxy">deja_proxy_manual</label>
+		 <div class="indent1">
+		 <label for="httpProxy">deja_proxy_http</label>
+		 <input id="httpProxy" type="text">
+		 <label for="httpPort">deja_proxy_port</label>
+		 <input id="httpPort" type="number" min="0">
+		 </div>
+		 <div class="indent1">
+		 <input id="allProtocols" type="checkbox">
+		 <label for="allProtocols">deja_proxy_all_protocols</label>
+		 </div>
+		 <div class="indent1">
+		 <label for="sslProxy">deja_proxy_ssl</label>
+		 <input id="sslProxy" type="text">
+		 <label for="sslPort">deja_proxy_port</label>
+		 <input id="sslPort" type="number" min="0">
+		 </div>
+		 <div class="indent1">
+		 <label for="ftpProxy">deja_proxy_ftp</label>
+		 <input id="ftpProxy" type="text">
+		 <label for="ftpPort">deja_proxy_port</label>
+		 <input id="ftpPort" type="number" min="0">
+		 </div>
+		 <div class="indent1">
+		 <label for="socksProxy">deja_proxy_socks</label>
+		 <input id="socksProxy" type="text">
+		 <label for="socksPort">deja_proxy_port</label>
+		 <input id="socksPort" type="number" min="0">
+		 </div>
+		 <div class="indent2">
+		 <input name="socksversion" id="socks4" type="radio">
+		 <label for="socks4">deja_proxy_socksv4</label>
+		 <input name="socksversion" id="socks5" type="radio">
+		 <label for="socks5">deja_proxy_socksv5</label>
+		 <input id="remoteDns" type="checkbox">
+		 <label for="remoteDns">deja_proxy_remotedns</label>
+		 </div>
+		 <div class="indent1">
+		 <label for="bypassList">deja_proxy_not_urls</label>
+		 <input id="bypassList" type="text">
+		 </div>
+       </div>
+       <div class="form-field">
+         <input name="proxysetting" type="radio" id="autoUrl" value="5"/>
+	     <label for="autoUrl">deja_proxy_auto_url</label>
+		 <div class="indent1">
+		 <input id="autoUrlList" type="text">
+		 </div>
+       </div>	   
+    </fieldset>  
+
+    <div id="displayLevel" class="rightAlign"></div>
+    <div class="clear">
+      <button id="apply">deja_global_btn_ok</button>
+      <button id="cancel">deja_global_btn_cancel</button>
+    </div>
+  </body>
+</html>

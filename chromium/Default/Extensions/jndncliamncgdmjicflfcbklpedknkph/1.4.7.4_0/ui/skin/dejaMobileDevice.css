@@ -1,0 +1,46 @@
+.device-dialog label,
+.device-dialog input {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.device-dialog input[type=checkbox] {
+    margin: 0;
+}
+
+.device-dialog input[type=text],
+.device-dialog input[type=number]{
+    padding: 2px 5px;
+}
+
+.form-field + .form-field,
+.form-group + .form-field{
+    margin-top: 5px;
+}
+.form-group + .form-group,
+.form-field + .form-group {
+    margin-top: 10px;
+}
+
+.device-name input,
+.user-agent input {
+    display: block;
+    min-width: 75%;
+    margin-top: 2px;
+}
+
+.device-params label + input {
+    margin-left: 5px;
+}
+
+.device-params input + label {
+    margin-left: 5px;
+}
+
+.screen-size label {
+    min-width: 40px;
+}
+
+.screen-size input + span {
+    margin-left: 5px;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+
+  <link rel="stylesheet" href="../skin/jquery-ui.css">
+  <link rel="stylesheet" href="../skin/dejaGlobal.css">
+  <link rel="stylesheet" href="../skin/dejaGlobalForms.css">
+  <link rel="stylesheet" href="../skin/dejaGlobalDialogs.css">
+  <link rel="stylesheet" href="../skin/dejaContentViewComponent.css">
+
+  <script src="jquery.js"></script>
+  <script src="jquery-ui.js"></script>
+  <script src="dejaUi.js"></script>
+  <script src="dejaContentViewComponent.js"></script>
+
+</head>
+<body class="dialog content-view-component-dialog">
+
+<div class="dialog-description" id="description"></div>
+
+<div class="type-container">
+  <label for="type">deja_contentViewComponent_typeLabel</label>
+  <select name="type" id="type">
+    <option value="1">deja_contentViewComponent_type_url</option>
+    <option value="2">deja_contentViewComponent_type_contentView</option>
+    <option value="3">deja_contentViewComponent_type_list</option>
+  </select>
+</div>
+
+<fieldset id="params" class="form-group">
+  <legend>deja_contentViewComponent_parameters</legend>
+
+  <div id="typeUrl" class="type-url form-field">
+    <label for="url">deja_contentViewComponent_urlLabel</label>
+    <input id="url" class="url" type="text"/>
+    <div id="urlError" class="error"></div>
+
+    <fieldset>
+      <legend>deja_contentViewComponent_options</legend>
+      <div class="match-type">deja_contentViewComponent_matchType</div>
+      <div class="form-field">
+        <input name="matchType" type="radio" id="matchTypeText" value="1"/>
+        <label for="matchTypeText">deja_keyword_plainText</label>
+      </div>
+      <div class="form-field">
+        <input name="matchType" type="radio" id="matchTypeRegexp" value="2" title="deja_global_regExpTooltip"/>
+        <label for="matchTypeRegexp" title="deja_global_regExpTooltip">deja_global_regExp</label>
+        <a id="regExpHelp" class="reg-exp-help" title="deja_global_regExpHelpTooltip">deja_global_regExpHelp</a>
+      </div>
+    </fieldset>
+  </div>
+
+  <div id="typeContentView" class="form-field">
+    <select id="contentViews"></select>
+  </div>
+
+  <div id="typeList" class="form-field">
+    <select id="list"></select>
+  </div>
+
+</fieldset>
+
+<div class="form-field">
+  <input id="exclude" type="checkbox"/>
+  <label for="exclude">deja_contentViewComponent_excludeLabel</label>
+</div>
+
+<div class="dialog-actions form-group clearfix">
+  <button id="apply">deja_global_btn_ok</button>
+  <button id="cancel">deja_global_btn_cancel</button>
+</div>
+
+</body>
+</html>

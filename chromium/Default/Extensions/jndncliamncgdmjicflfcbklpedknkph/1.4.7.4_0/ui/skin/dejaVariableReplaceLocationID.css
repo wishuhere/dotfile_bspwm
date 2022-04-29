@@ -1,0 +1,26 @@
+#description {
+    margin-bottom: 5px;
+}
+.select, .new {
+    display: block;
+    margin-bottom: 5px;
+    padding: 0 5px;
+}
+label {
+    width: 50px;
+    display: inline-block;
+}
+select, input {
+    width: 150px;
+    padding: 0;
+}
+select {
+    width: 152px;
+}
+input {
+    border: 1px solid #808080;
+}
+.actions {
+    float: right;
+    margin-top: 5px;
+}

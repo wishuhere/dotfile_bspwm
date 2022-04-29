@@ -2,7 +2,7 @@
 
 pgrep -x sxhkd > /dev/null || sxhkd &
 $HOME/.config/polybar/launch.sh &
-$HOME/.config/bspwm/monitor.sh
+#$HOME/.config/bspwm/monitor.sh
 ibus-daemon -rdxR
 #pulseaudio &
 picom &

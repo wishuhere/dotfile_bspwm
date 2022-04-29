@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+
+    <link rel="stylesheet" href="../skin/jquery-ui.css"></link>
+    <script src="jquery.js"></script>
+    <script src="jquery-ui.js"></script>
+
+    <link rel="stylesheet" href="../skin/dejaGlobal.css">
+    <link rel="stylesheet" href="../skin/dejaVariableSelector.css"></link>
+    <link rel="stylesheet" href="../skin/dejaKeyword.css"></link>
+    <script src="dejaUi.js"></script>
+    <script src="dejaVariableSelector.js"></script>
+    <script src="dejaDisplayLevelSelector.js"></script>
+    <script src="dejaKeyword.js"></script>
+  </head>
+  <body>
+    <div id="description"></div>
+    <div id="matchTextDiv">
+      <label for="matchText">deja_keyword_matchText</label>
+      <textarea id="matchText" title="deja_keyword_matchTextTooltip"></textarea>
+    </div>
+    <div id="variableDiv"></div>
+
+    <fieldset class="advancedOnly">
+      <legend>deja_keyword_matchOptions</legend>
+      <div>deja_keyword_matchType</div>
+      <div class="indent1">
+        <input id="plainText" type="radio" name="matchType" value="1" title="deja_keyword_plainTextTooltip"></input>
+        <label for="plainText">deja_keyword_plainText</label>
+        <input id="regExp" type="radio" name="matchType" value="2" title="deja_keyword_regExpTooltip"></input>
+        <label for="regExp">deja_keyword_regExp</label>
+        <a id="regExpHelp" title="deja_keyword_regExpHelpTooltip">deja_keyword_regExpHelp</a>
+      </div>
+      <div class="column1">
+        <div>
+          <input id="matchCase" type="checkbox" title="deja_keyword_matchCaseTooltip"></input>
+          <label for="matchCase">deja_keyword_matchCase</label>
+        </div>
+        <div>
+          <input id="allowWrap" type="checkbox" title="deja_keyword_allowWrapTooltip"></input>
+          <label for="allowWrap">deja_keyword_allowWrap</label>
+        </div>
+      </div>
+      <div class="column2">
+        <div>
+          <input id="matchWord" type="checkbox" title="deja_keyword_matchWordTooltip"></input>
+          <label for="matchWord">deja_keyword_matchWord</label>
+        </div>
+        <div>
+          <input id="fixSpaces" type="checkbox" title="deja_keyword_fixSpacesTooltip"></input>
+          <label for="fixSpaces">deja_keyword_fixSpaces</label>
+        </div>
+      </div>
+    </fieldset>
+
+    <fieldset class="advancedOnly">
+      <legend>deja_keyword_actionOptions</legend>
+      <div>
+        <label for="actionType">deja_keyword_actionType</label>
+        <select id="actionType">
+          <option value="1">deja_keyword_actionError</option>
+          <option value="2">deja_keyword_actionWait</option>
+          <option value="3">deja_keyword_actionCustomError</option>
+        </select>
+      </div>
+      <div>deja_keyword_errorType</div>
+      <div class="indent1">
+        <input id="require" type="radio" name="errorType" value="1" title="deja_keyword_requireTooltip"></input>
+        <label for="require">deja_keyword_require</label>
+        <input id="forbid" type="radio" name="errorType" value="2" title="deja_keyword_forbidTooltip"></input>
+        <label for="forbid">deja_keyword_forbid</label>
+      </div>
+    </fieldset>
+
+    <fieldset id="searchSet" class="advancedOnly">
+      <legend>deja_keyword_searchOptions</legend>
+      <div>deja_keyword_searchType</div>
+      <div class="indent1">
+        <input id="searchAll" type="radio" name="searchType" value="1" title="deja_keyword_searchAllTooltip"></input>
+        <label for="searchAll">deja_keyword_searchAll</label>
+        <input id="searchOne" type="radio" name="searchType" value="2" title="deja_keyword_searchOneTooltip"></input>
+        <label for="searchOne">deja_keyword_searchOne</label>
+      </div>
+      <button id="selectDocument" title="deja_keyword_selectDocumentTooltip" class="rightAlign">deja_keyword_selectDocument</button>
+    </fieldset>
+
+    <div id="displayLevel" class="rightAlign"></div>
+
+    <div class="clear">
+      <button id="apply">deja_global_btn_ok</button>
+      <button id="remove">deja_global_btn_remove</button>
+      <button id="cancel">deja_global_btn_cancel</button>
+    </div>
+  </body>
+</html>

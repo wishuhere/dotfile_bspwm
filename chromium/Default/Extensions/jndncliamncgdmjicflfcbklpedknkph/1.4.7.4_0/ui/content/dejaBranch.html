@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+
+  <link rel="stylesheet" href="../skin/jquery-ui.css">
+  <script src="jquery.js"></script>
+  <script src="jquery-ui.js"></script>
+
+  <link rel="stylesheet" href="../skin/dejaGlobal.css">
+  <link rel="stylesheet" href="../skin/dejaGlobalForms.css">
+  <link rel="stylesheet" href="../skin/dejaGlobalDialogs.css">
+  <link rel="stylesheet" href="../skin/dejaBranch.css">
+  <script src="dejaUi.js"></script>
+  <script src="dejaBranch.js"></script>
+</head>
+<body class="dialog branch-dialog">
+  <div id="description" class="dialog-description"></div>
+
+  <div class="form-group form-group-branch branch-name">
+    <label for="branchName" title="deja_branch_nameTooltip">deja_branch_name</label>
+    <input type="text" id="branchName" title="deja_branch_nameTooltip"/>
+  </div>
+
+  <fieldset class="form-group">
+    <div class="form-group form-group-branch condition-selection">
+      <div class="title">deja_branch_conditionSelectionTitle</div>
+      <div>
+        <select name="" id="conditionTypeList" class="condition-type-list">
+          <option value="1">deja_branch_conditionAlways</option>
+          <option value="2">deja_branch_conditionNever</option>
+          <option value="3">deja_branch_conditionReplayStatus</option>
+          <option value="4">deja_branch_conditionReplayStatusNot</option>
+        </select>
+        <select name="" id="replayStatusList" class="replay-status-list">
+          <option value="0">deja_branch_conditionStatus0</option>
+          <option value="1">deja_branch_conditionStatus1</option>
+          <option value="2">deja_branch_conditionStatus2</option>
+          <option value="5">deja_branch_conditionStatus5</option>
+          <option value="7">deja_branch_conditionStatus7</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="form-group form-group-branch target-selection">
+      <div class="title">deja_branch_targetSelectionTitle</div>
+      <div>
+        <select name="" id="actionList" class="action-list">
+          <option value="0">deja_branch_targetEndReplay</option>
+          <option value="1">deja_branch_targetJump</option>
+        </select>
+        <select name="" id="scriptList" class="script-list"></select>
+        <select name="" id="targetTypeList" class="target-type-list">
+          <option value="action">deja_branch_targetAction</option>
+          <option value="event">deja_branch_targetEvent</option>
+        </select>
+        <select name="" id="targetSeqList" class="target-seq-list"></select>
+      </div>
+    </div>
+
+    <div class="form-group form-group-branch branch-order">
+      <label for="branchOrder" title="deja_branch_branchOrderTooltip">deja_branch_branchOrder</label>
+      <input type="number" id="branchOrder" min="1" title="deja_branch_branchOrderTooltip"/>
+    </div>
+  </fieldset>
+
+  <div class="dialog-actions form-group form-group-branch clearfix">
+    <button id="remove" class="remove">deja_global_btn_remove</button>
+    <button id="cancel" class="cancel">deja_global_btn_cancel</button>
+    <button id="apply" class="apply">deja_global_btn_ok</button>
+  </div>
+</body>
+</html>

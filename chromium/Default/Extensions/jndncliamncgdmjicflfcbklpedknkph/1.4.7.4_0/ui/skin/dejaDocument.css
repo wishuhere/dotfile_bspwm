@@ -1,0 +1,38 @@
+.rightAlign {
+    float: right;
+    margin-right: 2px;
+}
+
+table {
+    width: 100%;
+    table-layout: fixed;
+}
+
+.flexigrid div.hDivBox {
+    padding-right: 0px !important;
+}
+
+.columnAction {
+    width: 5px;
+}
+
+.columnEvent {
+    width: 5px;
+}
+
+.columnOrdinal {
+    width: 5px;
+}
+
+.columnType {
+    width: 10px;
+}
+
+.columnTitle {
+    width: 10px;
+}
+
+.columnAddress {
+    width: 50px;
+}
+

@@ -1,0 +1,4750 @@
+{
+   "dcFailure_HTTP400": {
+      "message": "400 Bad Request"
+   },
+   "dcFailure_HTTP401": {
+      "message": "401 Unauthorized"
+   },
+   "dcFailure_HTTP402": {
+      "message": "402 Payment Required"
+   },
+   "dcFailure_HTTP403": {
+      "message": "403 Forbidden"
+   },
+   "dcFailure_HTTP404": {
+      "message": "404 Not Found"
+   },
+   "dcFailure_HTTP405": {
+      "message": "405 Method Not Allowed"
+   },
+   "dcFailure_HTTP406": {
+      "message": "406 Not Acceptable"
+   },
+   "dcFailure_HTTP407": {
+      "message": "407 Proxy Authentication Required"
+   },
+   "dcFailure_HTTP408": {
+      "message": "408 Request Timeout"
+   },
+   "dcFailure_HTTP409": {
+      "message": "409 Conflict"
+   },
+   "dcFailure_HTTP410": {
+      "message": "410 Gone"
+   },
+   "dcFailure_HTTP411": {
+      "message": "411 Length Required"
+   },
+   "dcFailure_HTTP412": {
+      "message": "412 Precondition Failed"
+   },
+   "dcFailure_HTTP413": {
+      "message": "413 Request Entity Too Long"
+   },
+   "dcFailure_HTTP414": {
+      "message": "414 Request-URI Too Long"
+   },
+   "dcFailure_HTTP415": {
+      "message": "415 Unsupported Media Type"
+   },
+   "dcFailure_HTTP416": {
+      "message": "416 Requested Range Not Satisfiable"
+   },
+   "dcFailure_HTTP417": {
+      "message": "417 Expectation Failed"
+   },
+   "dcFailure_HTTP500": {
+      "message": "500 Internal Server Error"
+   },
+   "dcFailure_HTTP501": {
+      "message": "501 Not Implemented"
+   },
+   "dcFailure_HTTP502": {
+      "message": "502 Bad Gateway"
+   },
+   "dcFailure_HTTP503": {
+      "message": "503 Service Unavailable"
+   },
+   "dcFailure_HTTP504": {
+      "message": "504 Gateway Timeout"
+   },
+   "dcFailure_HTTP505": {
+      "message": "505 HTTP Version Not Supported"
+   },
+   "dcFailure_HTTPNUL": {
+      "message": "Unknown Response"
+   },
+   "dcFailure_badSocketType": {
+      "message": "An Unknown Socket error was encountered."
+   },
+   "dcFailure_badSocketTypeLong": {
+      "message": "Unknown Socket error.  The site responded to the network request in an unexpected manner. This may be due to address (URL) using the wrong protocol for the specified port, or a non-standard configuration on the site which is running different services than expected.  (The specified socket type may not exist.)"
+   },
+   "dcFailure_badURL": {
+      "message": "Invalid URL. Replay stopped."
+   },
+   "dcFailure_badscriptdata": {
+      "message": "Script is missing event target data.  Data file may be corrupt."
+   },
+   "dcFailure_badscripterror": {
+      "message": "Unable to process recorded script.  Data file may be corrupt."
+   },
+   "dcFailure_bindingAborted": {
+      "message": "Network request canceled by browser or user settings."
+   },
+   "dcFailure_bindingAbortedLong": {
+      "message": "The network request was canceled by the browser or by user settings.  This may occur when the browser cancels pending requests during URL location change, or if a resource is re-requested before the first one completes, or if the network request is skipped based on user settings."
+   },
+   "dcFailure_bindingFailure": {
+      "message": "An unknown network request failure occurred."
+   },
+   "dcFailure_bindingFailureLong": {
+      "message": "An unknown network request failure occurred.  The network request binding was aborted."
+   },
+   "dcFailure_bindingRedirected": {
+      "message": "An asynchronous request was redirected."
+   },
+   "dcFailure_bindingRedirectedLong": {
+      "message": "The asynchronous request has been redirected to a different async request.  This error code is used with load groups to notify the load group observer when a request in the load group is redirected to another request."
+   },
+   "dcFailure_bindingRetargeted": {
+      "message": "An asynchronous request was retargeted."
+   },
+   "dcFailure_bindingRetargetedLong": {
+      "message": "An asynchronous request was retargeted.  This error code is used with load groups to notify the load group observer when a request in the load group is removed from the load group and added to a different load group."
+   },
+   "dcFailure_bookmarkreplay": {
+      "message": "Unable to replay the bookmarked script file."
+   },
+   "dcFailure_cantexport": {
+      "message": "Unable to export the script file."
+   },
+   "dcFailure_cantimport": {
+      "message": "Unable to import the script file."
+   },
+   "dcFailure_connectionFail": {
+      "message": "Unable to connect to the specified site, even though it exists."
+   },
+   "dcFailure_connectionFailLong": {
+      "message": "Connection failure error.  The browser was unable to connect to the specified site, even though it exists.  This may be because the site does not accept connections from your computer, the service may be down, or the site does not support the service or port that you tried to connect to."
+   },
+   "dcFailure_connecttimeout": {
+      "message": "Timeout interval reached while waiting for a network connection.  Replay stopped."
+   },
+   "dcFailure_dnsNotFound": {
+      "message": "The address was not found or there was a DNS lookup error."
+   },
+   "dcFailure_dnsNotFoundLong": {
+      "message": "The address (URL) does not correspond to a known site and could not be loaded.  This could be due to a misspelling in the address or because the site does not exist. If the address is known to be valid, or if the problem occurs for many sites, it may be an issue with your proxy service (if you use one) or the directory name service lookup."
+   },
+   "dcFailure_errorKeywordCustomError": {
+      "message": "A keyword was detected that indicates the monitored site is in a maintenance state.  Replay stopped."
+   },
+   "dcFailure_errorKeywordCustomErrorLong": {
+      "message": "A keyword [$1] was detected that indicates the monitored site is in maintenance state.  Replay stopped."
+   },
+   "dcFailure_errorkeyword": {
+      "message": "An error keyword validation item was found.  Replay stopped."
+   },
+   "dcFailure_errorkeywordLong": {
+      "message": "An error keyword validation item was found [$1].  Replay stopped."
+   },
+   "dcFailure_eventtimeout": {
+      "message": "Timeout interval reached waiting for the page to load.  Replay stopped."
+   },
+   "dcFailure_fileNotFound": {
+      "message": "The file specified by the address (URL) cannot be found."
+   },
+   "dcFailure_fileNotFoundLong": {
+      "message": "File Not Found error.  Check that the file exists and that you have sufficient permissions to view it."
+   },
+   "dcFailure_genericFailure": {
+      "message": "The page could not be loaded, possibly because it does not exist or the location is incorrect."
+   },
+   "dcFailure_genericFailureLong": {
+      "message": "The page could not be loaded, possibly because it does not exist or the location is incorrect.  Check that the address (URL) is valid and correctly formatted."
+   },
+   "dcFailure_httpError": {
+      "message": "The server responded with an HTTP error ($1)"
+   },
+   "dcFailure_httpErrorLong": {
+      "message": "Server returned HTTP error:  $1\n  Requested URL:  $2\n  Was Successful: $3\n  Response Code:  $4\n  Response Text:  $5"
+   },
+   "dcFailure_internalerror": {
+      "message": "An unexpected exception has occurred.  The previous action was cancelled."
+   },
+   "dcFailure_javascriptTimeout": {
+      "message": "A Javascript validation operation timed out.  Replay stopped."
+   },
+   "dcFailure_javascriptTimeoutLong": {
+      "message": "Javascript validation of [$javascript$] timed out.  Replay stopped.",
+      "placeholders": {
+         "javascript": {
+            "content": "$1"
+         }
+      }
+   },
+   "dcFailure_keywordTimeout": {
+      "message": "A keyword validation operation timed out.  Replay stopped."
+   },
+   "dcFailure_keywordTimeoutLong": {
+      "message": "Keyword validation of [$keyword$] timed out.  Replay stopped.",
+      "placeholders": {
+         "keyword": {
+            "content": "$1"
+         }
+      }
+   },
+   "dcFailure_locationtimeout": {
+      "message": "Timeout interval reached waiting for an expected URL location change event.  Replay stopped."
+   },
+   "dcFailure_malformedURI": {
+      "message": "The address (URL) is not a valid format and cannot be read."
+   },
+   "dcFailure_malformedURILong": {
+      "message": "Invalid URL address format.  A common cause for the problem is using backslashes(\\) instead of forward slashes (/)."
+   },
+   "dcFailure_maxskipped": {
+      "message": "The number of skipped events has exceeded the maximum configured limit.  Replay stopped."
+   },
+   "dcFailure_maxsteps": {
+      "message": "The maximum number of transaction steps was exceeded for your billing plan.  Replay stopped."
+   },
+   "dcFailure_minScriptVersion": {
+      "message": "This script is not compatible with your installed version of DejaClick.\nPlease update.  Import aborted."
+   },
+   "dcFailure_missingFeatures": {
+      "message": "This script is not compatible with your installed version of DejaClick.\nSome required features are not available.  Import aborted."
+   },
+   "dcFailure_mutbegintimeout": {
+      "message": "Timeout interval reached while waiting for page content changes to begin.  Replay stopped."
+   },
+   "dcFailure_mutendtimeout": {
+      "message": "Timeout interval reached while waiting for page content changes to complete.  Replay stopped."
+   },
+   "dcFailure_navigationtimeout": {
+      "message": "Timeout interval reached waiting for an expected page navigation event.  Replay stopped."
+   },
+   "dcFailure_negAssertion": {
+      "message": "A JavaScript validation failed (returned true). Replay stopped."
+   },
+   "dcFailure_negAssertionLong": {
+      "message": "A JavaScript validation failed (returned $2 => true) [JavaScript text: $1]. Replay stopped."
+   },
+   "dcFailure_netInterrupt": {
+      "message": "The network transfer was interrupted."
+   },
+   "dcFailure_netInterruptLong": {
+      "message": "The network transfer was interrupted.  The connection was established, but the data transfer was interrupted."
+   },
+   "dcFailure_netOffline": {
+      "message": "The browser is currently offline and cannot connect to the requested site."
+   },
+   "dcFailure_netOfflineLong": {
+      "message": "Network offline error.  Document falied to load because the browser is offline and the cache does not contain a copy of the document."
+   },
+   "dcFailure_netReset": {
+      "message": "The resource failed to load because of a server or network reset issue."
+   },
+   "dcFailure_netResetLong": {
+      "message": "Network reset error.  The link to the site was dropped unexpectedly while negotiating a connection or transferring data. This may be due to a network fault somewhere between the site and your computer.  This means the connection was established, but no data was ever received, so the document failed to load because the server kept reseting the connection before data could be read from it."
+   },
+   "dcFailure_netTimeout": {
+      "message": "A timeout occurred while communicating with the specified site."
+   },
+   "dcFailure_netTimeoutLong": {
+      "message": "A timeout occurred while communicating with the specified site.  The site may be experiencing high loads that are slowing it down, or network problems are preventing data from being received from it in a timely manner."
+   },
+   "dcFailure_networktimeout": {
+      "message": "Timeout interval reached waiting for expected network content.  Replay stopped."
+   },
+   "dcFailure_objectfailure": {
+      "message": "Page object timeout or failure occurred.  Replay stopped."
+   },
+   "dcFailure_populateScriptVar": {
+      "message": "Error populating value of script variable."
+   },
+   "dcFailure_posAssertion": {
+      "message": "A JavaScript validation failed (returned false).   Replay stopped."
+   },
+   "dcFailure_posAssertionLong": {
+      "message": "A JavaScript validation failed (returned $2 => false) [JavaScript text: $1]. Replay stopped."
+   },
+   "dcFailure_protocolNotFound": {
+      "message": "An Unknown Protocol error was encountered."
+   },
+   "dcFailure_protocolNotFoundLong": {
+      "message": "The address (URL) starts with a protocol that is not recognized by the browser.  A protocol is the part at the front of the address, such as http: or ftp: which tells the browser how to connect to the site."
+   },
+   "dcFailure_redirectLoop": {
+      "message": "A fatal redirect loop was encountered."
+   },
+   "dcFailure_redirectLoopLong": {
+      "message": "Redirection limit for this URL exceeded. Unable to load the requested page because the site is redirecting requests to itself in a manner which prevents it from ever completing.  This may be caused by cookies that are blocked."
+   },
+   "dcFailure_requiredKeywordCustomError": {
+      "message": "A keyword was not detected that indicates the monitored site is in a maintenance state.  Replay stopped."
+   },
+   "dcFailure_requiredKeywordCustomErrorLong": {
+      "message": "A keyword [$1] was not detected that indicates the monitored site is in maintenance state.  Replay stopped."
+   },
+   "dcFailure_requiredkeyword": {
+      "message": "A required keyword validation item was not found.  Replay stopped."
+   },
+   "dcFailure_requiredkeywordLong": {
+      "message": "A required keyword validation item was not found [$1].  Replay stopped."
+   },
+   "dcFailure_responsetimeout": {
+      "message": "Timeout interval reached waiting for a response to a replayed browser event.  Replay stopped."
+   },
+   "dcFailure_steptimeout": {
+      "message": "Fullpage document step timeout occurred.  Replay stopped."
+   },
+   "dcFailure_targetmatchscore": {
+      "message": "The minimum configured target match score was not met.  Replay stopped."
+   },
+   "dcFailure_targetnotfound": {
+      "message": "The expected page content differs too significantly for replay to continue.  Replay stopped."
+   },
+   "dcFailure_targetnotfoundLong": {
+      "message": "The target of the replayed event was not found, perhaps due to significant page content or navigation changes.  Replay stopped."
+   },
+   "dcFailure_txntimeout": {
+      "message": "Transaction timeout occurred (max replay time limit reached).  Replay stopped."
+   },
+   "dcFailure_unexpectedDialog": {
+      "message": "A prompt or dialog was encountered for which there were no instructions found for properly handling it.  View event properties to edit dialog instructions or re-record the script."
+   },
+   "dcFailure_unexpectedDialogLong": {
+      "message": "Missing dialog prompt instruction for [$1].  Replay stopped."
+   },
+   "dcMessage_appendComplete": {
+      "message": "Recording complete!  ($1 new events successfully appended)"
+   },
+   "dcMessage_appendIncomplete": {
+      "message": "No new events recorded, nothing to append."
+   },
+   "dcMessage_captureUploadReject": {
+      "message": "Scripts with diagnostic screen capture properties enabled cannot be uploaded.\nPlease adjust screen capture property settings."
+   },
+   "dcMessage_captureUploadWarn": {
+      "message": "This script has diagnostic screen capture properties enabled.\nAre you sure you want to upload?"
+   },
+   "dcMessage_classicModeAlreadyOpen": {
+      "message": "DejaClick in classic record mode already opened. Please use conventional mode or close DejaClick Side bar a create a new monitor again.!"
+   },
+   "dcMessage_deleteWarning": {
+      "message": "You are inserting a new action. Existing events occurring after the insertion point for this action will be deleted"
+   },
+   "dcMessage_encryptedScriptNotSupported": {
+      "message": "Encrypted scripts not supported on this mode. Press OK to upload script without encryption."
+   },
+   "dcMessage_errorLoadCVs": {
+      "message": "Error Loading Content Views"
+   },
+   "dcMessage_generalfailure": {
+      "message": "Failure!"
+   },
+   "dcMessage_insertWarning": {
+      "message": "All user interaction will be inserted from this point"
+   },
+   "dcMessage_missingscript": {
+      "message": "Nothing to replay."
+   },
+   "dcMessage_noActionStatus": {
+      "message": "This action has no replay status."
+   },
+   "dcMessage_noEventStatus": {
+      "message": "This event has no replay status."
+   },
+   "dcMessage_noScriptStatus": {
+      "message": "This script has no replay status."
+   },
+   "dcMessage_noSubscriptStatus": {
+      "message": "This branch has no replay status."
+   },
+   "dcMessage_objectfailure": {
+      "message": "Object Load Error!"
+   },
+   "dcMessage_recordComplete": {
+      "message": "Recording complete!  ($1 events successfully recorded)"
+   },
+   "dcMessage_recordIncomplete": {
+      "message": "No events recorded, nothing to replay."
+   },
+   "dcMessage_recordfailure": {
+      "message": "Record Failure!"
+   },
+   "dcMessage_replayComplete": {
+      "message": "Playback complete!  ($1 events successfully replayed)"
+   },
+   "dcMessage_replayCompleteNoStep": {
+      "message": "While the transaction played back successfully, no result data was collected due to the following\n$1"
+   },
+   "dcMessage_replayCompleteSkip": {
+      "message": "Playback complete!  ($1 events successfully replayed, $2 events skipped)"
+   },
+   "dcMessage_replayStopped": {
+      "message": "Playback stopped (at event $1 of $2)."
+   },
+   "dcMessage_replayTerminated": {
+      "message": "Replay has been terminated."
+   },
+   "dcMessage_replayTerminated2": {
+      "message": "Replay will be terminated at the end of this event."
+   },
+   "dcMessage_replayfailure": {
+      "message": "Replay Failure!"
+   },
+   "dcMessage_replaysuccess": {
+      "message": "Replay Success!"
+   },
+   "dcMessage_replaywarning": {
+      "message": "Replay Warning!"
+   },
+   "dcMessage_scriptUploaded": {
+      "message": "Script uploaded to your account."
+   },
+   "dcMessage_statusunknown": {
+      "message": "Status Unknown"
+   },
+   "dcMessage_tooLargeUpload": {
+      "message": "The script is too large.  Upload aborted."
+   },
+   "dcMessage_tooLargeUploadLong": {
+      "message": "Scripts larger than 10MB cannot be uploaded to AlertSite's global monitoring platform.  Upload aborted."
+   },
+   "dcMessage_unverifiedScript": {
+      "message": "Unverified scripts cannot be uploaded.\nPlease replay the current recording to verify its status."
+   },
+   "dcMessage_warnKeywordsUpload": {
+      "message": "This recording contains no keyword validations.\n\nKeywords can help detect page content errors and are recommended for monitored scripts.  You may add keywords during replay when the Play button is set to 'Replay Next Action'.  The Keyword toolbar button will be activated following each replayed Action to enable keyword selection mode.  Pressing Play during keyword selection mode will advance to the next Action.\n\nContinue with upload?"
+   },
+   "dcMessage_warnUnverifiedUpload": {
+      "message": "This script has not been successfully replayed.\nContinue with upload?"
+   },
+   "dcMessage_warnadvisorchanges": {
+      "message": "The Replay Advisor has automatically adjusted your recording to correct issues encountered during playback.  Please replay your recording again by using the Play button on the toolbar to verify these changes, then re-save the recording using the Save toolbar button if you would like the changes to be permanent.\n"
+   },
+   "dcService_DSInc": {
+      "message": "incrementing row by $1 and column by $2"
+   },
+   "dcService_DataSet": {
+      "message": "Value from $1 (row $2 and column $3)"
+   },
+   "dcService_Days": {
+      "message": "Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sun,Mon,Tue,Wed,Thu,Fri,Sat"
+   },
+   "dcService_JavaScript": {
+      "message": "JavaScript '$1'"
+   },
+   "dcService_Months": {
+      "message": "January,February,March,April,May,June,July,August,September,October,November,December,Jan,Feb,Mar,Apr,May,Jun,Jul,Aug,Sep,Oct,Nov,Dec"
+   },
+   "dcService_ReplayLoc": {
+      "message": "Replay location"
+   },
+   "dcService_StrAutoInc": {
+      "message": "Auto increment"
+   },
+   "dcService_StrAutoIncStart": {
+      "message": "starting at"
+   },
+   "dcService_StrAutoIncStep": {
+      "message": "with an increment of"
+   },
+   "dcService_StrDays": {
+      "message": "day(s)"
+   },
+   "dcService_StrHours": {
+      "message": "hours(s)"
+   },
+   "dcService_StrMinutes": {
+      "message": "minute(s)"
+   },
+   "dcService_StrNow": {
+      "message": "Datetime"
+   },
+   "dcService_StrRNRange": {
+      "message": "between $1 and $2"
+   },
+   "dcService_StrRTMax": {
+      "message": "max $1 characters"
+   },
+   "dcService_StrRTMin": {
+      "message": "at least $1 characters"
+   },
+   "dcService_StrRTRange": {
+      "message": "between $1 and $2 characters"
+   },
+   "dcService_StrRandomNumber": {
+      "message": "Random number"
+   },
+   "dcService_StrRandomText": {
+      "message": "Random text"
+   },
+   "dcService_StrSeconds": {
+      "message": "second(s)"
+   },
+   "dcService_cancel": {
+      "message": "Cancel"
+   },
+   "dcService_no": {
+      "message": "No"
+   },
+   "dcService_ok": {
+      "message": "OK"
+   },
+   "dcService_promptEmbeddedObjMessage": {
+      "message": "You have clicked on an embedded web page object.\n\nAny Navigation events generated by this embedded object will be\nrecorded, but direct mouse and keyboard events will not and may\nprevent successful playback."
+   },
+   "dcService_promptEmbeddedObjPrompt": {
+      "message": "Alert me the first time I click on an embedded web page object."
+   },
+   "dcService_promptEmbeddedObjTitle": {
+      "message": "DéjàClick Replay Advisor: Embedded Object Event"
+   },
+   "dcService_promptEvtTimeoutMessage": {
+      "message": "Replay has not yet completed for this event.\n\nYou may continue waiting, skip to the next event, or stop replay now.\n\nYou may also change the timeout value in the Event Properties panel."
+   },
+   "dcService_promptEvtTimeoutPrompt": {
+      "message": "Alert me about further event timeouts for this recording."
+   },
+   "dcService_promptEvtTimeoutTitle": {
+      "message": "DéjàClick Replay Advisor: Event Timeout"
+   },
+   "dcService_promptInvalidEventMessage": {
+      "message": "A recording must begin by navigating to a page. Events on pages that were loaded before recording was started cannot be recorded.\n\nDo you wish to be alerted if you attempt to do this again?"
+   },
+   "dcService_promptInvalidEventTitle": {
+      "message": "DéjàClick Replay Advisor: Existing Page Event"
+   },
+   "dcService_promptLocTimeoutMessage": {
+      "message": "A location change event was expected but has not yet occurred.\n\nYou may continue waiting, skip to the next event, or stop replay now."
+   },
+   "dcService_promptLocTimeoutPrompt": {
+      "message": "Alert me about further location change timeouts for this recording."
+   },
+   "dcService_promptLocTimeoutTitle": {
+      "message": "DéjàClick Replay Advisor: Location Change Timeout"
+   },
+   "dcService_promptMutContinueMessage": {
+      "message": "Page content changes continue to occur while waiting for the page to finish loading.\n\nPerhaps this is due to a time clock or banner being displayed that does not end.\nYou may continue waiting, skip to the next event, or stop replay now."
+   },
+   "dcService_promptMutContinuePrompt": {
+      "message": "Alert me about further continuous content timeouts for this recording."
+   },
+   "dcService_promptMutContinueTitle": {
+      "message": "DéjàClick Replay Advisor: Continuous Page Content"
+   },
+   "dcService_promptMutTimeoutMessage": {
+      "message": "Page content changes were expected but have not yet occurred.\n\nYou may continue waiting, skip to the next event, or stop replay now."
+   },
+   "dcService_promptMutTimeoutPrompt": {
+      "message": "Alert me about further content change timeouts for this recording."
+   },
+   "dcService_promptMutTimeoutTitle": {
+      "message": "DéjàClick Replay Advisor: Page Content Change Timeout"
+   },
+   "dcService_promptNavTimeoutMessage": {
+      "message": "A page navigation event was expected but has not yet occurred.\n\nYou may continue waiting, skip to the next event, or stop replay now."
+   },
+   "dcService_promptNavTimeoutPrompt": {
+      "message": "Alert me about further navigation timeouts for this recording."
+   },
+   "dcService_promptNavTimeoutTitle": {
+      "message": "DéjàClick Replay Advisor: Page Navigation Timeout"
+   },
+   "dcService_promptNetTimeoutMessage": {
+      "message": "Additional network activity is expected but has not yet occurred.\n\nYou may continue waiting, skip to the next event, or stop replay now."
+   },
+   "dcService_promptNetTimeoutPrompt": {
+      "message": "Alert me about further network content timeouts for this recording."
+   },
+   "dcService_promptNetTimeoutTitle": {
+      "message": "DéjàClick Replay Advisor: Network Activity Timeout"
+   },
+   "dcService_promptNonURLMessage": {
+      "message": "A navigation event for this starting page was not recorded.\n\nMost recordings begin by entering a URL into the browser location bar. To successfully replay this recording, you must\nreload this same page before replay or allow DéjàClick to load it for you when prompted.\n\n"
+   },
+   "dcService_promptScreenResizeMessage": {
+      "message": "Some objects on this page may adjust in size according to the dimensions of your browser window.  DejaClick needs to temporarily adjust the window to a preset size to improve TrueScreen replay.  Continue with screen size adjustment?\n\n"
+   },
+   "dcService_promptScreenResizeMessage2": {
+      "message": "Some objects on this page may adjust in size according to the dimensions of your browser window.  DejaClick needs to temporarily adjust the screen to the device's size to improve Mobile replay.  Continue with screen size adjustment?\n\n"
+   },
+   "dcService_promptScreenResizePrompt": {
+      "message": "Alert me the first time browser resizing is required.\n\n"
+   },
+   "dcService_promptScreenResizeTitle": {
+      "message": "DejaClick Replay Advisor: Screen Size Adjust."
+   },
+   "dcService_promptTimeoutButtonSkip": {
+      "message": "Skip to Next Event"
+   },
+   "dcService_promptTimeoutButtonStop": {
+      "message": "Stop Replay"
+   },
+   "dcService_promptTimeoutButtonWait": {
+      "message": "Continue Waiting"
+   },
+   "dcService_runInactive": {
+      "message": "Inactive"
+   },
+   "dcService_runPaused": {
+      "message": "Playback paused  (at event $1 of $2)"
+   },
+   "dcService_runRecordAppend": {
+      "message": "Recording...  ($1 new events of $2 total)"
+   },
+   "dcService_runRecordNew": {
+      "message": "Recording...  ($1 events recorded)"
+   },
+   "dcService_runReplay": {
+      "message": "Replaying...  (event $1 of $2)"
+   },
+   "dcService_runStoppedAborted": {
+      "message": "Stopped.   Processing aborted."
+   },
+   "dcService_runStoppedLoaded": {
+      "message": "Stopped.   Script has $1 events."
+   },
+   "dcService_runStoppedNoScript": {
+      "message": "Stopped.   No script loaded."
+   },
+   "dcService_yes": {
+      "message": "Yes"
+   },
+   "dcSuccess_replaySuccess": {
+      "message": "Replay completed successfully."
+   },
+   "dcTreeview_actionLabel": {
+      "message": "[ Action $num$ ]",
+      "placeholders": {
+         "num": {
+            "content": "$1"
+         }
+      }
+   },
+   "dcTreeview_changeLabel": {
+      "message": "Input HTML Element \u003C$element$>",
+      "placeholders": {
+         "element": {
+            "content": "$1"
+         }
+      }
+   },
+   "dcTreeview_clickLabel": {
+      "message": "Click HTML Element \u003C$element$>",
+      "placeholders": {
+         "element": {
+            "content": "$1"
+         }
+      }
+   },
+   "dcTreeview_dragLabel": {
+      "message": "Drag HTML Element \u003C$element$>",
+      "placeholders": {
+         "element": {
+            "content": "$1"
+         }
+      }
+   },
+   "dcTreeview_eventLabel": {
+      "message": "[ Event $num$ ]",
+      "placeholders": {
+         "num": {
+            "content": "$1"
+         }
+      }
+   },
+   "dcTreeview_expandLevelActions": {
+      "message": "Scripts > Actions >>"
+   },
+   "dcTreeview_expandLevelCollapse": {
+      "message": "(click here to collapse)"
+   },
+   "dcTreeview_expandLevelEvents": {
+      "message": "Scripts > Actions > Events"
+   },
+   "dcTreeview_expandLevelExpand": {
+      "message": "(click here to expand)"
+   },
+   "dcTreeview_expandLevelScripts": {
+      "message": "Scripts >>"
+   },
+   "dcTreeview_focusLabel": {
+      "message": "Focus HTML Element \u003C$element$>",
+      "placeholders": {
+         "element": {
+            "content": "$1"
+         }
+      }
+   },
+   "dcTreeview_hoverLabel": {
+      "message": "Hover HTML Element \u003C$element$>",
+      "placeholders": {
+         "element": {
+            "content": "$1"
+         }
+      }
+   },
+   "dcTreeview_moveLabel": {
+      "message": "Move HTML Element \u003C$element$>",
+      "placeholders": {
+         "element": {
+            "content": "$1"
+         }
+      }
+   },
+   "dcTreeview_navigateLabel": {
+      "message": "Navigate URL ($url$)",
+      "placeholders": {
+         "url": {
+            "content": "$1"
+         }
+      }
+   },
+   "dcTreeview_noScriptLabel": {
+      "message": "[ No Script ]"
+   },
+   "dcTreeview_scriptActiveCantDelete": {
+      "message": "Cannot delete during record/replay."
+   },
+   "dcTreeview_scriptLabel": {
+      "message": "[ Script $num$ ]",
+      "placeholders": {
+         "num": {
+            "content": "$1"
+         }
+      }
+   },
+   "dcTreeview_submitLabel": {
+      "message": "Submit HTML Form"
+   },
+   "dcTreeview_subscriptLabel": {
+      "message": "[ Subscript $num$ ]",
+      "placeholders": {
+         "num": {
+            "content": "$1"
+         }
+      }
+   },
+   "dcTreeview_sureDelete": {
+      "message": "Are you sure you want to delete ?"
+   },
+   "dcTreeview_tabcloseLabel": {
+      "message": "Browser Tab Close"
+   },
+   "dcTreeview_tabfocusLabel": {
+      "message": "Browser Tab Focus"
+   },
+   "dcTreeview_tabopenLabel": {
+      "message": "Browser Tab Open"
+   },
+   "dcTreeview_wincloseLabel": {
+      "message": "Browser Window Close"
+   },
+   "dcTreeview_winopenLabel": {
+      "message": "Browser Window Open"
+   },
+   "dcWarning_eventtimeout": {
+      "message": "Timeout interval reached waiting for the page to load.  Replay continued."
+   },
+   "dcWarning_httpcanceled": {
+      "message": "HTTP request was cancelled."
+   },
+   "dcWarning_locationtimeout": {
+      "message": "Timeout interval reached waiting for an expected location change.  Replay continued."
+   },
+   "dcWarning_mutbegintimeout": {
+      "message": "Timeout interval reached waiting for page content changes to start.  Replay continued."
+   },
+   "dcWarning_mutendtimeout": {
+      "message": "Timeout interval reached waiting for page content changes to finish.  Replay continued."
+   },
+   "dcWarning_navigationtimeout": {
+      "message": "Timeout interval reached waiting for an expected page navigation event.  Replay continued."
+   },
+   "dcWarning_networktimeout": {
+      "message": "Timeout interval reached waiting for expected network activity.  Replay continued."
+   },
+   "dcWarning_nobackhistory": {
+      "message": "Unable to go back to the previous page in browser history list.  Event skipped."
+   },
+   "dcWarning_noforwardhistory": {
+      "message": "Unable to go forward to the next page in browser history list.  Event skipped."
+   },
+   "dcWarning_ocspcertcheck": {
+      "message": "HTTPS OCSP certificate credentials requested."
+   },
+   "dcWarning_pageloadaborted": {
+      "message": "Page load was cancelled by user."
+   },
+   "dcWarning_requiredkeyword": {
+      "message": "A required keyword validation item was not found."
+   },
+   "dcWarning_requiredkeywordLong": {
+      "message": "A required keyword validation item was not found [$1]."
+   },
+   "dcWarning_responsetimeout": {
+      "message": "Timeout interval reached waiting for a response to a replayed browser event.  Event skipped."
+   },
+   "dcWarning_scriptnotencoded": {
+      "message": "Warning: Script file is not URI encoded.\nParsing problems may result."
+   },
+   "dcWarning_unknownevent": {
+      "message": "An unknown event type was encountered while processing the script.\nThe event will be skipped."
+   },
+   "deja_about_aboutInfo": {
+      "message": "About Info"
+   },
+   "deja_about_applicationInfo": {
+      "message": "Application Info:"
+   },
+   "deja_about_buildid": {
+      "message": "Build ID "
+   },
+   "deja_about_buildid_label": {
+      "message": "Build ID:"
+   },
+   "deja_about_client": {
+      "message": "Client"
+   },
+   "deja_about_copyright": {
+      "message": "© Copyright 2006-2018 SmartBear Software Inc.  All Rights Reserved.  DéjàClick, AlertSite and the AlertSite logo are trademarks of SmartBear Software Inc."
+   },
+   "deja_about_description": {
+      "message": "Record and replay in your browser with TrueUser™ accuracy"
+   },
+   "deja_about_extensionInfo": {
+      "message": "Extension Info:"
+   },
+   "deja_about_name_label": {
+      "message": "Name:"
+   },
+   "deja_about_ok": {
+      "message": "OK"
+   },
+   "deja_about_osInfo": {
+      "message": "Operation System Info"
+   },
+   "deja_about_osType_label": {
+      "message": "OS Type:"
+   },
+   "deja_about_platformInfo": {
+      "message": "Platform Info:"
+   },
+   "deja_about_server": {
+      "message": "Server"
+   },
+   "deja_about_systemInfo": {
+      "message": "System Info"
+   },
+   "deja_about_systemInfoLabel": {
+      "message": "DéjàClick System Information:"
+   },
+   "deja_about_title": {
+      "message": "About DéjàClick"
+   },
+   "deja_about_version": {
+      "message": "Version "
+   },
+   "deja_about_version_label": {
+      "message": "Version:"
+   },
+   "deja_authorization_title": {
+      "message": "Authentication Required"
+   },
+   "deja_branch_branchOrder": {
+      "message": "Sequence:"
+   },
+   "deja_branch_branchOrderTooltip": {
+      "message": "Specify the order in which this branching rule should be applied"
+   },
+   "deja_branch_conditionAlways": {
+      "message": "Always"
+   },
+   "deja_branch_conditionNever": {
+      "message": "Never (disabled)"
+   },
+   "deja_branch_conditionReplayStatus": {
+      "message": "Replay status is"
+   },
+   "deja_branch_conditionReplayStatusNot": {
+      "message": "Replay status is not"
+   },
+   "deja_branch_conditionSelectionTitle": {
+      "message": "When:"
+   },
+   "deja_branch_conditionStatus0": {
+      "message": "0)  Replay Successful"
+   },
+   "deja_branch_conditionStatus1": {
+      "message": "1)  TCP Connection Error"
+   },
+   "deja_branch_conditionStatus2": {
+      "message": "2)  Server Not Responding"
+   },
+   "deja_branch_conditionStatus5": {
+      "message": "5)  Validation Failed"
+   },
+   "deja_branch_conditionStatus7": {
+      "message": "7)  Server Returned HTTP Error"
+   },
+   "deja_branch_description_add_action": {
+      "message": "Add a branching rule to the current Action:"
+   },
+   "deja_branch_description_add_event": {
+      "message": "Add a branching rule to the current Event:"
+   },
+   "deja_branch_description_add_script": {
+      "message": "Add a branching rule to the current Script:"
+   },
+   "deja_branch_description_edit_action": {
+      "message": "Edit this branching rule for the current Action:"
+   },
+   "deja_branch_description_edit_event": {
+      "message": "Edit this branching rule for the current Event:"
+   },
+   "deja_branch_description_edit_script": {
+      "message": "Edit this branching rule for the current Script:"
+   },
+   "deja_branch_name": {
+      "message": "Name:"
+   },
+   "deja_branch_nameTooltip": {
+      "message": "Enter a descriptive name for the branching rule"
+   },
+   "deja_branch_targetAction": {
+      "message": "Action"
+   },
+   "deja_branch_targetEndReplay": {
+      "message": "Stop Replay"
+   },
+   "deja_branch_targetEvent": {
+      "message": "Event"
+   },
+   "deja_branch_targetJump": {
+      "message": "Jump to"
+   },
+   "deja_branch_targetMainScript": {
+      "message": "Main Script"
+   },
+   "deja_branch_targetSelectionTitle": {
+      "message": "Do this:"
+   },
+   "deja_branch_targetSubscript": {
+      "message": "Subscript "
+   },
+   "deja_branch_title_add": {
+      "message": "Add Branching Rule"
+   },
+   "deja_branch_title_edit": {
+      "message": "Edit Branching Rule"
+   },
+   "deja_changeuser_cancelButton": {
+      "message": "Cancel"
+   },
+   "deja_changeuser_customerid": {
+      "message": "Customer ID:"
+   },
+   "deja_changeuser_customeridHint": {
+      "message": "Enter a customer ID"
+   },
+   "deja_changeuser_customername": {
+      "message": "Customer Name:"
+   },
+   "deja_changeuser_enterInfo": {
+      "message": "Enter User Name or Customer ID"
+   },
+   "deja_changeuser_invalidInput": {
+      "message": "Please enter Username or Customer ID"
+   },
+   "deja_changeuser_okButton": {
+      "message": "OK"
+   },
+   "deja_changeuser_successful": {
+      "message": "You successfully changed to user $userid$ ($customerid$)",
+      "placeholders": {
+         "customerid": {
+            "content": "$2"
+         },
+         "userid": {
+            "content": "$1"
+         }
+      }
+   },
+   "deja_changeuser_title": {
+      "message": "Change User"
+   },
+   "deja_changeuser_username": {
+      "message": "User Name:"
+   },
+   "deja_changeuser_usernameHint": {
+      "message": "Enter a user login name"
+   },
+   "deja_confirm_title": {
+      "message": "DéjàClick Notice"
+   },
+   "deja_connect_cancel": {
+      "message": "Cancel"
+   },
+   "deja_connect_label": {
+      "message": "AlertSite connection URL:"
+   },
+   "deja_connect_missingendpoint": {
+      "message": "Please enter a connection URL (REST endpoint)."
+   },
+   "deja_connect_ok": {
+      "message": "OK"
+   },
+   "deja_connect_title": {
+      "message": "Edit Connection Settings"
+   },
+   "deja_contentTypeMember_contentType": {
+      "message": "Content Type:"
+   },
+   "deja_contentTypeMember_contentTypeTooltip": {
+      "message": "Enter a Content Type for the ContentView"
+   },
+   "deja_contentTypeMember_description_add": {
+      "message": "Add a new Content Type to the ContentView:"
+   },
+   "deja_contentTypeMember_description_edit": {
+      "message": "Edit the Content Type for this ContentView:"
+   },
+   "deja_contentTypeMember_title_add": {
+      "message": "Add Content Type"
+   },
+   "deja_contentTypeMember_title_edit": {
+      "message": "Edit Content Type"
+   },
+   "deja_contentViewComponent_description_add": {
+      "message": "Add a new component to the ContentView:"
+   },
+   "deja_contentViewComponent_description_edit": {
+      "message": "Edit the component for this ContentView:"
+   },
+   "deja_contentViewComponent_excludeLabel": {
+      "message": "Exclude from ContentView"
+   },
+   "deja_contentViewComponent_invalidRegexp": {
+      "message": "Your entered an invalid regular expression!"
+   },
+   "deja_contentViewComponent_invalidURL": {
+      "message": "Invalid URL! A URL cannot contain \"::\" or \"||\""
+   },
+   "deja_contentViewComponent_matchType": {
+      "message": "Match Type:"
+   },
+   "deja_contentViewComponent_options": {
+      "message": "Options"
+   },
+   "deja_contentViewComponent_parameters": {
+      "message": "Parameters"
+   },
+   "deja_contentViewComponent_title_add": {
+      "message": "Add Component"
+   },
+   "deja_contentViewComponent_title_edit": {
+      "message": "Edit Component"
+   },
+   "deja_contentViewComponent_typeLabel": {
+      "message": "Type:"
+   },
+   "deja_contentViewComponent_type_contentView": {
+      "message": "ContentView"
+   },
+   "deja_contentViewComponent_type_list": {
+      "message": "Pre-Defined List"
+   },
+   "deja_contentViewComponent_type_url": {
+      "message": "Url"
+   },
+   "deja_contentViewComponent_urlLabel": {
+      "message": "URL:"
+   },
+   "deja_contentViewHints_available": {
+      "message": "Available"
+   },
+   "deja_contentViewHints_contentViews": {
+      "message": "ContentViews"
+   },
+   "deja_contentViewHints_domains": {
+      "message": "Domains"
+   },
+   "deja_contentViewHints_include_arrow": {
+      "message": "→"
+   },
+   "deja_contentViewHints_included": {
+      "message": "Included"
+   },
+   "deja_contentViewHints_predefinedLists": {
+      "message": "Predefined Lists"
+   },
+   "deja_contentViewHints_title": {
+      "message": "Add ContentView Component"
+   },
+   "deja_contentViewHints_urls": {
+      "message": "URLs"
+   },
+   "deja_contentViewPredefinedItem_description": {
+      "message": "Description"
+   },
+   "deja_contentViewPredefinedItem_invalidRegexp": {
+      "message": "Your entered an invalid regular expression!"
+   },
+   "deja_contentViewPredefinedItem_invalidURL": {
+      "message": "Invalid data! None of these values can contain \"::\" or \"||\""
+   },
+   "deja_contentViewPredefinedItem_itemNameExists": {
+      "message": "Predefined item name already exists."
+   },
+   "deja_contentViewPredefinedItem_name": {
+      "message": "Name"
+   },
+   "deja_contentViewPredefinedItem_title": {
+      "message": "ContentView predefined items editor"
+   },
+   "deja_contentView_actionEventApplicable": {
+      "message": "Actions/Events Applicable"
+   },
+   "deja_contentView_addComponentTooltip": {
+      "message": "Add URL/ContentView/Predefined List"
+   },
+   "deja_contentView_addContentTypeTooltip": {
+      "message": "Add Content Type"
+   },
+   "deja_contentView_cloneComponentTooltip": {
+      "message": "Clone URL/ ContentView/ Predefined List"
+   },
+   "deja_contentView_contentLength": {
+      "message": "Content Length"
+   },
+   "deja_contentView_contentTypes": {
+      "message": "Content Types"
+   },
+   "deja_contentView_contentViewNameExists": {
+      "message": "A ContentView with this name already exists. Please choose a different name."
+   },
+   "deja_contentView_continueOnError": {
+      "message": "Continue to the next action/event on Error"
+   },
+   "deja_contentView_deleteComponentTooltip": {
+      "message": "Delete URL/ ContentView/ Predefined List"
+   },
+   "deja_contentView_deleteContentTypeTooltip": {
+      "message": "Delete Content Type"
+   },
+   "deja_contentView_description_add_action": {
+      "message": "Add a new ContentView to the current Action:"
+   },
+   "deja_contentView_description_add_event": {
+      "message": "Add a new ContentView to the current Event:"
+   },
+   "deja_contentView_description_add_script": {
+      "message": "Add a new ContentView to the current Script:"
+   },
+   "deja_contentView_description_edit_action": {
+      "message": "Edit the ContentView for the current Action:"
+   },
+   "deja_contentView_description_edit_event": {
+      "message": "Edit the ContentView for the current Event:"
+   },
+   "deja_contentView_description_edit_script": {
+      "message": "Edit the ContentView for the current Script:"
+   },
+   "deja_contentView_editComponentTooltip": {
+      "message": "Edit URL/ ContentView/Predefined List"
+   },
+   "deja_contentView_editContentTypeTooltip": {
+      "message": "Edit Content Type"
+   },
+   "deja_contentView_filterOn": {
+      "message": "Filter on URLs/ ContentViews/ Pre-Defined List(s):"
+   },
+   "deja_contentView_filterOnContentType": {
+      "message": "Filter on Content Type"
+   },
+   "deja_contentView_maximumSize": {
+      "message": "Maximum size (bytes)"
+   },
+   "deja_contentView_maximumSizeTooltip": {
+      "message": "Element is less than (bytes)"
+   },
+   "deja_contentView_minimumSize": {
+      "message": "Minimum size (bytes)"
+   },
+   "deja_contentView_minimumSizeTooltip": {
+      "message": "Element is greater than (bytes)"
+   },
+   "deja_contentView_moveDownComponentTooltip": {
+      "message": "Move the Item Down the list"
+   },
+   "deja_contentView_moveUpComponentTooltip": {
+      "message": "Move the Item Up the list"
+   },
+   "deja_contentView_name": {
+      "message": "Name:"
+   },
+   "deja_contentView_nameExist": {
+      "message": "A ContentView with this name already exists. Please choose a different name."
+   },
+   "deja_contentView_nameTooltip": {
+      "message": "Enter a name for the ContentView"
+   },
+   "deja_contentView_replayOptions": {
+      "message": "Replay Options"
+   },
+   "deja_contentView_scope": {
+      "message": "Scope"
+   },
+   "deja_contentView_title_add": {
+      "message": "Add ContentView"
+   },
+   "deja_contentView_title_edit": {
+      "message": "Edit ContentView"
+   },
+   "deja_device_deviceNameExists": {
+      "message": "Device name already exists."
+   },
+   "deja_device_flash": {
+      "message": "Flash"
+   },
+   "deja_device_height": {
+      "message": "Height:"
+   },
+   "deja_device_name": {
+      "message": "Name"
+   },
+   "deja_device_pixels": {
+      "message": "pixels"
+   },
+   "deja_device_screenSize": {
+      "message": "Screen Size"
+   },
+   "deja_device_supports": {
+      "message": "Supports"
+   },
+   "deja_device_title": {
+      "message": "Mobile Devices Editor"
+   },
+   "deja_device_userAgent": {
+      "message": "User Agent String"
+   },
+   "deja_device_width": {
+      "message": "Width:"
+   },
+   "deja_device_xhtml": {
+      "message": "XHTML-MP"
+   },
+   "deja_dialogPrompt_accept": {
+      "message": "Accept"
+   },
+   "deja_dialogPrompt_acceptTooltip": {
+      "message": "OK/Accept button"
+   },
+   "deja_dialogPrompt_buttonSelection": {
+      "message": "Button Selection:"
+   },
+   "deja_dialogPrompt_cancel": {
+      "message": "Cancel"
+   },
+   "deja_dialogPrompt_cancelTooltip": {
+      "message": "Cancel/Close button"
+   },
+   "deja_dialogPrompt_certificateExpired": {
+      "message": "Certificate Expired"
+   },
+   "deja_dialogPrompt_certificateInvalid": {
+      "message": "Certificate Invalid"
+   },
+   "deja_dialogPrompt_certificateMismatch": {
+      "message": "Certificate Mismatch"
+   },
+   "deja_dialogPrompt_certificateUnknown": {
+      "message": "Certificate Unknown"
+   },
+   "deja_dialogPrompt_clientAuthentication": {
+      "message": "Client Authentication"
+   },
+   "deja_dialogPrompt_confirmPrompt": {
+      "message": "Confirm Prompt"
+   },
+   "deja_dialogPrompt_description_add": {
+      "message": "Select a dialog type and configure your input instructions:"
+   },
+   "deja_dialogPrompt_description_edit": {
+      "message": "Configure your input instructions for this dialog type:"
+   },
+   "deja_dialogPrompt_dialogSeq": {
+      "message": "Dialog Sequence:"
+   },
+   "deja_dialogPrompt_dialogSeqTooltip": {
+      "message": "Specify the order in which this dialog should appear"
+   },
+   "deja_dialogPrompt_dialogType": {
+      "message": "Dialog Type:"
+   },
+   "deja_dialogPrompt_extra1": {
+      "message": "Extra1"
+   },
+   "deja_dialogPrompt_extra1Tooltip": {
+      "message": "Alternate button 1"
+   },
+   "deja_dialogPrompt_extra2": {
+      "message": "Extra2"
+   },
+   "deja_dialogPrompt_extra2Tooltip": {
+      "message": "Alternate button 2"
+   },
+   "deja_dialogPrompt_genericPrompt": {
+      "message": "Generic Prompt"
+   },
+   "deja_dialogPrompt_input1": {
+      "message": "Input1:"
+   },
+   "deja_dialogPrompt_input2": {
+      "message": "Input2:"
+   },
+   "deja_dialogPrompt_input3": {
+      "message": "Input3:"
+   },
+   "deja_dialogPrompt_inputPrompt": {
+      "message": "Input Prompt"
+   },
+   "deja_dialogPrompt_loginPrompt": {
+      "message": "Login Prompt"
+   },
+   "deja_dialogPrompt_option1": {
+      "message": "Option1"
+   },
+   "deja_dialogPrompt_option1Tooltip": {
+      "message": "Option button 1"
+   },
+   "deja_dialogPrompt_option2": {
+      "message": "Option2"
+   },
+   "deja_dialogPrompt_option2Tooltip": {
+      "message": "Option button 2"
+   },
+   "deja_dialogPrompt_option3": {
+      "message": "Option3"
+   },
+   "deja_dialogPrompt_option3Tooltip": {
+      "message": "Option button 3"
+   },
+   "deja_dialogPrompt_optionSelection": {
+      "message": "Option Selection:"
+   },
+   "deja_dialogPrompt_password": {
+      "message": "Password:"
+   },
+   "deja_dialogPrompt_permanentlyStore": {
+      "message": "Permanently store certificate"
+   },
+   "deja_dialogPrompt_rememberDecision": {
+      "message": "Remember the decision"
+   },
+   "deja_dialogPrompt_repeatCount": {
+      "message": "Repeat Count:"
+   },
+   "deja_dialogPrompt_repeatCountTooltip": {
+      "message": "Number of times to repeat this dialog instruction"
+   },
+   "deja_dialogPrompt_replayOptions": {
+      "message": "Replay Options"
+   },
+   "deja_dialogPrompt_textInput": {
+      "message": "Dialog Text Input:"
+   },
+   "deja_dialogPrompt_title_add": {
+      "message": "Add Dialog Prompt Instructions"
+   },
+   "deja_dialogPrompt_title_edit": {
+      "message": "Edit Dialog Prompt Instructions"
+   },
+   "deja_dialogPrompt_username": {
+      "message": "Username:"
+   },
+   "deja_document_cancel": {
+      "message": "Cancel"
+   },
+   "deja_document_caption": {
+      "message": "Select the document in which to perform this validation:"
+   },
+   "deja_document_columnAction": {
+      "message": "Action"
+   },
+   "deja_document_columnAddress": {
+      "message": "Address"
+   },
+   "deja_document_columnEvent": {
+      "message": "Event"
+   },
+   "deja_document_columnOrdinal": {
+      "message": "Document"
+   },
+   "deja_document_columnTitle": {
+      "message": "Title"
+   },
+   "deja_document_columnType": {
+      "message": "Type"
+   },
+   "deja_document_noDocuments": {
+      "message": "There are no web page documents available for selection. Please replay the current recording to reload all documents."
+   },
+   "deja_document_ok": {
+      "message": "OK"
+   },
+   "deja_document_title": {
+      "message": "Select Document"
+   },
+   "deja_document_viewSource": {
+      "message": "View Page Source"
+   },
+   "deja_download_accountIdLabel": {
+      "message": "Account ID:"
+   },
+   "deja_download_accountTypeFree": {
+      "message": "Free"
+   },
+   "deja_download_accountTypeLabel": {
+      "message": "Account Type:"
+   },
+   "deja_download_cancelButton": {
+      "message": "Cancel"
+   },
+   "deja_download_changeUser": {
+      "message": "Change user login"
+   },
+   "deja_download_customerIdLabel": {
+      "message": "Customer ID:"
+   },
+   "deja_download_customerNameLabel": {
+      "message": "Customer Name:"
+   },
+   "deja_download_downloadComplete": {
+      "message": "Download complete!  (recording has $eventCount$ events)",
+      "placeholders": {
+         "eventCount": {
+            "content": "$1"
+         }
+      }
+   },
+   "deja_download_insecureConnection": {
+      "message": "Nonsecure Connection"
+   },
+   "deja_download_loadingTransactions": {
+      "message": "[  loading account data...  ]"
+   },
+   "deja_download_okButton": {
+      "message": "OK"
+   },
+   "deja_download_realuser": {
+      "message": "Realuser: "
+   },
+   "deja_download_secureConnection": {
+      "message": "Secure Connection"
+   },
+   "deja_download_selectTransactionLabel": {
+      "message": "Select a transaction to download:"
+   },
+   "deja_download_title": {
+      "message": "Download Recording"
+   },
+   "deja_download_transactionDescription": {
+      "message": "Description:"
+   },
+   "deja_download_transactionTypeLabel": {
+      "message": "Service Type"
+   },
+   "deja_download_transactionTypeMonitor": {
+      "message": "Business Transaction Monitor"
+   },
+   "deja_download_transactionTypeShare": {
+      "message": "Script Repository"
+   },
+   "deja_download_userName": {
+      "message": "User:"
+   },
+   "deja_elementPath_cancel": {
+      "message": "Cancel"
+   },
+   "deja_elementPath_description": {
+      "message": "Edit the element path for the current Event:"
+   },
+   "deja_elementPath_elementPath": {
+      "message": "Element Path:"
+   },
+   "deja_elementPath_elementPathTooltip": {
+      "message": "Enter an element path"
+   },
+   "deja_elementPath_ok": {
+      "message": "OK"
+   },
+   "deja_elementPath_title": {
+      "message": "Edit Element Path"
+   },
+   "deja_global_btn_add": {
+      "message": "Add"
+   },
+   "deja_global_btn_cancel": {
+      "message": "Cancel"
+   },
+   "deja_global_btn_clone": {
+      "message": "Clone"
+   },
+   "deja_global_btn_edit": {
+      "message": "Edit"
+   },
+   "deja_global_btn_moveDown": {
+      "message": "Move Down"
+   },
+   "deja_global_btn_moveUp": {
+      "message": "Move Up"
+   },
+   "deja_global_btn_new": {
+      "message": "New"
+   },
+   "deja_global_btn_ok": {
+      "message": "OK"
+   },
+   "deja_global_btn_remove": {
+      "message": "Remove"
+   },
+   "deja_global_default": {
+      "message": "Default"
+   },
+   "deja_global_displayLevel": {
+      "message": "Display Level"
+   },
+   "deja_global_displayLevelHint": {
+      "message": "Control the amount of display details"
+   },
+   "deja_global_displayLevel_advanced": {
+      "message": "Advanced"
+   },
+   "deja_global_displayLevel_advancedHint": {
+      "message": "Display advanced details"
+   },
+   "deja_global_displayLevel_basic": {
+      "message": "Basic"
+   },
+   "deja_global_displayLevel_basicHint": {
+      "message": "Display only basic details"
+   },
+   "deja_global_displayLevel_diagnostic": {
+      "message": "Diagnostic"
+   },
+   "deja_global_displayLevel_diagnosticHint": {
+      "message": "Display diagnostic details"
+   },
+   "deja_global_editProxySettings": {
+      "message": "Edit custom proxy settings"
+   },
+   "deja_global_regExp": {
+      "message": "Regular Expression"
+   },
+   "deja_global_regExpHelp": {
+      "message": "(?)"
+   },
+   "deja_global_regExpHelpTooltip": {
+      "message": "What are regular expressions?"
+   },
+   "deja_global_regExpTooltip": {
+      "message": "Match using the specified regular expression"
+   },
+   "deja_header_addDescription": {
+      "message": "Add a custom HTTP request header to this script."
+   },
+   "deja_header_addTitle": {
+      "message": "Add Custom Header"
+   },
+   "deja_header_apply": {
+      "message": "OK"
+   },
+   "deja_header_cancel": {
+      "message": "Cancel"
+   },
+   "deja_header_editDescription": {
+      "message": "Edit the custom HTTP request header for this script."
+   },
+   "deja_header_editTitle": {
+      "message": "Edit Custom Header"
+   },
+   "deja_header_merge": {
+      "message": "Merge Values"
+   },
+   "deja_header_mergeTooltip": {
+      "message": "Merge any previous matching header with this one (ignored if merging not supported)."
+   },
+   "deja_header_mergeType": {
+      "message": "Merge Type:"
+   },
+   "deja_header_name": {
+      "message": "Name:"
+   },
+   "deja_header_nameTooltip": {
+      "message": "Enter a name for the custom HTTP header."
+   },
+   "deja_header_options": {
+      "message": "Header Options"
+   },
+   "deja_header_remove": {
+      "message": "Remove"
+   },
+   "deja_header_replace": {
+      "message": "Replace Value"
+   },
+   "deja_header_replaceTooltip": {
+      "message": "Replace any previous matching header with this one."
+   },
+   "deja_header_value": {
+      "message": "Value:"
+   },
+   "deja_header_valueTooltip": {
+      "message": "Enter a value for the custom HTTP header."
+   },
+   "deja_javascript_actionError": {
+      "message": "Generate an error"
+   },
+   "deja_javascript_actionOptions": {
+      "message": "Action Options"
+   },
+   "deja_javascript_actionType": {
+      "message": "Perform this Action:"
+   },
+   "deja_javascript_actionWait": {
+      "message": "Continue waiting"
+   },
+   "deja_javascript_addTitle": {
+      "message": "Add Javascript Validation"
+   },
+   "deja_javascript_addVariable": {
+      "message": "Create a new script variable"
+   },
+   "deja_javascript_advanced": {
+      "message": "Advanced"
+   },
+   "deja_javascript_apply": {
+      "message": "OK"
+   },
+   "deja_javascript_basic": {
+      "message": "Basic"
+   },
+   "deja_javascript_cancel": {
+      "message": "Cancel"
+   },
+   "deja_javascript_description_add_action": {
+      "message": "Add a new Javascript validation to the current Action:"
+   },
+   "deja_javascript_description_add_event": {
+      "message": "Add a new Javascript validation to the current Event:"
+   },
+   "deja_javascript_description_edit_action": {
+      "message": "Edit the Javascript validation for the current Action:"
+   },
+   "deja_javascript_description_edit_event": {
+      "message": "Edit the Javascript validation for the current Event:"
+   },
+   "deja_javascript_diagnostic": {
+      "message": "Diagnostic"
+   },
+   "deja_javascript_displayLevel": {
+      "message": "Display Level"
+   },
+   "deja_javascript_editTitle": {
+      "message": "Edit Javascript Validation"
+   },
+   "deja_javascript_editVariable": {
+      "message": "Edit selected script variable"
+   },
+   "deja_javascript_errorType": {
+      "message": "when Javascript expression:"
+   },
+   "deja_javascript_evalDefault": {
+      "message": "Default document"
+   },
+   "deja_javascript_evalDefaultTooltip": {
+      "message": "Evaluate the Javascript in the event's target document"
+   },
+   "deja_javascript_evalOne": {
+      "message": "Selected document"
+   },
+   "deja_javascript_evalOneTooltip": {
+      "message": "Evaluate the Javascript in the selected document"
+   },
+   "deja_javascript_evalOptions": {
+      "message": "Evaluation Options"
+   },
+   "deja_javascript_evalType": {
+      "message": "Evaluate Javascript in:"
+   },
+   "deja_javascript_isFalse": {
+      "message": "Returns false"
+   },
+   "deja_javascript_isFalseTooltip": {
+      "message": "Do action if Javascript evaluates to False"
+   },
+   "deja_javascript_isTrue": {
+      "message": "Returns true"
+   },
+   "deja_javascript_isTrueTooltip": {
+      "message": "Do action if Javascript evaluates to True"
+   },
+   "deja_javascript_jsText": {
+      "message": "Javascript:"
+   },
+   "deja_javascript_jsTextTooltip": {
+      "message": "Must evaluate to a boolean value (true or false)"
+   },
+   "deja_javascript_remove": {
+      "message": "Remove"
+   },
+   "deja_javascript_selectDocument": {
+      "message": "Select Document..."
+   },
+   "deja_javascript_selectDocumentTooltip": {
+      "message": "Select a specific document to evaluate the Javascript in"
+   },
+   "deja_javascript_useVariable": {
+      "message": "Use variable:"
+   },
+   "deja_keyword_actionCustomError": {
+      "message": "Generate custom error"
+   },
+   "deja_keyword_actionError": {
+      "message": "Generate an error"
+   },
+   "deja_keyword_actionOptions": {
+      "message": "Action Options"
+   },
+   "deja_keyword_actionType": {
+      "message": "Perform this Action:"
+   },
+   "deja_keyword_actionWait": {
+      "message": "Continue waiting"
+   },
+   "deja_keyword_addTitle": {
+      "message": "Add Keyword Validation"
+   },
+   "deja_keyword_addVariable": {
+      "message": "Create a new script variable"
+   },
+   "deja_keyword_advanced": {
+      "message": "Advanced"
+   },
+   "deja_keyword_allowWrap": {
+      "message": "Allow line wrap"
+   },
+   "deja_keyword_allowWrapTooltip": {
+      "message": "Permit search text to wrap across lines"
+   },
+   "deja_keyword_apply": {
+      "message": "OK"
+   },
+   "deja_keyword_basic": {
+      "message": "Basic"
+   },
+   "deja_keyword_cancel": {
+      "message": "Cancel"
+   },
+   "deja_keyword_description_add_action": {
+      "message": "Add a new keyword validation to the current Action:"
+   },
+   "deja_keyword_description_add_event": {
+      "message": "Add a new keyword validation to the current Event:"
+   },
+   "deja_keyword_description_edit_action": {
+      "message": "Edit the keyword validation for the current Action:"
+   },
+   "deja_keyword_description_edit_event": {
+      "message": "Edit the keyword validation for the current Event:"
+   },
+   "deja_keyword_diagnostic": {
+      "message": "Diagnostic"
+   },
+   "deja_keyword_displayLevel": {
+      "message": "Display Level"
+   },
+   "deja_keyword_editTitle": {
+      "message": "Edit Keyword Validation"
+   },
+   "deja_keyword_editVariable": {
+      "message": "Edit selected script variable"
+   },
+   "deja_keyword_errorType": {
+      "message": "when a Keyword Match is:"
+   },
+   "deja_keyword_fixSpaces": {
+      "message": "Normalize blank spaces"
+   },
+   "deja_keyword_fixSpacesTooltip": {
+      "message": "Standardize HTML spaces and whitespace during search"
+   },
+   "deja_keyword_forbid": {
+      "message": "Found"
+   },
+   "deja_keyword_forbidTooltip": {
+      "message": "Do action if keyword item is found"
+   },
+   "deja_keyword_matchCase": {
+      "message": "Match case"
+   },
+   "deja_keyword_matchCaseTooltip": {
+      "message": "Perform a case-sensitive search"
+   },
+   "deja_keyword_matchOptions": {
+      "message": "Match Options"
+   },
+   "deja_keyword_matchText": {
+      "message": "Keyword:"
+   },
+   "deja_keyword_matchTextTooltip": {
+      "message": "Enter a keyword, phrase, or regular expression."
+   },
+   "deja_keyword_matchType": {
+      "message": "Keyword Match Type:"
+   },
+   "deja_keyword_matchWord": {
+      "message": "Match whole word/phrase"
+   },
+   "deja_keyword_matchWordTooltip": {
+      "message": "Disregard any substring matches"
+   },
+   "deja_keyword_plainText": {
+      "message": "Plain Text"
+   },
+   "deja_keyword_plainTextTooltip": {
+      "message": "Match the specified text string"
+   },
+   "deja_keyword_regExp": {
+      "message": "Regular Expression"
+   },
+   "deja_keyword_regExpHelp": {
+      "message": "(?)"
+   },
+   "deja_keyword_regExpHelpTooltip": {
+      "message": "What are regular expressions?"
+   },
+   "deja_keyword_regExpTooltip": {
+      "message": "Match using the specified regular expression"
+   },
+   "deja_keyword_remove": {
+      "message": "Remove"
+   },
+   "deja_keyword_require": {
+      "message": "Not Found"
+   },
+   "deja_keyword_requireTooltip": {
+      "message": "Do action if keyword item is not found"
+   },
+   "deja_keyword_searchAll": {
+      "message": "All documents"
+   },
+   "deja_keyword_searchAllTooltip": {
+      "message": "Keyword search all documents and frames"
+   },
+   "deja_keyword_searchOne": {
+      "message": "Selected document"
+   },
+   "deja_keyword_searchOneTooltip": {
+      "message": "Keyword search only the selected document"
+   },
+   "deja_keyword_searchOptions": {
+      "message": "Search Options"
+   },
+   "deja_keyword_searchType": {
+      "message": "Search for Keyword in:"
+   },
+   "deja_keyword_selectDocument": {
+      "message": "Select Document..."
+   },
+   "deja_keyword_selectDocumentTooltip": {
+      "message": "Select a specific document to search"
+   },
+   "deja_keyword_useVariable": {
+      "message": "Use variable:"
+   },
+   "deja_login_cancelButton": {
+      "message": "Cancel"
+   },
+   "deja_login_enterLoginInfo": {
+      "message": "Enter AlertSite User Info"
+   },
+   "deja_login_failure": {
+      "message": "Login failed."
+   },
+   "deja_login_freeAccount": {
+      "message": "Sign up for a free account"
+   },
+   "deja_login_freeAccountTitle": {
+      "message": "Register here to start testing and sharing DéjàClick scripts!"
+   },
+   "deja_login_insecureConnection": {
+      "message": "Nonsecure Connection"
+   },
+   "deja_login_insecureConnectionChange": {
+      "message": "Nonsecure Connection - click to change"
+   },
+   "deja_login_okButton": {
+      "message": "OK"
+   },
+   "deja_login_password": {
+      "message": "Password:"
+   },
+   "deja_login_secureConnection": {
+      "message": "Secure Connection"
+   },
+   "deja_login_secureConnectionChange": {
+      "message": "Secure Connection - click to change"
+   },
+   "deja_login_success": {
+      "message": "AlertSite login successful!"
+   },
+   "deja_login_title": {
+      "message": "AlertSite Login"
+   },
+   "deja_login_userName": {
+      "message": "User Name:"
+   },
+   "deja_message_logoffsuccessful": {
+      "message": "You are now logged off from AlertSite!"
+   },
+   "deja_message_restconnectfailure": {
+      "message": "DéjàClick is unable to communicate with the AlertSite remote monitoring service.\nPlease retry your request.  If this situation persists, please contact Customer Care at 877-302-5378 or E-mail CustomerCare@AlertSite.com."
+   },
+   "deja_notify_ok": {
+      "message": "OK"
+   },
+   "deja_notify_summary": {
+      "message": "Additional information"
+   },
+   "deja_notify_title": {
+      "message": "DéjàClick Alert"
+   },
+   "deja_options_advanced": {
+      "message": "Advanced"
+   },
+   "deja_options_applyButton": {
+      "message": "Apply All"
+   },
+   "deja_options_basic": {
+      "message": "Basic"
+   },
+   "deja_options_diagnostic": {
+      "message": "Diagnostic"
+   },
+   "deja_options_displayLevel": {
+      "message": "Display Level"
+   },
+   "deja_options_effects": {
+      "message": "Effects"
+   },
+   "deja_options_generalButtonLabel": {
+      "message": "General"
+   },
+   "deja_options_generalTabLabel": {
+      "message": "General preferences"
+   },
+   "deja_options_highlight": {
+      "message": "Highlight Active Element"
+   },
+   "deja_options_notify": {
+      "message": "Notify when Complete"
+   },
+   "deja_options_recordButtonLabel": {
+      "message": "Record"
+   },
+   "deja_options_recordTabLabel": {
+      "message": "Record default properties"
+   },
+   "deja_options_refreshPrefs": {
+      "message": "Refresh system preferences"
+   },
+   "deja_options_replayButtonLabel": {
+      "message": "Replay"
+   },
+   "deja_options_replayTabLabel": {
+      "message": "Replay default properties"
+   },
+   "deja_options_resetButton": {
+      "message": "Reset All"
+   },
+   "deja_options_restApiConfiguration": {
+      "message": "REST API Configuration"
+   },
+   "deja_options_restApiEndpoint": {
+      "message": "REST API Endpoint"
+   },
+   "deja_options_samlConfiguration": {
+      "message": "SAML Configuration"
+   },
+   "deja_options_samlEnabled": {
+      "message": "Enable SAML"
+   },
+   "deja_options_samlUrl": {
+      "message": "SAML Endpoint"
+   },
+   "deja_options_scroll": {
+      "message": "Scroll to Active Element"
+   },
+   "deja_options_skipTodOptions": {
+      "message": "Skip Test on Demand Options Dialog"
+   },
+   "deja_options_title": {
+      "message": "DéjàClick Options"
+   },
+   "deja_options_urlmismatch": {
+      "message": "Domain Mismatch between SAML and REST API"
+   },
+   "deja_password_cancel": {
+      "message": "Cancel"
+   },
+   "deja_password_incorrectPassword": {
+      "message": "Incorrect script encryption password specified."
+   },
+   "deja_password_loadPrompt": {
+      "message": "This script contains encrypted data.\nPlease enter a valid password:"
+   },
+   "deja_password_missingPassword": {
+      "message": "Missing password value."
+   },
+   "deja_password_ok": {
+      "message": "OK"
+   },
+   "deja_password_savePrompt": {
+      "message": "This script contains data that will be encrypted when saved.\nPlease enter an encryption password:"
+   },
+   "deja_password_title": {
+      "message": "Encryption Password"
+   },
+   "deja_password_uploadPrompt": {
+      "message": "Please enter an encryption password:"
+   },
+   "deja_post_dashboard": {
+      "message": "Loading AlertSite Dashboard..."
+   },
+   "deja_post_reports": {
+      "message": "Loading AlertSite Reports..."
+   },
+   "deja_post_status": {
+      "message": "Loading AlertSite Status..."
+   },
+   "deja_promptSave_cancel": {
+      "message": "Cancel"
+   },
+   "deja_promptSave_dontsave": {
+      "message": "Don't Save"
+   },
+   "deja_promptSave_message": {
+      "message": "Save your previous recording?"
+   },
+   "deja_promptSave_save": {
+      "message": "Save"
+   },
+   "deja_promptSave_title": {
+      "message": "DéjàClick Notice"
+   },
+   "deja_properties_actionNotesFold": {
+      "message": "Action Notes"
+   },
+   "deja_properties_addButton": {
+      "message": "Add"
+   },
+   "deja_properties_addVariable": {
+      "message": "Create a new script variable"
+   },
+   "deja_properties_adjustEventTimeout": {
+      "message": "The timeout value entered is greater than the overall Event Timeout value.\n\nDo you want to adjust the Event Timeout value to match?"
+   },
+   "deja_properties_allowMultiple": {
+      "message": "Allow multiple selections"
+   },
+   "deja_properties_applyButton": {
+      "message": "Apply"
+   },
+   "deja_properties_blockOptionsCookies": {
+      "message": "Block New Cookies"
+   },
+   "deja_properties_blockOptionsDescription": {
+      "message": "You may temporarily override your normal browser settings during record and replay to block unwanted popups or prevent sites from setting cookies."
+   },
+   "deja_properties_blockOptionsPopups": {
+      "message": "Block Popup Windows"
+   },
+   "deja_properties_blockingFold": {
+      "message": "Blocking Options"
+   },
+   "deja_properties_branchesAlways": {
+      "message": "Always"
+   },
+   "deja_properties_branchesConditionUnknown": {
+      "message": "On unknown condition,"
+   },
+   "deja_properties_branchesDescription_action": {
+      "message": "You may set up instructions for choosing the next event to replay based on the results of replaying the events in this action."
+   },
+   "deja_properties_branchesDescription_event": {
+      "message": "You may set up instructions for choosing the next event to replay based on the results of replaying this event."
+   },
+   "deja_properties_branchesDescription_script": {
+      "message": "You may set up instructions for choosing the next event to replay based on the results of replaying the events in this script."
+   },
+   "deja_properties_branchesEndReplay": {
+      "message": "stop replay"
+   },
+   "deja_properties_branchesFold": {
+      "message": "Branching Rules"
+   },
+   "deja_properties_branchesMainScript_action": {
+      "message": "jump to action $actionNum$",
+      "placeholders": {
+         "actionNum": {
+            "content": "$1"
+         }
+      }
+   },
+   "deja_properties_branchesMainScript_event": {
+      "message": "jump to event $eventNum$",
+      "placeholders": {
+         "eventNum": {
+            "content": "$1"
+         }
+      }
+   },
+   "deja_properties_branchesNever": {
+      "message": "(disabled)"
+   },
+   "deja_properties_branchesStatus0": {
+      "message": "If successful,"
+   },
+   "deja_properties_branchesStatus1": {
+      "message": "If connection does not succeed,"
+   },
+   "deja_properties_branchesStatus2": {
+      "message": "If web server does not respond,"
+   },
+   "deja_properties_branchesStatus5": {
+      "message": "If content validation fails,"
+   },
+   "deja_properties_branchesStatus7": {
+      "message": "If web server responds with HTTP error,"
+   },
+   "deja_properties_branchesStatusNot0": {
+      "message": "If any error,"
+   },
+   "deja_properties_branchesStatusNot1": {
+      "message": "If connection succeeds,"
+   },
+   "deja_properties_branchesStatusNot2": {
+      "message": "If web server responds,"
+   },
+   "deja_properties_branchesStatusNot5": {
+      "message": "If content validation succeeds,"
+   },
+   "deja_properties_branchesStatusNot7": {
+      "message": "If web server responds with HTTP OK,"
+   },
+   "deja_properties_branchesSubscript_action": {
+      "message": "jump to branch $scriptNum$ action $actionNum$",
+      "placeholders": {
+         "actionNum": {
+            "content": "$1"
+         },
+         "scriptNum": {
+            "content": "$2"
+         }
+      }
+   },
+   "deja_properties_branchesSubscript_event": {
+      "message": "jump to branch $scriptNum$ event $eventNum$",
+      "placeholders": {
+         "eventNum": {
+            "content": "$1"
+         },
+         "scriptNum": {
+            "content": "$2"
+         }
+      }
+   },
+   "deja_properties_branchesSummary": {
+      "message": "$name$:   $condition$ $target$",
+      "placeholders": {
+         "condition": {
+            "content": "$2"
+         },
+         "name": {
+            "content": "$1"
+         },
+         "target": {
+            "content": "$3"
+         }
+      }
+   },
+   "deja_properties_branchesTargetUnknown": {
+      "message": "do something unexpected"
+   },
+   "deja_properties_browserFold": {
+      "message": "Browser Options"
+   },
+   "deja_properties_browserOptionsBlockInfo": {
+      "message": "The following option prevents switching to tabs that are not being recorded."
+   },
+   "deja_properties_browserOptionsBlockSwitch": {
+      "message": "Block switching to non-recorded tabs"
+   },
+   "deja_properties_browserOptionsBrowseHistory": {
+      "message": "Record Back/Forward/Reload/Home/History navigation"
+   },
+   "deja_properties_browserOptionsDescription": {
+      "message": "You may optionally record additional browser-related events."
+   },
+   "deja_properties_browserOptionsWinTabClose": {
+      "message": "Record the windows and tabs I close"
+   },
+   "deja_properties_browserOptionsWinTabOpen": {
+      "message": "Record the windows and tabs I open"
+   },
+   "deja_properties_browserPreferencesDescription": {
+      "message": "Apply special browser preferences during replay"
+   },
+   "deja_properties_browserPreferencesFold": {
+      "message": "Browser Preferences"
+   },
+   "deja_properties_captureDataAction": {
+      "message": "After each action"
+   },
+   "deja_properties_captureDataDocHeaders": {
+      "message": "Document Headers"
+   },
+   "deja_properties_captureDataError": {
+      "message": "After errors"
+   },
+   "deja_properties_captureDataEvent": {
+      "message": "After each event"
+   },
+   "deja_properties_captureDataFold": {
+      "message": "Capture Data"
+   },
+   "deja_properties_captureDataImage": {
+      "message": "Screen"
+   },
+   "deja_properties_captureDataImageFormat": {
+      "message": "Image type:"
+   },
+   "deja_properties_captureDataJpeg": {
+      "message": "JPEG"
+   },
+   "deja_properties_captureDataObjHeaders": {
+      "message": "Object Headers"
+   },
+   "deja_properties_captureDataOff": {
+      "message": "Never"
+   },
+   "deja_properties_captureDataPng": {
+      "message": "PNG"
+   },
+   "deja_properties_captureDataSource": {
+      "message": "Source"
+   },
+   "deja_properties_captureDataTypes": {
+      "message": "Types of data to capture"
+   },
+   "deja_properties_captureDataWhen": {
+      "message": "Capture data"
+   },
+   "deja_properties_clearButton": {
+      "message": "Clear"
+   },
+   "deja_properties_contentChangesDescription": {
+      "message": "Special hints are recorded whenever a visited page alters its contents after it has been loaded into the browser.  During replay, these hints help determine if the expected content changes have occurred before beginning the next event, and which dynamic content needs to be reconstructed if triggered by mouse movements.  These actions are normally handled automatically; however, at times it may be necessary to manually adjust these settings."
+   },
+   "deja_properties_contentChangesFold": {
+      "message": "Content Changes"
+   },
+   "deja_properties_contentChangesMilliseconds": {
+      "message": "milliseconds"
+   },
+   "deja_properties_contentChangesMinimum": {
+      "message": "scripted DOM changes"
+   },
+   "deja_properties_contentChangesPeriod": {
+      "message": "Recheck for content changes every"
+   },
+   "deja_properties_contentChangesSeconds": {
+      "message": "seconds"
+   },
+   "deja_properties_contentChangesStartTime": {
+      "message": "Prompt if expected content changes have not started after"
+   },
+   "deja_properties_contentChangesStopTime": {
+      "message": "Prompt if expected content changes have not stopped after"
+   },
+   "deja_properties_contentChangesUse": {
+      "message": "Use recorded content change hints"
+   },
+   "deja_properties_contentChangesUseMinimum": {
+      "message": "Require a minimum of"
+   },
+   "deja_properties_contentViewOptionsDescription": {
+      "message": "ContentView predefined items"
+   },
+   "deja_properties_contentViewOptionsFold": {
+      "message": "ContentView Options"
+   },
+   "deja_properties_contentViewsDescription_action": {
+      "message": "You may define ContentViews that apply to this action."
+   },
+   "deja_properties_contentViewsDescription_event": {
+      "message": "You may define ContentViews that apply to this event."
+   },
+   "deja_properties_contentViewsDescription_script": {
+      "message": "You may define ContentViews that apply to this script."
+   },
+   "deja_properties_contentViewsFold": {
+      "message": "ContentViews"
+   },
+   "deja_properties_customHeadersFold": {
+      "message": "Custom Headers"
+   },
+   "deja_properties_customProxySettings": {
+      "message": "Use custom proxy settings"
+   },
+   "deja_properties_datasetsFold": {
+      "message": "Datasets"
+   },
+   "deja_properties_deja_properties_variableOptionsCounterLabel": {
+      "message": "Current replay count"
+   },
+   "deja_properties_deja_properties_variableOptionsLocationLabel": {
+      "message": "My Location ID"
+   },
+   "deja_properties_descriptionFold": {
+      "message": "Description"
+   },
+   "deja_properties_descriptionLabel_action": {
+      "message": "Enter a description for this action"
+   },
+   "deja_properties_descriptionLabel_event": {
+      "message": "Enter a description for this event"
+   },
+   "deja_properties_descriptionLabel_script": {
+      "message": "Enter a description for this script"
+   },
+   "deja_properties_descriptionLabel_subscript": {
+      "message": "Enter a description for this branch"
+   },
+   "deja_properties_dialogAccept": {
+      "message": "accept"
+   },
+   "deja_properties_dialogCancel": {
+      "message": "cancel"
+   },
+   "deja_properties_dialogCertClient": {
+      "message": "Client Authentication  [$action$]  ($check$)  $repeat$",
+      "placeholders": {
+         "action": {
+            "content": "$1"
+         },
+         "check": {
+            "content": "$2"
+         },
+         "repeat": {
+            "content": "$3"
+         }
+      }
+   },
+   "deja_properties_dialogCertExpired": {
+      "message": "Certificate Expired"
+   },
+   "deja_properties_dialogCertInvalid": {
+      "message": "Certificate Invalid  [$action$]  ($check$)  $repeat$",
+      "placeholders": {
+         "action": {
+            "content": "$1"
+         },
+         "check": {
+            "content": "$2"
+         },
+         "repeat": {
+            "content": "$3"
+         }
+      }
+   },
+   "deja_properties_dialogCertMismatch": {
+      "message": "Certificate Mismatch"
+   },
+   "deja_properties_dialogCertUnknown": {
+      "message": "Certificate Unknown  [$action$]  ($option$)  $repeat$",
+      "placeholders": {
+         "action": {
+            "content": "$1"
+         },
+         "option": {
+            "content": "$2"
+         },
+         "repeat": {
+            "content": "$3"
+         }
+      }
+   },
+   "deja_properties_dialogCheck1f": {
+      "message": "forget"
+   },
+   "deja_properties_dialogCheck1p": {
+      "message": "permanent"
+   },
+   "deja_properties_dialogCheck1r": {
+      "message": "remember"
+   },
+   "deja_properties_dialogCheck1t": {
+      "message": "temporary"
+   },
+   "deja_properties_dialogConfirm": {
+      "message": "Confirm Prompt"
+   },
+   "deja_properties_dialogExtra1": {
+      "message": "extra1"
+   },
+   "deja_properties_dialogExtra2": {
+      "message": "extra2"
+   },
+   "deja_properties_dialogGeneric": {
+      "message": "Generic Prompt"
+   },
+   "deja_properties_dialogInput": {
+      "message": "Input Prompt"
+   },
+   "deja_properties_dialogLogin": {
+      "message": "Login Prompt  [$action$]  (username: $input1$,  password: $input2$)  $repeat$",
+      "placeholders": {
+         "action": {
+            "content": "$1"
+         },
+         "input1": {
+            "content": "$2"
+         },
+         "input2": {
+            "content": "$3"
+         },
+         "repeat": {
+            "content": "$4"
+         }
+      }
+   },
+   "deja_properties_dialogOption1": {
+      "message": "option1"
+   },
+   "deja_properties_dialogOption2": {
+      "message": "option2"
+   },
+   "deja_properties_dialogOption3": {
+      "message": "option3"
+   },
+   "deja_properties_dialogPrompt1Input": {
+      "message": "$type$  [$action$]  (input1: $input1$)  $repeat$",
+      "placeholders": {
+         "action": {
+            "content": "$2"
+         },
+         "input1": {
+            "content": "$3"
+         },
+         "repeat": {
+            "content": "$4"
+         },
+         "type": {
+            "content": "$1"
+         }
+      }
+   },
+   "deja_properties_dialogPrompt2Inputs": {
+      "message": "$type$  [$action$]  (input1: $input1$,  input2: $input2$)  $repeat$",
+      "placeholders": {
+         "action": {
+            "content": "$2"
+         },
+         "input1": {
+            "content": "$3"
+         },
+         "input2": {
+            "content": "$4"
+         },
+         "repeat": {
+            "content": "$5"
+         },
+         "type": {
+            "content": "$1"
+         }
+      }
+   },
+   "deja_properties_dialogPrompt3Inputs": {
+      "message": "$type$  [$action$]  (input1: $input1$,  input2: $input2$,  input3: $input3$)  $repeat$",
+      "placeholders": {
+         "action": {
+            "content": "$2"
+         },
+         "input1": {
+            "content": "$3"
+         },
+         "input2": {
+            "content": "$4"
+         },
+         "input3": {
+            "content": "$5"
+         },
+         "repeat": {
+            "content": "$6"
+         },
+         "type": {
+            "content": "$1"
+         }
+      }
+   },
+   "deja_properties_dialogPromptNoInput": {
+      "message": "$type$  [$action$]  $repeat$",
+      "placeholders": {
+         "action": {
+            "content": "$2"
+         },
+         "repeat": {
+            "content": "$3"
+         },
+         "type": {
+            "content": "$1"
+         }
+      }
+   },
+   "deja_properties_dialogPromptsDescription": {
+      "message": "Instructions for responding to dialog prompts encountered during this event"
+   },
+   "deja_properties_dialogPromptsFold": {
+      "message": "Dialog Prompts"
+   },
+   "deja_properties_dialogRepeat": {
+      "message": "repeat $num$ times",
+      "placeholders": {
+         "num": {
+            "content": "$1"
+         }
+      }
+   },
+   "deja_properties_dialogRepeatOnce": {
+      "message": "repeat once"
+   },
+   "deja_properties_editButton": {
+      "message": "Edit"
+   },
+   "deja_properties_editProxySettings": {
+      "message": "Edit settings"
+   },
+   "deja_properties_editUrlTarget": {
+      "message": "Edit URL target"
+   },
+   "deja_properties_editVariable": {
+      "message": "Edit selected script variable"
+   },
+   "deja_properties_enterValidUrl": {
+      "message": "Please enter a valid URL."
+   },
+   "deja_properties_eventInputFold": {
+      "message": "Event Input"
+   },
+   "deja_properties_eventNotesFold": {
+      "message": "Event Notes"
+   },
+   "deja_properties_eventTimeoutAction": {
+      "message": "If a timeout occurs,"
+   },
+   "deja_properties_eventTimeoutDescriptionEvent": {
+      "message": "Stop waiting for this event to replay after"
+   },
+   "deja_properties_eventTimeoutDescriptionGeneral": {
+      "message": "Stop waiting for event replay after"
+   },
+   "deja_properties_eventTimeoutError": {
+      "message": "Fail with error"
+   },
+   "deja_properties_eventTimeoutFold": {
+      "message": "Event Timeout"
+   },
+   "deja_properties_eventTimeoutSeconds": {
+      "message": "seconds."
+   },
+   "deja_properties_eventTimeoutSkip": {
+      "message": "Skip the event"
+   },
+   "deja_properties_eventTimeoutUserPause": {
+      "message": "Use recorded user pause interval"
+   },
+   "deja_properties_flashFold": {
+      "message": "Flash Options"
+   },
+   "deja_properties_flashOptionsDelay": {
+      "message": "Apply change after"
+   },
+   "deja_properties_flashOptionsHide": {
+      "message": "Hide Flash objects (but load and run them)"
+   },
+   "deja_properties_flashOptionsHideDescription": {
+      "message": "You may visibly hide Flash content to speed execution time if Flash interaction is not required.  This can help Flash objects behave reasonably well by eliminating their constant frame rendering which consumes the most CPU execution time."
+   },
+   "deja_properties_flashOptionsMilliseconds": {
+      "message": "milliseconds"
+   },
+   "deja_properties_flashOptionsOpaque": {
+      "message": "opaque"
+   },
+   "deja_properties_flashOptionsOverride": {
+      "message": "Change to"
+   },
+   "deja_properties_flashOptionsTransparent": {
+      "message": "transparent"
+   },
+   "deja_properties_flashOptionsWindow": {
+      "message": "window"
+   },
+   "deja_properties_flashOptionsWmode": {
+      "message": "Override Flash WMODE attributes"
+   },
+   "deja_properties_flashOptionsWmodeDescription": {
+      "message": "You may override the WMODE attribute of Flash objects for special circumstances.  If the WMODE value is missing or set to 'window', Chrome is unable to hear click events on the object."
+   },
+   "deja_properties_headerMergeFormat": {
+      "message": "$name$:  $value$  (Options: merge)",
+      "placeholders": {
+         "name": {
+            "content": "$1"
+         },
+         "value": {
+            "content": "$2"
+         }
+      }
+   },
+   "deja_properties_headerReplaceFormat": {
+      "message": "$name$: $value$  (Options: replace)",
+      "placeholders": {
+         "name": {
+            "content": "$1"
+         },
+         "value": {
+            "content": "$2"
+         }
+      }
+   },
+   "deja_properties_headersDescription": {
+      "message": "Create custom HTTP request headers for this script."
+   },
+   "deja_properties_htmlContent": {
+      "message": "Final HTML Content"
+   },
+   "deja_properties_imageValidationFold": {
+      "message": "Image Validation"
+   },
+   "deja_properties_inputFold": {
+      "message": "Input Options"
+   },
+   "deja_properties_inputOptionsForceFocus": {
+      "message": "Record all HTML focus events"
+   },
+   "deja_properties_inputOptionsLabel": {
+      "message": "The following option forces recording of all HTML focus events.  Normally, certain types of focus events are recorded automatically as needed.  However, at times it may be necessary to manually override the automatic behavior."
+   },
+   "deja_properties_invalidEntry": {
+      "message": "Invalid input value entered."
+   },
+   "deja_properties_javascriptAssertFalse": {
+      "message": "assertfalse"
+   },
+   "deja_properties_javascriptAssertTrue": {
+      "message": "asserttrue"
+   },
+   "deja_properties_javascriptDescription_action": {
+      "message": "You may set rules for validating the results of this action using custom logic written in JavaScript."
+   },
+   "deja_properties_javascriptDescription_event": {
+      "message": "You may set rules for validating the results of this event using custom logic written in JavaScript."
+   },
+   "deja_properties_javascriptEvalDefault": {
+      "message": "defaultdoc"
+   },
+   "deja_properties_javascriptEvalOne": {
+      "message": "selecteddoc"
+   },
+   "deja_properties_javascriptSummary": {
+      "message": "$match$   (Options: $options$)",
+      "placeholders": {
+         "match": {
+            "content": "$1"
+         },
+         "options": {
+            "content": "$2"
+         }
+      }
+   },
+   "deja_properties_javascriptValidationFold": {
+      "message": "JavaScript Validation"
+   },
+   "deja_properties_javascriptVariable": {
+      "message": "variable"
+   },
+   "deja_properties_keywordAllowWrap": {
+      "message": "allowwrap"
+   },
+   "deja_properties_keywordDescription_action": {
+      "message": "You may set rules for validating the results of this action by searching for specific keywords or phrases."
+   },
+   "deja_properties_keywordDescription_event": {
+      "message": "You may set rules for validating the results of this event by searching for specific keywords or phrases."
+   },
+   "deja_properties_keywordFixSpaces": {
+      "message": "fixspaces"
+   },
+   "deja_properties_keywordForbid": {
+      "message": "iserror"
+   },
+   "deja_properties_keywordMatchCase": {
+      "message": "matchcase"
+   },
+   "deja_properties_keywordPlain": {
+      "message": "plaintext"
+   },
+   "deja_properties_keywordRegExp": {
+      "message": "regexp"
+   },
+   "deja_properties_keywordRequire": {
+      "message": "isrequired"
+   },
+   "deja_properties_keywordSearchAll": {
+      "message": "alldocs"
+   },
+   "deja_properties_keywordSearchOne": {
+      "message": "singledoc"
+   },
+   "deja_properties_keywordSummary": {
+      "message": "$match$   (Options: $options$)",
+      "placeholders": {
+         "match": {
+            "content": "$1"
+         },
+         "options": {
+            "content": "$2"
+         }
+      }
+   },
+   "deja_properties_keywordValidationFold": {
+      "message": "Keyword Validation"
+   },
+   "deja_properties_keywordVariable": {
+      "message": "variable"
+   },
+   "deja_properties_keywordWord": {
+      "message": "wholeword"
+   },
+   "deja_properties_locationChangesCount": {
+      "message": "URL location changes"
+   },
+   "deja_properties_locationChangesDescription": {
+      "message": "Special hints are recorded whenever the URL location changes.  During replay, these hints help determine the expected number of location changes needed before beginning the next event.  These actions are normally handled automatically; however, at times it may be necessary to disable or manually adjust these settings."
+   },
+   "deja_properties_locationChangesFold": {
+      "message": "Location Changes"
+   },
+   "deja_properties_locationChangesSeconds": {
+      "message": "seconds"
+   },
+   "deja_properties_locationChangesUse": {
+      "message": "Use recorded location change hints"
+   },
+   "deja_properties_locationChangesWaitDescription": {
+      "message": "Prompt if expected location changes have not occurred after"
+   },
+   "deja_properties_logOptionsAllDebug": {
+      "message": "Enable All"
+   },
+   "deja_properties_logOptionsDebugCategories": {
+      "message": "Debug Categories"
+   },
+   "deja_properties_logOptionsDescription": {
+      "message": "The following options control the types of messages that are logged during operation."
+   },
+   "deja_properties_logOptionsFailures": {
+      "message": "Failures"
+   },
+   "deja_properties_logOptionsGeneral": {
+      "message": "General"
+   },
+   "deja_properties_logOptionsHttpActivity": {
+      "message": "HTTP Activity"
+   },
+   "deja_properties_logOptionsHttpHeaders": {
+      "message": "HTTP Headers"
+   },
+   "deja_properties_logOptionsHttpTimings": {
+      "message": "HTTP Timings"
+   },
+   "deja_properties_logOptionsInformation": {
+      "message": "Information"
+   },
+   "deja_properties_logOptionsNetworkActivity": {
+      "message": "Network Activity"
+   },
+   "deja_properties_logOptionsPendingActivity": {
+      "message": "Pending Activity"
+   },
+   "deja_properties_logOptionsScreenEvents": {
+      "message": "TrueScreen Events"
+   },
+   "deja_properties_logOptionsTargetSearch": {
+      "message": "DOM Target Search"
+   },
+   "deja_properties_logOptionsUrlBlocking": {
+      "message": "URL Blocking"
+   },
+   "deja_properties_logOptionsWarnings": {
+      "message": "Warnings"
+   },
+   "deja_properties_loggingOptionsFold": {
+      "message": "Logging Options"
+   },
+   "deja_properties_matchOptionsBreadcrumbs": {
+      "message": "Breadcrumbs Search"
+   },
+   "deja_properties_matchOptionsCustom": {
+      "message": "Custom"
+   },
+   "deja_properties_matchOptionsDescription_event": {
+      "message": "You may adjust matching options for this event."
+   },
+   "deja_properties_matchOptionsDescription_play": {
+      "message": "You may adjust matching options for replayed scripts."
+   },
+   "deja_properties_matchOptionsDescription_script": {
+      "message": "You may adjust matching options for this script."
+   },
+   "deja_properties_matchOptionsEdit": {
+      "message": "Edit..."
+   },
+   "deja_properties_matchOptionsElementPath": {
+      "message": "ElementPath Search"
+   },
+   "deja_properties_matchOptionsEnableDetectErrors": {
+      "message": "Auto-detect page content errors below"
+   },
+   "deja_properties_matchOptionsEnableStopReplay": {
+      "message": "Stop replay if match score falls below"
+   },
+   "deja_properties_matchOptionsFingerprint": {
+      "message": "Fingerprint Search"
+   },
+   "deja_properties_matchOptionsFold": {
+      "message": "Match Options"
+   },
+   "deja_properties_matchOptionsIgnoreNamedAttributes": {
+      "message": "Ignore named attributes"
+   },
+   "deja_properties_matchOptionsIntensive": {
+      "message": "Intensive"
+   },
+   "deja_properties_matchOptionsMatchType": {
+      "message": "Match Type"
+   },
+   "deja_properties_matchOptionsOptimized": {
+      "message": "Optimized"
+   },
+   "deja_properties_matchOptionsPercent": {
+      "message": "percent"
+   },
+   "deja_properties_mobileOptionsActiveDevices": {
+      "message": "Active Mobile Devices"
+   },
+   "deja_properties_mobileOptionsAvailableDevices": {
+      "message": "Available Mobile Devices"
+   },
+   "deja_properties_mobileOptionsDescription": {
+      "message": "Select the mobile devices for which transactions can be recorded."
+   },
+   "deja_properties_mobileOptionsFold": {
+      "message": "Mobile Options"
+   },
+   "deja_properties_name": {
+      "message": "name"
+   },
+   "deja_properties_networkActivityAutoClose": {
+      "message": "Auto-close streaming network requests"
+   },
+   "deja_properties_networkActivityDescription": {
+      "message": "Special hints are recorded whenever network activity occurs during an event.  During replay, these hints and other configurable options determine if replay should pause for network activity before beginning the next event.  These actions are normally handled automatically; however, at times it may be necessary to manually adjust these settings."
+   },
+   "deja_properties_networkActivityFold": {
+      "message": "Network Activity"
+   },
+   "deja_properties_networkActivityFullpage": {
+      "message": "Wait for all page objects to load"
+   },
+   "deja_properties_networkActivityPrune": {
+      "message": "Expire abandoned network requests after"
+   },
+   "deja_properties_networkActivitySeconds": {
+      "message": "seconds"
+   },
+   "deja_properties_networkActivityTimeout": {
+      "message": "Prompt if expected network activity has not responded after"
+   },
+   "deja_properties_networkActivityUseHints": {
+      "message": "Use recorded network activity hints"
+   },
+   "deja_properties_newVisitorClearAppCache": {
+      "message": "Clear App Cache"
+   },
+   "deja_properties_newVisitorClearAppCacheTitle": {
+      "message": "Clear app cache for all websites before recording and replaying."
+   },
+   "deja_properties_newVisitorClearBrowser": {
+      "message": "Clear Browser Cache"
+   },
+   "deja_properties_newVisitorClearBrowserTitle": {
+      "message": "Clear browser cache before recording and replaying."
+   },
+   "deja_properties_newVisitorClearCertificates": {
+      "message": "Clear Certificates"
+   },
+   "deja_properties_newVisitorClearCertificatesTitle": {
+      "message": "Clear all server-bound certificates before recording and replaying."
+   },
+   "deja_properties_newVisitorClearFileSystems": {
+      "message": "Clear File Systems"
+   },
+   "deja_properties_newVisitorClearFileSystemsTitle": {
+      "message": "Clear file systems for all websites before recording and replaying."
+   },
+   "deja_properties_newVisitorClearFormData": {
+      "message": "Clear Form Data"
+   },
+   "deja_properties_newVisitorClearFormDataTitle": {
+      "message": "Clear all saved form data before recording and replaying."
+   },
+   "deja_properties_newVisitorClearIndexedDb": {
+      "message": "Clear IndexedDB"
+   },
+   "deja_properties_newVisitorClearIndexedDbTitle": {
+      "message": "Clear IndexedDB data for all websites before recording and replaying."
+   },
+   "deja_properties_newVisitorClearLocalStorage": {
+      "message": "Clear Local Storage"
+   },
+   "deja_properties_newVisitorClearLocalStorageTitle": {
+      "message": "Clear local storage for all websites before recording and replaying."
+   },
+   "deja_properties_newVisitorClearPasswords": {
+      "message": "Clear Passwords"
+   },
+   "deja_properties_newVisitorClearPasswordsTitle": {
+      "message": "Clear all saved passwords before recording and replaying."
+   },
+   "deja_properties_newVisitorClearPluginData": {
+      "message": "Clear Plugin Data"
+   },
+   "deja_properties_newVisitorClearPluginDataTitle": {
+      "message": "Clear data for all plugins before recording and replaying."
+   },
+   "deja_properties_newVisitorClearWebSql": {
+      "message": "Clear WebSQL"
+   },
+   "deja_properties_newVisitorClearWebSqlTitle": {
+      "message": "Clear WebSQL data for all websites before recording and replaying."
+   },
+   "deja_properties_newVisitorDescription": {
+      "message": "Websites may change their displayed content or functionality after repeat visits, which can sometimes create issues during replay.  The following option will adjust browser settings during record and replay to simulate visiting a website for the first time."
+   },
+   "deja_properties_newVisitorEnable": {
+      "message": "Enable 'Simulate New Visitor' Options"
+   },
+   "deja_properties_newVisitorFold": {
+      "message": "Simulate New Visitor"
+   },
+   "deja_properties_newVisitorHideCookies": {
+      "message": "Hide Existing Cookies"
+   },
+   "deja_properties_newVisitorHideCookiesTitle": {
+      "message": "Temporarily remove existing cookies while recording and replaying."
+   },
+   "deja_properties_optionPosition": {
+      "message": "Position $index$",
+      "placeholders": {
+         "index": {
+            "content": "$1"
+         }
+      }
+   },
+   "deja_properties_pauseIntervalsDescription": {
+      "message": "Your pause intervals (user think time) from the original recording may be used during replay."
+   },
+   "deja_properties_pauseIntervalsEnable": {
+      "message": "Use recorded event pause intervals"
+   },
+   "deja_properties_pauseIntervalsEnableScreen": {
+      "message": "Use recorded screen event timings"
+   },
+   "deja_properties_pauseIntervalsFold": {
+      "message": "Pause Intervals"
+   },
+   "deja_properties_pauseIntervalsMilliseconds": {
+      "message": "milliseconds"
+   },
+   "deja_properties_pauseIntervalsPercent": {
+      "message": "percent"
+   },
+   "deja_properties_pauseIntervalsSpeed": {
+      "message": "Replay speed"
+   },
+   "deja_properties_position": {
+      "message": "position"
+   },
+   "deja_properties_removeButton": {
+      "message": "Remove"
+   },
+   "deja_properties_replayAdvisorBrowserResize": {
+      "message": "Browser window resizing needed (record)"
+   },
+   "deja_properties_replayAdvisorContentStartTimeout": {
+      "message": "Content Change Start Timeouts occur"
+   },
+   "deja_properties_replayAdvisorContentStopTimeout": {
+      "message": "Content Change Stop Timeouts occur"
+   },
+   "deja_properties_replayAdvisorDescription": {
+      "message": "Replay Advisor can prompt for your assistance when certain types of record or replay issues occur.  In many cases, it may also be possible for Replay Advisor to automatically correct these issues."
+   },
+   "deja_properties_replayAdvisorEmbeddedObject": {
+      "message": "Clicking on an embedded object (record)"
+   },
+   "deja_properties_replayAdvisorEventTimeout": {
+      "message": "Event Timeouts occur"
+   },
+   "deja_properties_replayAdvisorFileUpload": {
+      "message": "Selecting files for upload (record)"
+   },
+   "deja_properties_replayAdvisorFold": {
+      "message": "Replay Advisor"
+   },
+   "deja_properties_replayAdvisorLocationTimeout": {
+      "message": "Location Timeouts occur"
+   },
+   "deja_properties_replayAdvisorNavigationTimeout": {
+      "message": "Navigation Timeouts occur"
+   },
+   "deja_properties_replayAdvisorNetworkTimeout": {
+      "message": "Network Timeouts occur"
+   },
+   "deja_properties_replayAdvisorPrompt": {
+      "message": "Let Replay Advisor prompt for assistance"
+   },
+   "deja_properties_replayAdvisorPromptWhen": {
+      "message": "Prompt for assistance when:"
+   },
+   "deja_properties_replayAdvisorRepair": {
+      "message": "Let Replay Advisor make script adjustments"
+   },
+   "deja_properties_replayAdvisorResponseTimeout": {
+      "message": "Response Timeouts occur"
+   },
+   "deja_properties_replayAdvisorStartUrl": {
+      "message": "Events on pre-loaded page (record)"
+   },
+   "deja_properties_replayTimingsCustom": {
+      "message": "Custom"
+   },
+   "deja_properties_replayTimingsDescriptionInternal": {
+      "message": "The following internal timings are used during replay and normally should not require adjustment."
+   },
+   "deja_properties_replayTimingsDescription_event": {
+      "message": "You may adjust the replay timings for this event."
+   },
+   "deja_properties_replayTimingsDescription_play": {
+      "message": "You may adjust the replay timings for all scripts."
+   },
+   "deja_properties_replayTimingsDescription_script": {
+      "message": "You may adjust the replay timings for this script."
+   },
+   "deja_properties_replayTimingsDispatchDelay": {
+      "message": "Event dispatch delay"
+   },
+   "deja_properties_replayTimingsEventDelay": {
+      "message": "Event processing delay"
+   },
+   "deja_properties_replayTimingsFaster": {
+      "message": "Faster"
+   },
+   "deja_properties_replayTimingsFold": {
+      "message": "Replay Timings"
+   },
+   "deja_properties_replayTimingsMaxScriptTime": {
+      "message": "Maximum JavaScript run time"
+   },
+   "deja_properties_replayTimingsMilliseconds": {
+      "message": "milliseconds"
+   },
+   "deja_properties_replayTimingsNormal": {
+      "message": "Normal"
+   },
+   "deja_properties_replayTimingsReadyTimeout": {
+      "message": "Check browser ready delay"
+   },
+   "deja_properties_replayTimingsResponseTimeout": {
+      "message": "Event response timeout interval"
+   },
+   "deja_properties_replayTimingsSeconds": {
+      "message": "seconds"
+   },
+   "deja_properties_replayTimingsSlower": {
+      "message": "Slower"
+   },
+   "deja_properties_replayTimingsSpeed": {
+      "message": "Replay Speed"
+   },
+   "deja_properties_resetButton": {
+      "message": "Reset"
+   },
+   "deja_properties_scriptNotesFold": {
+      "message": "Script Notes"
+   },
+   "deja_properties_securityAllInput": {
+      "message": "Encrypt all user input data."
+   },
+   "deja_properties_securityFold": {
+      "message": "Encryption Options"
+   },
+   "deja_properties_securityLocal": {
+      "message": "Encrypt locally saved scripts."
+   },
+   "deja_properties_securityRemote": {
+      "message": "Encrypt remotely monitored transactions."
+   },
+   "deja_properties_selectBy": {
+      "message": "Select FORM list items by"
+   },
+   "deja_properties_selectMultiple": {
+      "message": "Select one or more items"
+   },
+   "deja_properties_selectOne": {
+      "message": "Select item"
+   },
+   "deja_properties_selectOptionItem": {
+      "message": "Please select an item from the dropdown."
+   },
+   "deja_properties_selectOptionItems": {
+      "message": "Please select items from the list."
+   },
+   "deja_properties_selectScriptVar": {
+      "message": "Please select a script variable."
+   },
+   "deja_properties_showPassword": {
+      "message": "Show password text"
+   },
+   "deja_properties_skippedEventsCount": {
+      "message": "events are skipped."
+   },
+   "deja_properties_skippedEventsDescription": {
+      "message": "You may stop replay if the number of skipped events exceeds a preset maximum."
+   },
+   "deja_properties_skippedEventsEnable": {
+      "message": "Stop replay if more than"
+   },
+   "deja_properties_skippedEventsFold": {
+      "message": "Skipped Events"
+   },
+   "deja_properties_skippedEventsInvalidCount": {
+      "message": "Please enter a count between 1 and 999."
+   },
+   "deja_properties_textInput": {
+      "message": "Text Input"
+   },
+   "deja_properties_title": {
+      "message": "DéjàClick Properties"
+   },
+   "deja_properties_trueScreenFold": {
+      "message": "TrueScreen Options"
+   },
+   "deja_properties_ueFold": {
+      "message": "User Experience Options"
+   },
+   "deja_properties_urlExclusionsFold": {
+      "message": "URL Exclusions"
+   },
+   "deja_properties_urlMaskBlock": {
+      "message": "block"
+   },
+   "deja_properties_urlMaskIgnore": {
+      "message": "ignore"
+   },
+   "deja_properties_urlMaskPlain": {
+      "message": "plaintext"
+   },
+   "deja_properties_urlMaskRegExp": {
+      "message": "regexp"
+   },
+   "deja_properties_urlMaskSummary": {
+      "message": "\"$text$\"  (Options: $type$,$style$)",
+      "placeholders": {
+         "style": {
+            "content": "$3"
+         },
+         "text": {
+            "content": "$1"
+         },
+         "type": {
+            "content": "$2"
+         }
+      }
+   },
+   "deja_properties_urlMasksDescription": {
+      "message": "Exclude specific URLs from being processed."
+   },
+   "deja_properties_useKeystrokes": {
+      "message": "Replay using keystrokes"
+   },
+   "deja_properties_useVariable": {
+      "message": "Use script variable"
+   },
+   "deja_properties_value": {
+      "message": "value"
+   },
+   "deja_properties_variableOptionsCounterDescription": {
+      "message": "Script variables may include Auto-Increment tokens.  The increment applied is based upon the number of times the current script was replayed during power on.  Your current script's replay count may be adjusted below for testing purposes."
+   },
+   "deja_properties_variableOptionsFold": {
+      "message": "Variable Options"
+   },
+   "deja_properties_variableOptionsLocationDescription": {
+      "message": "Script variables may include tokens that are limited to specific monitoring Location IDs.   This allows the same variable to render differently based on where the script is run.  By default, your computer is identified as Location ID 0.  You may temporarily adjust this value to simulate replay at a specific monitoring location for testing purposes."
+   },
+   "deja_properties_variablesDescription": {
+      "message": "You may add script variables to substitute dynamic vaues for event input"
+   },
+   "deja_properties_variablesFold": {
+      "message": "Variables"
+   },
+   "deja_properties_variablesReplaceLocationID": {
+      "message": "Replace location ID's..."
+   },
+   "deja_properties_warnremotecrypto": {
+      "message": "An encryption password may be required when uploading or downloading transactions from AlertSite if this feature is enabled.  Customer Support may also be limited for encrypted transactions unless a valid password is provided."
+   },
+   "deja_proxy_all_protocols": {
+      "message": "Use this proxy for all protocols"
+   },
+   "deja_proxy_auto_detect": {
+      "message": "Auto-detect proxy settings for this network"
+   },
+   "deja_proxy_auto_url": {
+      "message": "Automatic proxy configuration URL"
+   },
+   "deja_proxy_configure": {
+      "message": "Configure Proxies to Access the Internet"
+   },
+   "deja_proxy_ftp": {
+      "message": "FTP Proxy:"
+   },
+   "deja_proxy_http": {
+      "message": "HTTP Proxy:"
+   },
+   "deja_proxy_manual": {
+      "message": "Manual Proxy Configuration:"
+   },
+   "deja_proxy_none": {
+      "message": "No Proxy"
+   },
+   "deja_proxy_not_urls": {
+      "message": "No Proxy for:"
+   },
+   "deja_proxy_port": {
+      "message": "Port:"
+   },
+   "deja_proxy_remotedns": {
+      "message": "Remote DNS"
+   },
+   "deja_proxy_socks": {
+      "message": "Socks Host:"
+   },
+   "deja_proxy_socksv4": {
+      "message": "Socks v4"
+   },
+   "deja_proxy_socksv5": {
+      "message": "Socks v5"
+   },
+   "deja_proxy_ssl": {
+      "message": "SSL Proxy:"
+   },
+   "deja_proxy_use_system": {
+      "message": "Use system proxy settings"
+   },
+   "deja_restapi_badloginparams": {
+      "message": "Missing login and customer id"
+   },
+   "deja_restapi_badsaveparams": {
+      "message": "Missing or invalid saveRemote arguments specified."
+   },
+   "deja_restapi_changeusererror": {
+      "message": "Unable to change effective user."
+   },
+   "deja_restapi_error0": {
+      "message": "No errors"
+   },
+   "deja_restapi_error10": {
+      "message": "User session has expired, please login again."
+   },
+   "deja_restapi_error12": {
+      "message": "No active session.  Please login now."
+   },
+   "deja_restapi_error2": {
+      "message": "Not enough fullpage credits."
+   },
+   "deja_restapi_error20": {
+      "message": "Session is invalid.  Please login again."
+   },
+   "deja_restapi_error3": {
+      "message": "No credits available for this plan."
+   },
+   "deja_restapi_error30": {
+      "message": "Session failure.  Please login again."
+   },
+   "deja_restapi_error4": {
+      "message": "Invalid format of POP3 address."
+   },
+   "deja_restapi_error40": {
+      "message": "Invalid login information."
+   },
+   "deja_restapi_error41": {
+      "message": "Invalid or expired login information."
+   },
+   "deja_restapi_error47": {
+      "message": "Sorry, your account has not yet been activated.\nPlease check your email for activation instructions."
+   },
+   "deja_restapi_error48": {
+      "message": "Sorry, your login account has insufficient access to use this feature."
+   },
+   "deja_restapi_error49": {
+      "message": "Login failed.  Please try again."
+   },
+   "deja_restapi_error50": {
+      "message": "Sorry, you do not have enough site credits to add a new transaction.\nLogin to your AlertSite account to add site credits or contact AlertSite\nCustomer Care at 877-302-5378 or E-mail CustomerCare@AlertSite.com."
+   },
+   "deja_restapi_error51": {
+      "message": "AlertSite's transaction monitoring service has been upgraded and now requires a newer version of the recorder than you currently are using.\nPlease download the latest recorder from http://www.alertsite.com/ASTM.  Don't forget to uninstall the old version and reinstall the new.  We apologize for any inconvenience."
+   },
+   "deja_restapi_error52": {
+      "message": "AlertSite's transaction monitoring service has been upgraded and now requires a newer version of the DéjàClick extension than you currently are using.\nPlease download the latest version from http://www.alertsite.com/dejaclick.  We apologize for any inconvenience."
+   },
+   "deja_restapi_error53": {
+      "message": "Upload of the transaction failed."
+   },
+   "deja_restapi_error54": {
+      "message": "Upload of the LoadTest transaction failed."
+   },
+   "deja_restapi_error55": {
+      "message": "Upload Failed. Invalid plan type for this transaction."
+   },
+   "deja_restapi_errorFatal": {
+      "message": "Internal error. Please login again."
+   },
+   "deja_restapi_errorSkip": {
+      "message": "Internal error."
+   },
+   "deja_restapi_invalidsession": {
+      "message": "You are currently logged off from your AlertSite monitoring account. Please login and try again."
+   },
+   "deja_restapi_invaliduser": {
+      "message": "Missing or invalid user account."
+   },
+   "deja_restapi_remoteconnecterror": {
+      "message": "Unable to connect to server."
+   },
+   "deja_restapi_remotelistlocationserror": {
+      "message": "Unable to list remote locations."
+   },
+   "deja_restapi_remotelisttransactionserror": {
+      "message": "Unable to list remote scripts."
+   },
+   "deja_restapi_remoteloaderror": {
+      "message": "Unable to load script from remote server."
+   },
+   "deja_restapi_remotesaveerror": {
+      "message": "Unable to save script to remote server."
+   },
+   "deja_restapi_restapimultiple": {
+      "message": "Simultaneous requests made on REST service"
+   },
+   "deja_restapi_toolargeupload": {
+      "message": "The script exceeds the 10MB limit. Upload aborted."
+   },
+   "deja_results_actionContains1": {
+      "message": "$numEvents$ events",
+      "placeholders": {
+         "numEvents": {
+            "content": "$1"
+         }
+      }
+   },
+   "deja_results_actionContains2": {
+      "message": "$numEvents$ event",
+      "placeholders": {
+         "numEvents": {
+            "content": "$1"
+         }
+      }
+   },
+   "deja_results_actionContainsLabel": {
+      "message": "Composition:"
+   },
+   "deja_results_actionDescLabel": {
+      "message": "Description:"
+   },
+   "deja_results_actionNumberLabel": {
+      "message": "Action Number:"
+   },
+   "deja_results_actionTypeLabel": {
+      "message": "Action Type:"
+   },
+   "deja_results_actionType_browser": {
+      "message": "Browser Action"
+   },
+   "deja_results_actionURLFinalizedLabel": {
+      "message": "URL Redirect:"
+   },
+   "deja_results_actionURLRequestedLabel": {
+      "message": "URL Location:"
+   },
+   "deja_results_dejaBrowserVersion": {
+      "message": "DéjàClick $dejaVersion$ / $browserName$ $browserVersion$",
+      "placeholders": {
+         "browserName": {
+            "content": "$3"
+         },
+         "browserVersion": {
+            "content": "$2"
+         },
+         "dejaVersion": {
+            "content": "$1"
+         }
+      }
+   },
+   "deja_results_dejaChromeVersion": {
+      "message": "DéjàClick $dejaVersion$ / Chrome $chromeVersion$",
+      "placeholders": {
+         "chromeVersion": {
+            "content": "$2"
+         },
+         "dejaVersion": {
+            "content": "$1"
+         }
+      }
+   },
+   "deja_results_dejaFirefoxVersion": {
+      "message": "DéjàClick $dejaVersion$ / Firefox $ffVersion$",
+      "placeholders": {
+         "dejaVersion": {
+            "content": "$1"
+         },
+         "ffVersion": {
+            "content": "$2"
+         }
+      }
+   },
+   "deja_results_eventDescLabel": {
+      "message": "Description:"
+   },
+   "deja_results_eventNumberLabel": {
+      "message": "Event Number:"
+   },
+   "deja_results_eventRedirectURLLabel": {
+      "message": "Redirected To:"
+   },
+   "deja_results_eventTargetLabel": {
+      "message": "Event Target:"
+   },
+   "deja_results_eventTarget_browser": {
+      "message": "Browser"
+   },
+   "deja_results_eventTarget_document": {
+      "message": "HTML Document"
+   },
+   "deja_results_eventTarget_element": {
+      "message": "HTML Element \u003C$element$>",
+      "placeholders": {
+         "element": {
+            "content": "$1"
+         }
+      }
+   },
+   "deja_results_eventTypeLabel": {
+      "message": "Event Type:"
+   },
+   "deja_results_eventType_change": {
+      "message": "Input"
+   },
+   "deja_results_eventType_click": {
+      "message": "Click"
+   },
+   "deja_results_eventType_drag": {
+      "message": "Drag"
+   },
+   "deja_results_eventType_focus": {
+      "message": "Focus"
+   },
+   "deja_results_eventType_hover": {
+      "message": "Hover"
+   },
+   "deja_results_eventType_move": {
+      "message": "Move"
+   },
+   "deja_results_eventType_navigate": {
+      "message": "Navigate"
+   },
+   "deja_results_eventType_screen": {
+      "message": "$eventType$   [TrueScreen]",
+      "placeholders": {
+         "eventType": {
+            "content": "$1"
+         }
+      }
+   },
+   "deja_results_eventType_tabclose": {
+      "message": "Tab Close"
+   },
+   "deja_results_eventType_tabfocus": {
+      "message": "Tab Focus"
+   },
+   "deja_results_eventType_tabopen": {
+      "message": "Tab Open"
+   },
+   "deja_results_eventType_winclose": {
+      "message": "Window Close"
+   },
+   "deja_results_eventType_winopen": {
+      "message": "Window Open"
+   },
+   "deja_results_lastReplayedOn": {
+      "message": "Last Replayed On: $date$",
+      "placeholders": {
+         "date": {
+            "content": "$1"
+         }
+      }
+   },
+   "deja_results_matchResultsLabel": {
+      "message": "Match Results"
+   },
+   "deja_results_matchScoreLabel": {
+      "message": "Match Score:"
+   },
+   "deja_results_networkResultsLabel": {
+      "message": "Network Activity"
+   },
+   "deja_results_networkStepsLabel": {
+      "message": "HTTP Steps:"
+   },
+   "deja_results_noStatus_action": {
+      "message": "This action has no replay status."
+   },
+   "deja_results_noStatus_event": {
+      "message": "This event has no replay status."
+   },
+   "deja_results_noStatus_script": {
+      "message": "This script has no replay status."
+   },
+   "deja_results_noStatus_subscript": {
+      "message": "This branch has no replay status."
+   },
+   "deja_results_notAvailable": {
+      "message": "n/a"
+   },
+   "deja_results_percentLabel": {
+      "message": "%"
+   },
+   "deja_results_replayStatusLabel": {
+      "message": "Replay Status"
+   },
+   "deja_results_replayStatus_unknown": {
+      "message": "Status Unknown"
+   },
+   "deja_results_resultsPending": {
+      "message": "Results pending . . ."
+   },
+   "deja_results_scriptContains1": {
+      "message": "$numActions$ Actions, $numEvents$ Events",
+      "placeholders": {
+         "numActions": {
+            "content": "$1"
+         },
+         "numEvents": {
+            "content": "$2"
+         }
+      }
+   },
+   "deja_results_scriptContains2": {
+      "message": "$numActions$ Actions, $numEvents$ Event",
+      "placeholders": {
+         "numActions": {
+            "content": "$1"
+         },
+         "numEvents": {
+            "content": "$2"
+         }
+      }
+   },
+   "deja_results_scriptContains3": {
+      "message": "$numActions$ Action, $numEvents$ Events",
+      "placeholders": {
+         "numActions": {
+            "content": "$1"
+         },
+         "numEvents": {
+            "content": "$2"
+         }
+      }
+   },
+   "deja_results_scriptContains4": {
+      "message": "$numActions$ Action, $numEvents$ Event",
+      "placeholders": {
+         "numActions": {
+            "content": "$1"
+         },
+         "numEvents": {
+            "content": "$2"
+         }
+      }
+   },
+   "deja_results_scriptContainsLabel": {
+      "message": "Composition:"
+   },
+   "deja_results_scriptDescLabel": {
+      "message": "Description:"
+   },
+   "deja_results_scriptMVersionLabel": {
+      "message": "Version:"
+   },
+   "deja_results_scriptModifiedLabel": {
+      "message": "Modified:"
+   },
+   "deja_results_scriptNotSaved": {
+      "message": "(script not yet saved)"
+   },
+   "deja_results_scriptNumberLabel": {
+      "message": "Script Number:"
+   },
+   "deja_results_scriptPVersionLabel": {
+      "message": "Version:"
+   },
+   "deja_results_scriptPathLabel": {
+      "message": "File Name:"
+   },
+   "deja_results_scriptProducedLabel": {
+      "message": "Created:"
+   },
+   "deja_results_scriptRecordedLabel": {
+      "message": "Recorded On:"
+   },
+   "deja_results_scriptStatusLabel": {
+      "message": "Last Upload Status:"
+   },
+   "deja_results_scriptStatus_check": {
+      "message": "Replay Success"
+   },
+   "deja_results_scriptStatus_error": {
+      "message": "Replay Error"
+   },
+   "deja_results_scriptStatus_none": {
+      "message": "None"
+   },
+   "deja_results_scriptStatus_norm": {
+      "message": "Replay Incomplete"
+   },
+   "deja_results_scriptStatus_warn": {
+      "message": "Replay Warning"
+   },
+   "deja_results_scriptTypeLabel": {
+      "message": "Script Type:"
+   },
+   "deja_results_statusCodeLabel": {
+      "message": "AlertSite Status Code:"
+   },
+   "deja_results_statusLogIDLabel": {
+      "message": "Log Reference ID:"
+   },
+   "deja_results_statusLogIDTooltip": {
+      "message": "Show log file status details"
+   },
+   "deja_results_stepLabel": {
+      "message": "step"
+   },
+   "deja_results_stepsLabel": {
+      "message": "steps"
+   },
+   "deja_results_subscriptContainsLabel": {
+      "message": "Composition:"
+   },
+   "deja_results_subscriptDescLabel": {
+      "message": "Description:"
+   },
+   "deja_results_subscriptNumberLabel": {
+      "message": "Subscript Number:"
+   },
+   "deja_results_subscriptTypeLabel": {
+      "message": "Subscript Type:"
+   },
+   "deja_results_targetFoundLabel": {
+      "message": "Target Found:"
+   },
+   "deja_results_targetsFound": {
+      "message": "$numFound$ out of $numTargets$ searched",
+      "placeholders": {
+         "numFound": {
+            "content": "$1"
+         },
+         "numTargets": {
+            "content": "$2"
+         }
+      }
+   },
+   "deja_results_targetsFoundLabel": {
+      "message": "Targets Found:"
+   },
+   "deja_results_title": {
+      "message": "DéjàClick Results"
+   },
+   "deja_results_version_unknown": {
+      "message": "unknown"
+   },
+   "deja_sidebar_aboutDejaClickItem": {
+      "message": "About DéjàClick for Chrome™"
+   },
+   "deja_sidebar_aboutDejaClickItemHint": {
+      "message": "About DéjàClick"
+   },
+   "deja_sidebar_actionProperties": {
+      "message": "Action $seq$ Properties",
+      "placeholders": {
+         "seq": {
+            "content": "$1"
+         }
+      }
+   },
+   "deja_sidebar_actionResults": {
+      "message": "Action $seq$ Results",
+      "placeholders": {
+         "seq": {
+            "content": "$1"
+         }
+      }
+   },
+   "deja_sidebar_activeElementItem": {
+      "message": "Active Element"
+   },
+   "deja_sidebar_activeElementItemHint": {
+      "message": "Optional effects for active element"
+   },
+   "deja_sidebar_alertSitePageItem": {
+      "message": "AlertSite Home Page"
+   },
+   "deja_sidebar_alertSitePageItemHint": {
+      "message": "Visit the AlertSite Home Page"
+   },
+   "deja_sidebar_blockCookiesItem": {
+      "message": "Block New Cookies"
+   },
+   "deja_sidebar_blockCookiesItemHint": {
+      "message": "Block New Cookies during Record/Replay"
+   },
+   "deja_sidebar_blockPopupsItem": {
+      "message": "Block Popup Windows"
+   },
+   "deja_sidebar_blockPopupsItemHint": {
+      "message": "Block Popup Windows during Record/Replay"
+   },
+   "deja_sidebar_changeUserItem": {
+      "message": "Change User"
+   },
+   "deja_sidebar_changeUserItemHint": {
+      "message": "Change your AlertSite user login"
+   },
+   "deja_sidebar_chooseAppendModeButton": {
+      "message": "Continue Recording"
+   },
+   "deja_sidebar_chooseAppendModeDefault": {
+      "message": "Append to current"
+   },
+   "deja_sidebar_chooseAppendModeDefaultHint": {
+      "message": "New events will be appended after the current event"
+   },
+   "deja_sidebar_chooseAppendModeSubscript": {
+      "message": "Add to new branch"
+   },
+   "deja_sidebar_chooseAppendModeSubscriptHint": {
+      "message": "New events will be added to a new branch"
+   },
+   "deja_sidebar_chooseMobileButton": {
+      "message": "Choose mobile"
+   },
+   "deja_sidebar_closeValidationHint": {
+      "message": "Close the Validation toolbar to continue record/replay"
+   },
+   "deja_sidebar_configureItem": {
+      "message": "DéjàClick Options..."
+   },
+   "deja_sidebar_configureItemHint": {
+      "message": "Configure DéjàClick Options"
+   },
+   "deja_sidebar_confirmOverwriteRecording": {
+      "message": "Recording from this point will overwrite the rest of the events in the current script.\nNew script events will be appended and any unplayed events will be discarded.\n\nAre you sure you want to overwrite the script from this point on?"
+   },
+   "deja_sidebar_contentViewItem": {
+      "message": "Add ContentViews..."
+   },
+   "deja_sidebar_contentViewItemHint": {
+      "message": "Open the ContentViews dialog to add a ContentView"
+   },
+   "deja_sidebar_dashboardItem": {
+      "message": "Dashboard"
+   },
+   "deja_sidebar_dashboardItemHint": {
+      "message": "View your AlertSite dashboard"
+   },
+   "deja_sidebar_decorateButton": {
+      "message": "Add Validations"
+   },
+   "deja_sidebar_dejaClickPageItem": {
+      "message": "DéjàClick Home Page"
+   },
+   "deja_sidebar_dejaClickPageItemHint": {
+      "message": "Visit the DéjàClick Home Page"
+   },
+   "deja_sidebar_displayLevelAdvancedItem": {
+      "message": "Advanced"
+   },
+   "deja_sidebar_displayLevelAdvancedItemHint": {
+      "message": "Display advanced details"
+   },
+   "deja_sidebar_displayLevelBasicItem": {
+      "message": "Basic"
+   },
+   "deja_sidebar_displayLevelBasicItemHint": {
+      "message": "Display only basic details"
+   },
+   "deja_sidebar_displayLevelDiagnosticItem": {
+      "message": "Diagnostic"
+   },
+   "deja_sidebar_displayLevelDiagnosticItemHint": {
+      "message": "Display diagnostic details"
+   },
+   "deja_sidebar_displayLevelItem": {
+      "message": "Display Level"
+   },
+   "deja_sidebar_displayLevelItemHint": {
+      "message": "Control the amount of display details"
+   },
+   "deja_sidebar_downloadItem": {
+      "message": "Download Recording"
+   },
+   "deja_sidebar_downloadItemHint": {
+      "message": "Download your recording from AlertSite"
+   },
+   "deja_sidebar_encryptLocalItem": {
+      "message": "Encrypt Saved Files"
+   },
+   "deja_sidebar_encryptLocalItemHint": {
+      "message": "Encrypt locally saved script files"
+   },
+   "deja_sidebar_encryptRemoteQuery1": {
+      "message": "This recording contains data that can be encrypted.\n\nWould you like to encrypt your script?"
+   },
+   "deja_sidebar_encryptRemoteQuery2": {
+      "message": "This recording contains data that can be encrypted.\n\nEncryption was previously applied to this script when last uploaded.\nWould you still like this script to be encrypted?"
+   },
+   "deja_sidebar_eventProperties": {
+      "message": "Event $seq$ Properties",
+      "placeholders": {
+         "seq": {
+            "content": "$1"
+         }
+      }
+   },
+   "deja_sidebar_eventResults": {
+      "message": "Event $seq$ Results",
+      "placeholders": {
+         "seq": {
+            "content": "$1"
+         }
+      }
+   },
+   "deja_sidebar_freeTrialItem": {
+      "message": "Free Trial!"
+   },
+   "deja_sidebar_freeTrialItemHint": {
+      "message": "Sign Up Online - Try AlertSite FREE for 30 days"
+   },
+   "deja_sidebar_helpButton": {
+      "message": "Display Help Topics"
+   },
+   "deja_sidebar_helpForumItem": {
+      "message": "Help Forum"
+   },
+   "deja_sidebar_helpForumItemHint": {
+      "message": "DéjàClick Online Help Forum"
+   },
+   "deja_sidebar_helpTopicsItem": {
+      "message": "Help Topics"
+   },
+   "deja_sidebar_helpTopicsItemHint": {
+      "message": "DéjàClick Online Help Topics"
+   },
+   "deja_sidebar_highlightItem": {
+      "message": "Highlight"
+   },
+   "deja_sidebar_highlightItemHint": {
+      "message": "Highlight active element during replay"
+   },
+   "deja_sidebar_jsHelpButton": {
+      "message": "Help"
+   },
+   "deja_sidebar_jsHelpHint": {
+      "message": "You are now in \"document selection\" mode.\n\nClick anywhere in a frame or window to select it as the evaluation document for a JavaScript validation.\n\nTo exit this mode and resume record/replay, close the Validation toolbar either by clicking the Close [x] icon on the Validation toolbar or by clicking on the Validation icon on the main DejaClick toolbar again."
+   },
+   "deja_sidebar_jsSuggestLabel": {
+      "message": "Click in any frame or window to select the target document for a Javascript validation"
+   },
+   "deja_sidebar_jsValidationItem": {
+      "message": "Add javascript validations..."
+   },
+   "deja_sidebar_jsValidationItemHint": {
+      "message": "Open the Javascript Validation toolbar to add validations to this page"
+   },
+   "deja_sidebar_keywordHelpButton": {
+      "message": "Help"
+   },
+   "deja_sidebar_keywordHelpHint": {
+      "message": "You are now in \"keyword selection\" mode.\n\nMove your mouse around the page to see how the keyword dropdown will automatically suggest keywords or phrases to validate the page during replay.  Click on any suggested text item to create a new keyword validation, or select a range of text to have the page source for your selection used instead.\n\nOpen the keyword dropdown to display a list of all keywords created for the page.  You can select any keyword in the dropdown to edit or remove it.  You can also create keywords by typing the word or phrase directly into the keyword dropdown and pressing Enter.\n\nTo add a keyword with default options and without showing the Add Keyword Validation dialog, hold down the Ctrl key while clicking on a suggested keyword or while pressing Enter after typing a keyword into the dropdown.\n\nTo exit this mode and resume record/replay, close the Validation toolbar either by clicking the Close [x] icon on the Validation toolbar or by clicking on the Validation icon on the main DéjàClick toolbar again."
+   },
+   "deja_sidebar_keywordSuggestHint": {
+      "message": "(move mouse to suggest keywords)"
+   },
+   "deja_sidebar_keywordSuggestLabel": {
+      "message": "Click on a word or phrase on the page to use it as a keyword:"
+   },
+   "deja_sidebar_keywordValidationItem": {
+      "message": "Add keyword validations..."
+   },
+   "deja_sidebar_keywordValidationItemHint": {
+      "message": "Open the Keyword Validation toolbar to add validations to this page"
+   },
+   "deja_sidebar_learnMoreItem": {
+      "message": "Learn More"
+   },
+   "deja_sidebar_learnMoreItemHint": {
+      "message": "Learn more about AlertSite Monitoring"
+   },
+   "deja_sidebar_localCryptCancelled": {
+      "message": "Encryption cancelled.  Script was not saved.\n\nLocal script encryption can be enabled or disabled from the Configure Options toolbar menu.  You can also adjust other encryption settings from the Security tab of the DejaClick Options dialog, accessible from the Configure Options toolbar menu."
+   },
+   "deja_sidebar_loginButton": {
+      "message": "SignIn to your AlertSite monitoring account"
+   },
+   "deja_sidebar_loginItem": {
+      "message": "AlertSite SignIn"
+   },
+   "deja_sidebar_loginItemHint": {
+      "message": "SignIn to your AlertSite monitoring account"
+   },
+   "deja_sidebar_logoffItem": {
+      "message": "AlertSite Sign Out"
+   },
+   "deja_sidebar_logoffItemHint": {
+      "message": "SignOut from your AlertSite monitoring account"
+   },
+   "deja_sidebar_monitorButton": {
+      "message": "Remotely monitor, share and test your recorded scripts"
+   },
+   "deja_sidebar_monitoringStatusItem": {
+      "message": "Monitoring Status"
+   },
+   "deja_sidebar_monitoringStatusItemHint": {
+      "message": "View your AlertSite monitoring status"
+   },
+   "deja_sidebar_newVisitorItem": {
+      "message": "Simulate New Visitor"
+   },
+   "deja_sidebar_newVisitorItemHint": {
+      "message": "Simulate a first-time website visitor"
+   },
+   "deja_sidebar_noteAnnotateItem": {
+      "message": "Add Annotate Note"
+   },
+   "deja_sidebar_noteAnnotateItemHint": {
+      "message": "Create a new Annotate style Note"
+   },
+   "deja_sidebar_noteBalloonItem": {
+      "message": "Add Balloon Note"
+   },
+   "deja_sidebar_noteBalloonItemHint": {
+      "message": "Create a new Balloon style Note"
+   },
+   "deja_sidebar_notePlainItem": {
+      "message": "Add Plain Note"
+   },
+   "deja_sidebar_notePlainItemHint": {
+      "message": "Create a new Plain style Note"
+   },
+   "deja_sidebar_noteStickyItem": {
+      "message": "Add Sticky Note"
+   },
+   "deja_sidebar_noteStickyItemHint": {
+      "message": "Create a new Sticky style Note"
+   },
+   "deja_sidebar_noteThoughtItem": {
+      "message": "Add Thought Note"
+   },
+   "deja_sidebar_noteThoughtItemHint": {
+      "message": "Create a new Thought style Note"
+   },
+   "deja_sidebar_notifyWhenCompleteItem": {
+      "message": "Notify When Complete"
+   },
+   "deja_sidebar_notifyWhenCompleteItemHint": {
+      "message": "Display a prompt after Record/Replay completion"
+   },
+   "deja_sidebar_openButton": {
+      "message": "Open a recorded script"
+   },
+   "deja_sidebar_optionsButton": {
+      "message": "Configure Options"
+   },
+   "deja_sidebar_pauseButton": {
+      "message": "Pause replay"
+   },
+   "deja_sidebar_playButton": {
+      "message": "Begin replay"
+   },
+   "deja_sidebar_propertiesTab": {
+      "message": "Properties"
+   },
+   "deja_sidebar_quickStartGuideItem": {
+      "message": "Quickstart Guide"
+   },
+   "deja_sidebar_quickStartGuideItemHint": {
+      "message": "DéjàClick Quickstart Guide"
+   },
+   "deja_sidebar_recordButton": {
+      "message": "Begin recording"
+   },
+   "deja_sidebar_remoteCryptCancelled": {
+      "message": "Encryption cancelled.  Transaction was not uploaded.\n\nYou can adjust your remote encryption settings from the Security tab of the DejaClick Options dialog, accessible from the Configure Options toolbar menu."
+   },
+   "deja_sidebar_replayActionItem": {
+      "message": "Replay Next Action"
+   },
+   "deja_sidebar_replayActionItemHint": {
+      "message": "Step to and pause at the next action"
+   },
+   "deja_sidebar_replayAllItem": {
+      "message": "Replay All"
+   },
+   "deja_sidebar_replayAllItemHint": {
+      "message": "Replay all actions and events remaining"
+   },
+   "deja_sidebar_replayEventItem": {
+      "message": "Replay Next Event"
+   },
+   "deja_sidebar_replayEventItemHint": {
+      "message": "Step to and pause at the next event"
+   },
+   "deja_sidebar_replayFasterItem": {
+      "message": "Faster"
+   },
+   "deja_sidebar_replayFasterItemHint": {
+      "message": "Replay scripts at faster speed"
+   },
+   "deja_sidebar_replayModeItem": {
+      "message": "Replay Mode"
+   },
+   "deja_sidebar_replayModeItemHint": {
+      "message": "Adjust whether script will be replayed in steps"
+   },
+   "deja_sidebar_replayNormalItem": {
+      "message": "Normal"
+   },
+   "deja_sidebar_replayNormalItemHint": {
+      "message": "Replay scripts at normal speed"
+   },
+   "deja_sidebar_replayNotesItem": {
+      "message": "Replay with Notes"
+   },
+   "deja_sidebar_replayNotesItemHint": {
+      "message": "Show Notes during Replay"
+   },
+   "deja_sidebar_replaySlowerItem": {
+      "message": "Slower"
+   },
+   "deja_sidebar_replaySlowerItemHint": {
+      "message": "Replay scripts at slower speed"
+   },
+   "deja_sidebar_replaySpeedItem": {
+      "message": "Replay Speed"
+   },
+   "deja_sidebar_replaySpeedItemHint": {
+      "message": "Adjust replay speed for all scripts"
+   },
+   "deja_sidebar_replayUEItem": {
+      "message": "Replay for User Experience"
+   },
+   "deja_sidebar_replayUEItemHint": {
+      "message": "Capture user experience data during replay"
+   },
+   "deja_sidebar_reportsItem": {
+      "message": "View Reports"
+   },
+   "deja_sidebar_reportsItemHint": {
+      "message": "View your AlertSite performance reports"
+   },
+   "deja_sidebar_repositoryItem": {
+      "message": "Scripts Repository"
+   },
+   "deja_sidebar_repositoryItemHint": {
+      "message": "View your Scripts Repository"
+   },
+   "deja_sidebar_resultsTab": {
+      "message": "Results"
+   },
+   "deja_sidebar_saveButton": {
+      "message": "Save your recording as a script"
+   },
+   "deja_sidebar_scriptLoadFailure": {
+      "message": "Failed to load script $filename$.\n$error$",
+      "placeholders": {
+         "error": {
+            "content": "$2"
+         },
+         "filename": {
+            "content": "$1"
+         }
+      }
+   },
+   "deja_sidebar_scriptNotUriEncoded": {
+      "message": "Script file is not URI encoded.\nParsing problems may occur."
+   },
+   "deja_sidebar_scriptPassword": {
+      "message": "This script requires a password. Unable to import script."
+   },
+   "deja_sidebar_scriptProperties": {
+      "message": "Script Properties"
+   },
+   "deja_sidebar_scriptReadFailure": {
+      "message": "Failed to read file $filename$: $errorCode$",
+      "placeholders": {
+         "errorCode": {
+            "content": "$2"
+         },
+         "filename": {
+            "content": "$1"
+         }
+      }
+   },
+   "deja_sidebar_scriptResults": {
+      "message": "Script Results"
+   },
+   "deja_sidebar_scrollToItem": {
+      "message": "Scroll To"
+   },
+   "deja_sidebar_scrollToItemHint": {
+      "message": "Scroll to active element during replay"
+   },
+   "deja_sidebar_shareRecordingItem": {
+      "message": "Share Recording"
+   },
+   "deja_sidebar_shareRecordingItemHint": {
+      "message": "Share your recording with others"
+   },
+   "deja_sidebar_smartBearPageItem": {
+      "message": "SmartBear Home Page"
+   },
+   "deja_sidebar_smartBearPageItemHint": {
+      "message": "Visit the SmartBear Home Page"
+   },
+   "deja_sidebar_stopButton": {
+      "message": "Stop record/replay"
+   },
+   "deja_sidebar_subscriptProperties": {
+      "message": "Branch $seq$ Properties",
+      "placeholders": {
+         "seq": {
+            "content": "$1"
+         }
+      }
+   },
+   "deja_sidebar_subscriptResults": {
+      "message": "Branch $seq$ Results",
+      "placeholders": {
+         "seq": {
+            "content": "$1"
+         }
+      }
+   },
+   "deja_sidebar_testOnDemandButton": {
+      "message": "Begin Test on Demand"
+   },
+   "deja_sidebar_title": {
+      "message": "DéjàClick for Chrome™"
+   },
+   "deja_sidebar_uploadItem": {
+      "message": "Upload Recording"
+   },
+   "deja_sidebar_uploadItemHint": {
+      "message": "Upload your recording to AlertSite"
+   },
+   "deja_sidebar_useKeystrokesItem": {
+      "message": "Replay using keystrokes"
+   },
+   "deja_sidebar_useKeystrokesItemHint": {
+      "message": "Replay text input using keystrokes (override automatic detection)"
+   },
+   "deja_test_accountIdLabel": {
+      "message": "Account ID:"
+   },
+   "deja_test_accountTypeFree": {
+      "message": "Free"
+   },
+   "deja_test_accountTypeLabel": {
+      "message": "Account Type:"
+   },
+   "deja_test_browserLabel": {
+      "message": "Browser:"
+   },
+   "deja_test_cancelButton": {
+      "message": "Cancel"
+   },
+   "deja_test_captureFormatLabel": {
+      "message": "Capture Image Format:"
+   },
+   "deja_test_captureLevelLabel": {
+      "message": "Capture Level:"
+   },
+   "deja_test_captureSetLabel": {
+      "message": "Capture Set:"
+   },
+   "deja_test_changeUserHint": {
+      "message": "Change user login"
+   },
+   "deja_test_customerIdLabel": {
+      "message": "Customer ID:"
+   },
+   "deja_test_customerNameLabel": {
+      "message": "Customer Name:"
+   },
+   "deja_test_disabledValue": {
+      "message": "Disabled"
+   },
+   "deja_test_errorOnlyValue": {
+      "message": "Error Only"
+   },
+   "deja_test_expanderLabel": {
+      "message": "Options"
+   },
+   "deja_test_fullpageLabel": {
+      "message": "Fullpage:"
+   },
+   "deja_test_headersValue": {
+      "message": "HTTP Headers"
+   },
+   "deja_test_imagesValue": {
+      "message": "Images"
+   },
+   "deja_test_insecureConnection": {
+      "message": "Nonsecure Connection"
+   },
+   "deja_test_jpegValue": {
+      "message": "jpeg"
+   },
+   "deja_test_loadingMessage": {
+      "message": "Loading..."
+   },
+   "deja_test_locationsLabel": {
+      "message": "Locations:"
+   },
+   "deja_test_pngValue": {
+      "message": "png"
+   },
+   "deja_test_realuserLabel": {
+      "message": "Realuser: "
+   },
+   "deja_test_secureConnection": {
+      "message": "Secure Connection"
+   },
+   "deja_test_skipDialogHelpHint": {
+      "message": "Tip: You can reset this option on the General Preferences tab of the DéjàClick Options page"
+   },
+   "deja_test_skipDialogHelpLabel": {
+      "message": "(?)"
+   },
+   "deja_test_skipDialogLabel": {
+      "message": "Skip this dialog next time"
+   },
+   "deja_test_sourceValue": {
+      "message": "HTML Source"
+   },
+   "deja_test_testButton": {
+      "message": "Test"
+   },
+   "deja_test_testOptionsLabel": {
+      "message": "Replay Options"
+   },
+   "deja_test_timeoutLabel": {
+      "message": "Timeout After:"
+   },
+   "deja_test_timeoutValue": {
+      "message": "$seconds$ seconds",
+      "placeholders": {
+         "seconds": {
+            "content": "$1"
+         }
+      }
+   },
+   "deja_test_timeoutValue1": {
+      "message": "1 second"
+   },
+   "deja_test_title": {
+      "message": "Test On Demand"
+   },
+   "deja_test_userIdLabel": {
+      "message": "User:"
+   },
+   "deja_upload_accountIdLabel": {
+      "message": "Account ID:"
+   },
+   "deja_upload_accountTypeFree": {
+      "message": "Free"
+   },
+   "deja_upload_accountTypeLabel": {
+      "message": "Account Type:"
+   },
+   "deja_upload_browserMonitor": {
+      "message": "Browser:"
+   },
+   "deja_upload_cancelButton": {
+      "message": "Cancel"
+   },
+   "deja_upload_changeUser": {
+      "message": "Change user login"
+   },
+   "deja_upload_configureRepository": {
+      "message": "Please configure your script information:"
+   },
+   "deja_upload_configureTransactionMonitor": {
+      "message": "Please configure your transaction information:"
+   },
+   "deja_upload_customerIdLabel": {
+      "message": "Customer ID:"
+   },
+   "deja_upload_customerNameLabel": {
+      "message": "Customer Name:"
+   },
+   "deja_upload_descriptionRepository": {
+      "message": "Description:"
+   },
+   "deja_upload_enterScriptName": {
+      "message": "Please enter a script name."
+   },
+   "deja_upload_enterTransactionName": {
+      "message": "Please enter a transaction name."
+   },
+   "deja_upload_insecureConnection": {
+      "message": "Nonsecure Connection"
+   },
+   "deja_upload_intervalMonitor": {
+      "message": "Interval:"
+   },
+   "deja_upload_intervalValue": {
+      "message": "$minutes$ minutes",
+      "placeholders": {
+         "minutes": {
+            "content": "$1"
+         }
+      }
+   },
+   "deja_upload_loading": {
+      "message": "Loading..."
+   },
+   "deja_upload_loadingTransactions": {
+      "message": "[  loading account data...  ]"
+   },
+   "deja_upload_okButton": {
+      "message": "OK"
+   },
+   "deja_upload_planCodeMonitor": {
+      "message": "Plan Code:"
+   },
+   "deja_upload_realuser": {
+      "message": "Realuser: "
+   },
+   "deja_upload_replaceTransactionMonitor": {
+      "message": "Replace existing transaction"
+   },
+   "deja_upload_replaceTransactionRepository": {
+      "message": "Replace existing script"
+   },
+   "deja_upload_secureConnection": {
+      "message": "Secure Connection"
+   },
+   "deja_upload_selectMonitoringBrowser": {
+      "message": "Please select a browser type."
+   },
+   "deja_upload_selectMonitoringInterval": {
+      "message": "Please select a monitoring interval."
+   },
+   "deja_upload_selectMonitoringTimeout": {
+      "message": "Please select a timeout value."
+   },
+   "deja_upload_selectPlanCode": {
+      "message": "Please select a plan code from the list."
+   },
+   "deja_upload_selectScriptReplace": {
+      "message": "Please select a script to replace."
+   },
+   "deja_upload_selectTransactionToReplace": {
+      "message": "Please select a transaction to replace."
+   },
+   "deja_upload_timeoutMonitor": {
+      "message": "Timeout:"
+   },
+   "deja_upload_timeoutValue": {
+      "message": "$seconds$ seconds",
+      "placeholders": {
+         "seconds": {
+            "content": "$1"
+         }
+      }
+   },
+   "deja_upload_timeoutValue1": {
+      "message": "1 second"
+   },
+   "deja_upload_title": {
+      "message": "Upload Recording"
+   },
+   "deja_upload_transactionMonitor": {
+      "message": "Transaction"
+   },
+   "deja_upload_transactionNameMonitor": {
+      "message": "Transaction Name:"
+   },
+   "deja_upload_transactionNameRepository": {
+      "message": "Script Name:"
+   },
+   "deja_upload_transactionRepository": {
+      "message": "Script"
+   },
+   "deja_upload_transactionTypeLabel": {
+      "message": "Service Type"
+   },
+   "deja_upload_transactionTypeMonitor": {
+      "message": "Business Transaction Monitor"
+   },
+   "deja_upload_transactionTypeShare": {
+      "message": "Script Repository"
+   },
+   "deja_upload_uploadComplete": {
+      "message": "Upload complete!  (recording has $eventCount$ events)",
+      "placeholders": {
+         "eventCount": {
+            "content": "$1"
+         }
+      }
+   },
+   "deja_upload_userName": {
+      "message": "User:"
+   },
+   "deja_upload_warnMaxStepsUpload": {
+      "message": "This recording exceeds the number action steps for the selected plan code.\nContinue with upload?"
+   },
+   "deja_urlmask_actionType": {
+      "message": "Action Type"
+   },
+   "deja_urlmask_addDescription": {
+      "message": "Add a URL to be excluded from script processing:"
+   },
+   "deja_urlmask_addTitle": {
+      "message": "Add URL Exclusion"
+   },
+   "deja_urlmask_apply": {
+      "message": "OK"
+   },
+   "deja_urlmask_block": {
+      "message": "Block"
+   },
+   "deja_urlmask_blockTooltip": {
+      "message": "Block requests for matching URLs entirely"
+   },
+   "deja_urlmask_cancel": {
+      "message": "Cancel"
+   },
+   "deja_urlmask_editDescription": {
+      "message": "Edit the URL to be excluded from script processing:"
+   },
+   "deja_urlmask_editTitle": {
+      "message": "Edit URL Exclusion"
+   },
+   "deja_urlmask_ignore": {
+      "message": "Ignore"
+   },
+   "deja_urlmask_ignoreTooltip": {
+      "message": "Request URL but ignore procesing and reporting"
+   },
+   "deja_urlmask_matchType": {
+      "message": "Match Type:"
+   },
+   "deja_urlmask_options": {
+      "message": "Options"
+   },
+   "deja_urlmask_plainText": {
+      "message": "Plain Text"
+   },
+   "deja_urlmask_plainTextTooltip": {
+      "message": "Match using the specified text string"
+   },
+   "deja_urlmask_regExp": {
+      "message": "Regular Expression"
+   },
+   "deja_urlmask_regExpHelp": {
+      "message": "(?)"
+   },
+   "deja_urlmask_regExpHelpTooltip": {
+      "message": "What are regular expressions?"
+   },
+   "deja_urlmask_regExpTooltip": {
+      "message": "Match using the specified regular expression"
+   },
+   "deja_urlmask_remove": {
+      "message": "Remove"
+   },
+   "deja_urlmask_url": {
+      "message": "URL"
+   },
+   "deja_urlmask_urlTooltip": {
+      "message": "Enter a URL path or regular expression"
+   },
+   "deja_varReplaceLocID_description": {
+      "message": "Replace an existing location ID with another one:"
+   },
+   "deja_varReplaceLocID_labelExisting": {
+      "message": "Replace:"
+   },
+   "deja_varReplaceLocID_labelNew": {
+      "message": "With:"
+   },
+   "deja_varReplaceLocID_placeholderExising": {
+      "message": "Select location ID..."
+   },
+   "deja_varReplaceLocID_title": {
+      "message": "Replace Location ID:"
+   },
+   "deja_varToken_common_increment": {
+      "message": "Increment:"
+   },
+   "deja_varToken_dataset_startColumn_label": {
+      "message": "Start column:"
+   },
+   "deja_varToken_dataset_startRow_label": {
+      "message": "Start row:"
+   },
+   "deja_varToken_datetimeFormatHint": {
+      "message": "(right-click to insert format specifiers)"
+   },
+   "deja_varToken_datetime_0_11": {
+      "message": "0...11"
+   },
+   "deja_varToken_datetime_0_23": {
+      "message": "0...23"
+   },
+   "deja_varToken_datetime_1_12": {
+      "message": "1...12"
+   },
+   "deja_varToken_datetime_1_24": {
+      "message": "1...24"
+   },
+   "deja_varToken_datetime_2digitsFixed": {
+      "message": "2 digits fixed"
+   },
+   "deja_varToken_datetime_4digitsFixed": {
+      "message": "4 digits fixed"
+   },
+   "deja_varToken_datetime_ampm": {
+      "message": "AM/PM"
+   },
+   "deja_varToken_datetime_dayAbbreviation": {
+      "message": "Abbreviation"
+   },
+   "deja_varToken_datetime_dayName": {
+      "message": "Name"
+   },
+   "deja_varToken_datetime_dayOfMonth": {
+      "message": "Day of month"
+   },
+   "deja_varToken_datetime_dayOfWeek": {
+      "message": "Day of week"
+   },
+   "deja_varToken_datetime_days_label": {
+      "message": "Days"
+   },
+   "deja_varToken_datetime_hours": {
+      "message": "Hours"
+   },
+   "deja_varToken_datetime_hours_label": {
+      "message": "Hours"
+   },
+   "deja_varToken_datetime_label": {
+      "message": "Format:"
+   },
+   "deja_varToken_datetime_minutes": {
+      "message": "Minutes"
+   },
+   "deja_varToken_datetime_minutes_label": {
+      "message": "Minutes"
+   },
+   "deja_varToken_datetime_month": {
+      "message": "Month"
+   },
+   "deja_varToken_datetime_seconds": {
+      "message": "Seconds"
+   },
+   "deja_varToken_datetime_seconds_label": {
+      "message": "Seconds"
+   },
+   "deja_varToken_datetime_year": {
+      "message": "Year"
+   },
+   "deja_varToken_descriptionAdd": {
+      "message": "Add a new token to this variable:"
+   },
+   "deja_varToken_descriptionEdit": {
+      "message": "Edit the token to this variable:"
+   },
+   "deja_varToken_javascript_tooltip": {
+      "message": "Must evaluate to a string value"
+   },
+   "deja_varToken_labelLocationID": {
+      "message": "Location ID:"
+   },
+   "deja_varToken_labelTypeSelection": {
+      "message": "Type:"
+   },
+   "deja_varToken_legendLimitTo": {
+      "message": "Limit token to"
+   },
+   "deja_varToken_legendOffset": {
+      "message": "Offset"
+   },
+   "deja_varToken_legendParameters": {
+      "message": "Parameters"
+   },
+   "deja_varToken_numberAutoInc_start": {
+      "message": "Start value:"
+   },
+   "deja_varToken_numberRandom_maxLength": {
+      "message": "Max value:"
+   },
+   "deja_varToken_numberRandom_minLength": {
+      "message": "Min value:"
+   },
+   "deja_varToken_textRandom_maxLength": {
+      "message": "Max length:"
+   },
+   "deja_varToken_textRandom_minLength": {
+      "message": "Min length:"
+   },
+   "deja_varToken_textStatic_label": {
+      "message": "Value:"
+   },
+   "deja_varToken_titleAdd": {
+      "message": "Add Token"
+   },
+   "deja_varToken_titleEdit": {
+      "message": "Edit Token"
+   },
+   "deja_varToken_type_datasetValue": {
+      "message": "Dataset value"
+   },
+   "deja_varToken_type_datetimeRelative": {
+      "message": "Relative date/time"
+   },
+   "deja_varToken_type_javascript": {
+      "message": "Javascript code"
+   },
+   "deja_varToken_type_location": {
+      "message": "Replay location"
+   },
+   "deja_varToken_type_numberAutoIncrement": {
+      "message": "Auto increment"
+   },
+   "deja_varToken_type_numberRandom": {
+      "message": "Random number"
+   },
+   "deja_varToken_type_textRandom": {
+      "message": "Random text"
+   },
+   "deja_varToken_type_textStatic": {
+      "message": "Static text"
+   },
+   "deja_variableSelector_addVariable": {
+      "message": "Create a new script variable"
+   },
+   "deja_variableSelector_description": {
+      "message": "A description of the currently selected script variable"
+   },
+   "deja_variableSelector_editVariable": {
+      "message": "Edit selected script variable"
+   },
+   "deja_variableSelector_useVariable": {
+      "message": "Use script variable"
+   },
+   "deja_variables_description_add": {
+      "message": "Add a custom variable to this script:"
+   },
+   "deja_variables_description_edit": {
+      "message": "Edit the custom variable for this script:"
+   },
+   "deja_variables_errDoubleName": {
+      "message": "A script variable with this name already exists. Please choose a different name."
+   },
+   "deja_variables_errInvalidValue": {
+      "message": "Unable to populate script variable: \u003Cmissing value>"
+   },
+   "deja_variables_name": {
+      "message": "Name:"
+   },
+   "deja_variables_preview": {
+      "message": "Preview..."
+   },
+   "deja_variables_previewVariable": {
+      "message": "Variable preview: \n\n"
+   },
+   "deja_variables_stickyValue": {
+      "message": "Calculate variable only once (sticky value)"
+   },
+   "deja_variables_title_add": {
+      "message": "Add Script Variable"
+   },
+   "deja_variables_title_edit": {
+      "message": "Edit Script Variable"
+   },
+   "deja_variables_tokensDescription": {
+      "message": "Script variables are constructed from one or more tokens"
+   },
+   "extDescription": {
+      "description": "Description of the extension.",
+      "message": "Record and replay in your browser."
+   },
+   "extName": {
+      "description": "Extension name.",
+      "message": "DéjàClick for Chrome™"
+   }
+}

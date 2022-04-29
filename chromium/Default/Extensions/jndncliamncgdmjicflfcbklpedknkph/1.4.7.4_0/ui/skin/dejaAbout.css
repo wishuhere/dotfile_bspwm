@@ -1,0 +1,25 @@
+body {
+    margin: 0px;
+}
+
+section {
+    padding: 5px;
+}
+
+#logoImg {
+    padding: 10px;
+}
+
+.description {
+    font-weight: bold;
+    color: #909090;
+}
+
+.version {
+    font-weight: bold;
+    color: #909090;
+}
+
+.buildid {
+    color: #909090;
+}

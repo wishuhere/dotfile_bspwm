@@ -1,0 +1,113 @@
+/*
+* DejaClick for Chrome by SmartBear Software.
+* Copyright (C) 2006-2013 SmartBear Software.  All Rights Reserved.
+*
+* The contents of this file are subject to the End User License Agreement.
+* Software distributed under the License is distributed on an "AS IS" basis,
+* WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
+* for the specific language governing rights and limitations under the
+* License.
+*/
+
+span.processing-icon {
+   margin: 2px 4px 6px 6px;
+   min-width: 32px;
+   min-height: 32px;
+   vertical-align: middle;
+   background-image: url(images/dc_results_pending.gif);
+   display: inline-block;
+}
+
+.resultsLabel {
+   font-family: sans-serif;
+   font-weight: bold;
+   font-size: 12px;
+   color: #2D5982;
+}
+
+.resultsData {
+   font-family: sans-serif;
+   font-weight: normal;
+   font-size: 12px;
+   color: black;
+}
+
+.contextInfo div {
+   overflow-x: hidden;
+   text-overflow: ellipsis;
+}
+
+#replayResults {
+   border: 1px solid #D0D0BF;
+   border-radius: 5px;
+   padding-top: 3px;
+   padding-bottom: 6px;
+}
+
+.outerBox {
+   margin-top: 0px;
+   margin-bottom: 12px;
+}
+
+.innerBox {
+   margin: 12px 6px 2px 12px;
+}
+
+.resultsTitle {
+   background-image: url(images/dc_resulttitle_bg.png);
+   background-repeat: repeat-x;
+   font-family: sans-serif;
+   font-weight: bold;
+   font-size: 12px;
+   color: #2D5982;
+   text-shadow: 1px 1px 1px white;
+   margin: 0px 0px 6px 0px;
+   padding: 0px 0px 3px 5px;
+}
+
+#statusMessage {
+   font-size: larger;
+   font-weight: bold;
+}
+
+#statusImage {
+   margin: 0px 6px 2px 6px;
+   min-width: 32px;
+   min-height: 32px;
+   background-image: url(images/dc_results_nodata.png);
+   display: inline-block;
+   float: right;
+}
+#statusImage[statustype="0"] {
+   background-image: url(images/dc_results_success.png);
+}
+#statusImage[statustype="1"] {
+   background-image: url(images/dc_results_warning.png);
+}
+#statusImage[statustype="2"] {
+   background-image: url(images/dc_results_error.png);
+}
+
+.textLink {
+   margin-right: 12px;
+   font-family: sans-serif;
+   font-weight: normal;
+   font-size: 12px;
+   color: #0000FF;
+   text-decoration: underline !important;
+   cursor: pointer;
+}
+
+hr.separator {
+   margin-top: 0px;
+   margin-bottom: 0px;
+   padding-bottom: 0px;
+}
+
+#replayedOn {
+   font-family: sans-serif;
+   font-weight: normal;
+   font-size: x-small;
+   color: #909090;
+   margin-left: 4px;
+}

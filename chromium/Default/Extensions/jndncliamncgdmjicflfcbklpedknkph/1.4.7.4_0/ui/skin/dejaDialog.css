@@ -1,0 +1,28 @@
+.dialog-type-selection {
+    text-align: right;
+}
+.dialog-type-list {
+    box-sizing: border-box;
+    width: 50%;
+    padding: 2px 5px;
+}
+
+.input-selection label {
+    max-width: 25%;
+    min-width: 15%;
+}
+.input-selection input {
+    box-sizing: border-box;
+    width: 70%
+}
+
+.replay-options .form-field-left {
+    width: 45%;
+}
+.replay-options label {
+    max-width: 60%;
+}
+.replay-options input {
+    box-sizing: border-box;
+    width: 30%;
+}
