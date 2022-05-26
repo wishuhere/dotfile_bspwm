@@ -1,4 +1,5 @@
 #!/bin/bash
+wal -i $HOME/.config/wallpaper &
 
 x=$(xrandr --listmonitors | grep "+"|wc -l)
 

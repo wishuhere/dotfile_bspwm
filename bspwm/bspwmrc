@@ -8,7 +8,7 @@ ibus-daemon -rdxR
 picom &
 
 #wallpaper and theme
-wal -i $HOME/.config/wallpaper &
+#wal -i $HOME/.config/wallpaper &
 . "$HOME/.cache/wal/colors.sh"
 feh --bg-scale $HOME/.config/wal/wal
 
