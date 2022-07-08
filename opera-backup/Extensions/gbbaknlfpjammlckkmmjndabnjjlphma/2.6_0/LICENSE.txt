@@ -1,0 +1,316 @@
+BEHOLDER CORPORATION (DBA "FOXYPROXY")
+Software License Agreement
+
+NOTICE TO USER: PLEASE
+READ THIS AGREEMENT CAREFULLY. BY COPYING, INSTALLING OR USING ALL OR ANY
+PORTION OF THE SOFTWARE YOU ACCEPT ALL THE TERMS AND CONDITIONS OF THIS
+AGREEMENT, INCLUDING, IN PARTICULAR THE LIMITATIONS ON: USE CONTAINED IN
+SECTION 2; TRANSFERABILITY IN SECTION 4; WARRANTY IN SECTIONS 6 AND 7;
+LIABILITY IN SECTION 8; AND SPECIFIC PROVISIONS AND EXCEPTIONS IN SECTION 14.
+YOU AGREE THAT THIS AGREEMENT IS LIKE ANY WRITTEN NEGOTIATED AGREEMENT SIGNED
+BY YOU. THIS AGREEMENT IS ENFORCEABLE AGAINST YOU AND ANY LEGAL ENTITY THAT
+OBTAINED THE SOFTWARE AND ON WHOSE BEHALF IT IS USED: FOR EXAMPLE, IF
+APPLICABLE, YOUR EMPLOYER. IF YOU DO NOT AGREE TO THE TERMS OF THIS AGREEMENT,
+DO NOT USE THE SOFTWARE.
+
+YOU MAY HAVE ANOTHER WRITTEN AGREEMENT DIRECTLY WITH BEHOLDER CORPORATION (E.G., A VOLUME
+LICENSE AGREEMENT) THAT SUPPLEMENTS OR SUPERSEDES ALL OR PORTIONS OF THIS
+AGREEMENT.
+
+BEHOLDER CORPORATION AND ITS
+SUPPLIERS OWN ALL INTELLECTUAL PROPERTY IN THE SOFTWARE. THE SOFTWARE IS
+LICENSED, NOT SOLD. BEHOLDER CORPORATION PERMITS YOU TO COPY, DOWNLOAD, INSTALL, USE, OR
+OTHERWISE BENEFIT FROM THE FUNCTIONALITY OR INTELLECTUAL PROPERTY OF THE
+SOFTWARE ONLY IN ACCORDANCE WITH THE TERMS OF THIS AGREEMENT.
+
+THE
+SOFTWARE MAY INCLUDE PRODUCT ACTIVATION AND OTHER TECHNOLOGY DESIGNED TO
+PREVENT UNAUTHORIZED USE AND COPYING, AND TECHNOLOGY TO HELP YOU MANAGE
+LICENSES. SUCH TECHNOLOGY MAY PREVENT YOUR USE OF THE SOFTWARE IF YOU DO NOT
+FOLLOW THE ACTIVATION, INSTALLATION, AND/OR LICENSE MANAGEMENT PROCESS
+DESCRIBED IN THE SOFTWARE AND DOCUMENTATION. VISIT http://getfoxyproxy.org
+FOR INFORMATION ABOUT PRODUCT ACTIVATION AND LICENSE MANAGEMENT.
+
+1.
+Definitions.
+
+"BEHOLDER CORPORATION" and "FOXYPROXY" means BEHOLDER CORPORATION, a Wyoming corporation,
+1731 1st Avenue, Suite 27799, New York, New York 10128
+
+"Computer" means a computer device
+that accepts information in digital or similar form and manipulates it for a
+specific result based on a sequence of instructions.
+
+"Permitted Number" means one (1) unless
+otherwise indicated under a valid license (e.g., volume license) granted by
+BEHOLDER CORPORATION
+
+"Software" means (a) all of the information with which this agreement
+is provided, including but not limited to (i) BEHOLDER CORPORATION or third party software
+files and other computer information; (ii) images, sounds, graphics and other
+works bundled with BEHOLDER CORPORATION software
+and not obtained from BEHOLDER CORPORATION or another party through a separate service
+("Content Files"); (iii) related explanatory written materials and files
+("Documentation"); and (b) any modified versions and copies of,
+and upgrades, updates and additions to, such information, provided to you by
+BEHOLDER CORPORATION at any time, to the extent not provided under a separate agreement
+(collectively, "Updates").
+
+2. Software License. If you obtained the Software
+from BEHOLDER CORPORATION or one of its authorized licensees and as long as you comply with
+the terms of this agreement, BEHOLDER CORPORATION grants you a non-exclusive license to use
+the Software in the manner and for the purposes described in the Documentation,
+as further set forth below. See Section 14 for specific provisions related to
+the use of certain products and components.
+
+2.1 General Use. You may install and use one copy of the Software on up to the
+Permitted Number of your Computers.
+
+2.6 Backup Copy. You may make a
+reasonable number of backup copies of the Software, provided your backup copies
+are not installed or used for other than archival purposes.
+
+3. Intellectual Property Ownership. The Software and any
+authorized copies that you make are the intellectual property of and are owned
+by BEHOLDER CORPORATION and its suppliers. The structure, organization
+and code of the Software are the valuable trade secrets and confidential
+information of BEHOLDER CORPORATION and its suppliers. The Software is
+protected by law, including but not limited to the copyright laws of the United
+States and other countries, and by international treaty provisions. Except as
+expressly stated herein, this agreement does not grant you any intellectual
+property rights in the Software and all rights not expressly granted are
+reserved by BEHOLDER CORPORATION and its suppliers.
+
+4. Restrictions.
+
+4.1 Notices. You may
+not copy the Software except as set forth in Section 2 and 14. Any permitted
+copy of the Software that you make must contain the same copyright and other
+proprietary notices that appear on or in the Software.
+
+4.2 No Modifications.
+Except as permitted in Section 14, you may not modify, adapt or translate the
+Software. You may not reverse engineer, decompile, disassemble or otherwise
+attempt to discover the source code of the Software.
+
+4.3 No Unbundling. The Software
+may include various applications, utilities and components, may support
+multiple platforms and languages and may be provided to you on multiple media
+or in multiple copies. Nonetheless, the Software is designed and provided to
+you as a single product to be used as a single product on Computers as
+permitted by Sections 2 and 14. You are not required to use all component parts
+of the Software, but you may not unbundle the component parts of the Software
+for use on different Computers. You may not unbundle or repackage the Software
+for distribution, transfer or resale. See Section 14 for specific exceptions to
+this Section.4.3.
+
+4.4 No Transfer. YOU MAY NOT RENT, LEASE, SELL, SUBLICENSE,
+ASSIGN OR TRANSFER YOUR RIGHTS IN THE SOFTWARE, OR AUTHORIZE ANY PORTION OF THE
+SOFTWARE TO BE COPIED ONTO ANOTHER INDIVIDUAL OR LEGAL ENTITY'S COMPUTER EXCEPT
+AS MAY BE PERMITTED HEREIN.
+
+5. Updates.
+If the Software is an upgrade or update to a previous version of BEHOLDER CORPORATION
+software, you must possess a valid license to such previous version in order to
+use such upgrade or update. After you install such update or upgrade, you may
+continue to use any such previous version in accordance with its end-user
+license agreement only if (a) the upgrade or update and all previous versions
+are installed on the same device, (b) the previous versions or copies thereof
+are not transferred to another party or device unless all copies of the update
+or upgrade are also transferred to such party or device and (c) you acknowledge
+that any obligation BEHOLDER CORPORATION may have to support the previous version(s) may be
+ended upon the availability of the upgrade or update. No other use of the
+previous version(s) is permitted after installation of an update or upgrade.
+Upgrades and updates may be licensed to you by BEHOLDER CORPORATION with additional or
+different terms.
+
+
+7. DISCLAIMER. THE
+FOREGOING LIMITED WARRANTY IS THE ONLY WARRANTY MADE BY BEHOLDER CORPORATION AND ITS
+AFFILIATES AND STATES THE SOLE AND EXCLUSIVE REMEDIES FOR BEHOLDER CORPORATION, ITS AFFILIATES
+OR SUPPLIERS' BREACH OF WARRANTY. EXCEPT FOR THE FOREGOING LIMITED WARRANTY AND
+ANY WARRANTY, CONDITION, REPRESENTATION OR TERM TO THE EXTENT THE SAME CANNOT
+OR MAY NOT BE EXCLUDED OR LIMITED BY LAW APPLICABLE TO YOU IN YOUR
+JURISDICTION, BEHOLDER CORPORATION AND ITS AFFILIATES AND SUPPLIERS PROVIDE THE SOFTWARE AND
+ACCESS TO ANY WEBSITES, ONLINE SERVICES AND CD SERVICES AS-IS AND WITH ALL
+FAULTS AND EXPRESSLY DISCLAIM ALL OTHER WARRANTIES, CONDITIONS, REPRESENTATIONS
+OR TERMS, EXPRESS OR IMPLIED, WHETHER BY STATUTE, COMMON LAW, CUSTOM, USAGE OR
+OTHERWISE AS TO ANY MATTER, INCLUDING BUT NOT LIMITED TO PERFORMANCE, SECURITY,
+NON-INFRINGEMENT OF THIRD PARTY RIGHTS, INTEGRATION, MERCHANTABILITY, QUIET
+ENJOYMENT, SATISFACTORY QUALITY OR FITNESS FOR ANY PARTICULAR PURPOSE. THIS
+DISCLAIMER OF WARRANTY MAY NOT BE VALID IN SOME STATES. The provisions of
+Sections 7 and Section 8 will survive the termination of this agreement,
+howsoever caused, but this will not imply or create any continued right to use
+the Software after termination of this Agreement.
+
+8. LIMITATION OF LIABILITY.
+EXCEPT FOR THE EXCLUSIVE REMEDY SET FORTH ABOVE AND AS OTHERWISE PROVIDED IN
+SECTION 14, IN NO EVENT WILL BEHOLDER CORPORATION OR ITS AFFILIATES OR SUPPLIERS BE LIABLE TO
+YOU FOR ANY LOSS, DAMAGES, CLAIMS OR COSTS WHATSOEVER INCLUDING ANY
+CONSEQUENTIAL, INDIRECT OR INCIDENTAL DAMAGES, ANY LOST PROFITS OR LOST
+SAVINGS, ANY DAMAGES RESULTING FROM BUSINESS INTERRUPTION, PERSONAL INJURY OR
+FAILURE TO MEET ANY DUTY OF CARE, OR CLAIMS BY A THIRD PARTY, EVEN IF A FOXYPROXY
+REPRESENTATIVE HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH LOSS, DAMAGES,
+CLAIMS OR COSTS. THE FOREGOING LIMITATIONS AND EXCLUSIONS APPLY TO THE EXTENT
+PERMITTED BY APPLICABLE LAW IN YOUR JURISDICTION. BEHOLDER CORPORATION'S AGGREGATE LIABILITY
+AND THAT OF ITS AFFILIATES AND SUPPLIERS UNDER OR IN CONNECTION WITH THIS
+AGREEMENT WILL BE LIMITED TO THE AMOUNT PAID FOR THE SOFTWARE, IF ANY. THIS
+LIMITATION WILL APPLY EVEN IN THE EVENT OF A FUNDAMENTAL OR MATERIAL BREACH OR
+A BREACH OF THE FUNDAMENTAL OR MATERIAL TERMS OF THIS AGREEMENT. THIS
+LIMITATION OF LIABILITY MAY NOT BE VALID IN SOME STATES.
+
+9.
+Export Rules. You agree that the Software will not be shipped, transferred or
+exported into any country or used in any manner prohibited by the United States
+Export Administration Act or any other export laws, restrictions or regulations
+(collectively the "Export Laws"). In addition, if the Software is identified as
+an export controlled item under the Export Laws, you represent and warrant that
+you are not a citizen of, or located within, an embargoed or otherwise
+restricted nation (including without limitation Iran, Syria, Sudan, Libya, Cuba
+and North Korea) and that you are not otherwise prohibited under the Export
+Laws from receiving the Software. All rights to use the Software are granted on
+condition that such rights are forfeited if you fail to comply with the terms
+of this agreement.
+
+10. Governing Law. This agreement will be governed by and
+construed in accordance with the substantive laws in force in: the State of
+Massachusetts. The court of Middlesex County shall
+have non-exclusive jurisdiction over all disputes relating to this
+agreement. This agreement will not be governed by the conflict of law rules of
+any jurisdiction or the United Nations Convention on Contracts for the
+International Sale of Goods, the application of which is expressly
+excluded.
+
+11. General Provisions. If any part of this agreement is found void
+and unenforceable, it will not affect the validity of the balance of this
+agreement, which will remain valid and enforceable according to its terms. This
+agreement will not prejudice the statutory rights of any party dealing as a
+consumer. For example, for consumers in New Zealand who obtain the Software for
+personal, domestic or household use (not business purposes), this agreement is
+subject to the Consumer Guarantees Act. This agreement may only be modified by
+a writing signed by an authorized officer of BEHOLDER CORPORATION. The English version of this
+agreement will be the version used when interpreting or construing this
+agreement. This is the entire agreement between BEHOLDER CORPORATION and you relating to the
+Software and it supersedes any prior representations, discussions,
+undertakings, communications or advertising relating to the Software.
+
+13. Compliance with Licenses. If you are a business, company or
+organization, you agree that upon request from BEHOLDER CORPORATION or its authorized
+representative you will within thirty (30) days fully document and certify that
+use of any and all BEHOLDER CORPORATION software at the time of the request is in conformity
+with your valid licenses from BEHOLDER CORPORATION.
+
+14. Specific Provisions and Exceptions.
+This section sets forth specific provisions related to certain products and
+components of the Software as well as limited exceptions to the above terms and
+conditions. To the extent that any provision in this section is in conflict
+with any other term or condition in this agreement, this section will supersede
+such other term or condition.
+
+14.1 Limited Warranty for Users Residing in
+Germany or Austria. If you obtained the Software in Germany or Austria, and you
+usually reside in such country, then Section 6 does not apply; instead, BEHOLDER CORPORATION
+warrants that the Software provides the functionalities set forth in the
+Documentation (the "agreed upon functionalities") for the limited warranty
+period following receipt of the Software when used on the recommended hardware
+configuration. As used in this Section, "limited warranty period" means one (1)
+year if you are a business user and two (2) years if you are not a business
+user. Non-substantial variation from the agreed upon functionalities will not
+and does not establish any warranty rights. THIS LIMITED WARRANTY DOES NOT
+APPLY TO SOFTWARE PROVIDED TO YOU FREE OF CHARGE, FOR EXAMPLE, UPDATES,
+PRE-RELEASE, TRYOUT, STARTER, PRODUCT SAMPLER AND NOT FOR RESALE (NFR) COPIES
+OF SOFTWARE, OR TO FONT SOFTWARE CONVERTED INTO OTHER FORMATS, WEB SITES,
+ONLINE SERVICES, CD SERVICES OR SOFTWARE THAT HAS BEEN ALTERED BY YOU, TO THE
+EXTENT SUCH ALTERATION CAUSED A DEFECT. To make a warranty claim, during the
+limited warranty period you must return, at our expense, the Software and proof
+of purchase to the location where you obtained it. If the functionalities of
+the Software vary substantially from the agreed upon functionalities, BEHOLDER CORPORATION is
+entitled -- by way of re-performance and at its own discretion -- to repair or
+replace the Software. If this fails, you are entitled to a reduction of the
+purchase price (reduction) or to cancel the purchase agreement (rescission).
+For further warranty information, please contact the BEHOLDER CORPORATION Customer Support
+Department.
+
+14.2 Limitation of Liability for Users Residing in Germany and Austria.
+
+14.2.1 If you obtained the Software in Germany or Austria, and you
+usually reside in such country, then Section 8 does not apply. Instead, subject
+to the provisions in Section 14.2.2, BEHOLDER CORPORATION and its affiliates' statutory
+liability for damages will be limited as follows: (i) BEHOLDER CORPORATION and its affiliates
+will be liable only up to the amount of damages as typically foreseeable at the
+time of entering into the purchase agreement in respect of damages caused by a
+slightly negligent breach of a material contractual obligation and (ii) BEHOLDER CORPORATION
+and its affiliates will not be liable for damages caused by a slightly
+negligent breach of a non-material contractual obligation.
+
+14.2.2 The
+aforesaid limitation of liability will not apply to any mandatory statutory
+liability, in particular, to liability under the German Product Liability Act,
+liability for assuming a specific guarantee or liability for culpably caused
+personal injuries.
+
+14.2.3 You are required to take all reasonable measures to
+avoid and reduce damages, in particular to make back-up copies of the Software
+and your computer data subject to the provisions of this agreement.
+
+14.3
+Pre-release Software Additional Terms. If the Software is pre-commercial
+release or beta software ("Pre-release Software"), then this Section applies.
+The Pre-release Software is a pre-release version, does not represent final
+product from BEHOLDER CORPORATION, and may contain bugs, errors and other problems that could
+cause system or other failures and data loss. BEHOLDER CORPORATION may never commercially
+release the Pre-release Software. If you received the Pre-release Software
+pursuant to a separate written agreement, your use of the Software
+is also governed by such agreement. You will return or destroy all copies of
+Pre-release Software upon request by BEHOLDER CORPORATION or upon BEHOLDER CORPORATION's commercial release
+of such Software. YOUR USE OF PRE-RELEASE SOFTWARE IS AT YOUR OWN RISK. SEE
+SECTIONS 7 and 8 FOR WARRANTY DISCLAIMERS AND LIABILITY LIMITATIONS WHICH
+GOVERN PRE-RELEASE SOFTWARE.
+
+14.4 Tryout, Product Sampler, NFR, Additional
+Terms. If the Software is tryout, starter, product sampler, or NFR software
+("Tryout Software"), then the following Section applies. The Tryout Software
+may contain limited functionality and is to be used for demonstration and
+evaluation purposes only and not for your commercial purposes. YOUR USE OF
+TRYOUT SOFTWARE IS AT YOUR OWN RISK. SEE SECTIONS 7 and 8 FOR WARRANTY
+DISCLAIMERS AND LIABILITY LIMITATIONS WHICH GOVERN TRYOUT SOFTWARE.
+
+14.5 TimeOut Software. If the Software is a timeout version then it will cease
+operations after a designated period of time or number of launches following
+installation. The license hereunder will terminate after such period or number
+of launches unless extended by BEHOLDER CORPORATION upon your acquisition of a full retail
+license.
+
+14.8 Online Services.
+
+14.8.1 The Software may rely upon or
+facilitate your access to websites maintained by BEHOLDER CORPORATION or its affiliates or
+third parties offering goods, information, software and services
+("Online Services"). Your access to and use of any
+website or online services is governed by the terms, conditions, disclaimers
+and notices found on such site or otherwise associated with such services.
+BEHOLDER CORPORATION may at any time, for any reason, modify or discontinue the availability
+of any website and Online Services.
+
+14.8.2 BEHOLDER CORPORATION does not control, endorse or
+accept responsibility for websites or Online Services offered by third parties.
+Any dealings between you and any third party in connection with a website or
+Online Services, including delivery of and payment for goods and services and
+any other terms, conditions, warranties or representations associated with such
+dealings, are solely between you and such third party.
+
+14.8.3 EXCEPT AS
+EXPRESSLY AGREED BY BEHOLDER CORPORATION OR ITS AFFILIATES OR A THIRD PARTY IN A SEPARATE
+AGREEMENT, YOUR USE OF WEBSITES AND ONLINE SERVICES IS AT YOUR OWN RISK UNDER
+THE WARRANTY AND LIABILITY LIMITATIONS OF SECTIONS 7 AND 8.
+
+If you have any questions regarding this
+agreement or if you wish to request any information from BEHOLDER CORPORATION please use the
+address and contact information included with this product.
+
+GeoShift, IPmatic, FoxyProxy, FoxyProxy, FoxyProxy Plus, FoxyProxy Pro, and FoxyProxy Professional
+are either the registered trademarks or trademarks of BEHOLDER CORPORATION in the
+United States and/or other countries. All other trademarks are the property of
+their respective owners.
+
+***

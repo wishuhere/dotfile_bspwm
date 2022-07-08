@@ -1,0 +1,23 @@
+{
+   "background": {
+      "persistent": true,
+      "scripts": [ "background.js" ]
+   },
+   "browser_action": {
+      "default_icon": "img/icon.png",
+      "default_popup": "popup.html"
+   },
+   "description": "Change your proxies with one click",
+   "icons": {
+      "128": "img/icon128.png",
+      "16": "img/icon.png",
+      "48": "img/icon48.png"
+   },
+   "incognito": "spanning",
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAhPlaP7Az+MiuCb5Gd3ODdXOMtb6tvq2okMIb73KIP4tvKmV4F7y2P4GfH+yKd7/qWe4fkGjDngdtEg0/BsfS6kAoRnXu2Cmm/Tq0huOFA7BfnSF+jmNMmZU1l8mR+Y2mZygYakGwLgvWFVXAKlh0ZNEKf626kpP2e7/Bw3TYO4NHeneGvnZVYs6XID3SuEO8JbKGjaVq+/VxImJw+WfD1ELcEX2kbGd0Czcs+uqc9fQnqId7gyIHVpB2S8FFPxVMXlUUqR+CYwoyVrtGby7ieq2Vmv9/6ywyBnRxyhareaAgyPNoQP1/0PeRtP1lxomiF6hyd1KqTR543BCIWrMTYQIDAQAB",
+   "manifest_version": 2,
+   "name": "BP Proxy Switcher",
+   "permissions": [ "storage", "proxy", "privacy", "notifications", "webRequest", "webRequestBlocking", "\u003Call_urls>", "tabs", "browsingData", "contextMenus" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "4.0.5"
+}

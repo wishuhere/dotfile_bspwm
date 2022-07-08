@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+
+    <link rel="stylesheet" href="../skin/jquery-ui.css"></link>
+    <script src="jquery.js"></script>
+    <script src="jquery-ui.js"></script>
+
+    <link rel="stylesheet" href="../skin/styles/style.css">
+    <script src="dejaUi.js"></script>
+    <script src="dejaVariableSelector.js"></script>
+    <script src="dejaDisplayLevelSelector.js"></script>
+    <script src="dejaKeyword.js"></script>
+    <script src="dejaAccordion.js"></script>
+
+  </head>
+  <body id="keywordValidationDialog" class="modal-body">
+    <div id="description"></div>
+    <div id="matchTextDiv">
+      <label for="matchText">deja_keyword_matchText</label>
+      <textarea id="matchText" title="deja_keyword_matchTextTooltip"></textarea>
+    </div>
+    <div class="validationsOnly">
+      <div id="variableDiv"></div>
+    </div>
+
+    <section id="keywordMatchOptions" data-accordion class="advancedOnly keyword-match-options">
+        <span data-accordion-trigger>deja_keyword_matchOptions</span>
+        <div data-accordion-content class="keyword-match-options-content">
+          <div class="section-label first section-extend-below">deja_keyword_matchType</div>
+          <div class="validation-input input-label-container">
+            <input id="plainText" type="radio" name="matchType" value="1" title="deja_keyword_plainTextTooltip"></input>
+            <label for="plainText">deja_keyword_plainText</label>
+          </div>
+          <div class="validation-input input-label-container">
+            <input id="regExp" type="radio" class="keyword-regExp-input" name="matchType" value="2" title="deja_keyword_regExpTooltip"></input>
+            <label for="regExp">deja_keyword_regExp</label>
+            <a id="regExpHelp" title="deja_keyword_regExpHelpTooltip">deja_keyword_regExpHelp</a>
+          </div>
+          <div class="validation-input validation-input-section input-label-container">
+            <input id="matchCase" type="checkbox" title="deja_keyword_matchCaseTooltip"></input>
+            <label for="matchCase">deja_keyword_matchCase</label>
+          </div>
+          <div class="validation-input input-label-container">
+            <input id="allowWrap" type="checkbox" title="deja_keyword_allowWrapTooltip"></input>
+            <label for="allowWrap">deja_keyword_allowWrap</label>
+          </div>
+          <div class="validation-input input-label-container">
+            <input id="matchWord" type="checkbox" title="deja_keyword_matchWordTooltip"></input>
+            <label for="matchWord">deja_keyword_matchWord</label>
+          </div>
+          <div class="validation-input input-label-container">
+            <input id="fixSpaces" type="checkbox" title="deja_keyword_fixSpacesTooltip"></input>
+            <label for="fixSpaces">deja_keyword_fixSpaces</label>
+          </div>
+          
+        </div>
+    </section>
+  
+    <section id="keywordActionOptions" data-accordion class="advancedOnly validationsOnly keyword-action-options">
+        <span data-accordion-trigger>deja_keyword_actionOptions</span>
+        <div data-accordion-content>
+            <div>
+                <label for="actionType">deja_keyword_actionType</label>
+            </div>
+            <div>
+                <select id="actionType">
+                  <option value="1">deja_keyword_actionError</option>
+                  <option value="2">deja_keyword_actionWait</option>
+                  <option value="3">deja_keyword_actionCustomError</option>
+                </select>
+            </div>
+            <div class="keyword-errortype validation-input-section">deja_keyword_errorType</div>
+            <div class="validation-input input-label-container">
+              <input id="require" type="radio" name="errorType" value="1" title="deja_keyword_requireTooltip"></input>
+              <label for="require">deja_keyword_require</label>
+            </div>
+            <div class="validation-input input-label-container">
+              <input id="forbid" type="radio" class="keyword-forbid-input" name="errorType" value="2" title="deja_keyword_forbidTooltip"></input>
+              <label for="forbid">deja_keyword_forbid</label>
+            </div>
+        </div>
+    </section>
+  
+    <section id="keywordSearchOptions" data-accordion class="advancedOnly validationsOnly keyword-search-options">
+      <span data-accordion-trigger>deja_keyword_searchOptions</span>
+      <div data-accordion-content>
+        <div>deja_keyword_searchType</div>
+        <div class="validation-input input-label-container">
+          <input id="searchAll" type="radio" name="searchType" value="1" title="deja_keyword_searchAllTooltip"></input>
+          <label for="searchAll">deja_keyword_searchAll</label>
+        </div>
+        <div class="validation-input input-label-container">
+          <input id="searchOne" class="keyword-searchOne-input" type="radio" name="searchType" value="2" title="deja_keyword_searchOneTooltip"></input>
+          <label for="searchOne">deja_keyword_searchOne</label>
+        </div>
+        <button id="keywordSelectDocument" class="keywordSelectDocument" title="deja_keyword_selectDocumentTooltip" class="keyword-selectDocument">deja_keyword_selectDocument</button>
+      </div>
+    </section>
+
+    <div id="keywordDisplayLevel" class="rightAlign keywordDisplayLevel"></div>
+
+    <div class="clear option-actions keyword-buttons right">
+      <button id="keywordApply" class="btn btn-apply">deja_global_btn_ok</button>
+      <button id="keywordRemove" class="btn btn-remove">deja_global_btn_remove</button>
+      <button id="keywordCancel" class="btn btn-cancel">deja_global_btn_cancel</button>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+
+  <link rel="stylesheet" href="../skin/jquery-ui.css">
+  <script src="jquery.js"></script>
+  <script src="jquery-ui.js"></script>
+
+  <link rel="stylesheet" href="../skin/styles/style.css">
+  <link rel="stylesheet" href="../skin/dejaGlobalForms.css">
+  <link rel="stylesheet" href="../skin/dejaGlobalDialogs.css">
+  <script src="dejaUi.js"></script>
+  <script src="dejaContentViewPredefinedItem.js"></script>
+</head>
+<body class="dialog cv-predefined-item-dialog modal-body">
+  <div class="form-group">
+    <div class="form-field form-field-block-content predefined-item-name input-label-container">
+      <label for="predefinedItemName">deja_contentViewPredefinedItem_name</label>
+      <input type="text" id="predefinedItemName"/>
+    </div>
+
+    <div class="form-field form-field-block-content predefined-item-description input-label-container">
+      <label for="predefinedItemDescription">deja_contentViewPredefinedItem_description</label>
+      <input type="text" id="predefinedItemDescription"/>
+    </div>
+
+    <div class="form-field form-field-block-content predefined-item-value input-label-container">
+      <a id="regExpHelp" class="reg-exp-help" title="deja_global_regExpHelpTooltip">deja_global_regExpHelp</a>
+      <label for="predefinedItemValue" title="deja_global_regExpTooltip">deja_global_regExp</label>
+      <input type="text" id="predefinedItemValue" title="deja_global_regExpTooltip"/>
+    </div>
+
+    <div id="predefinedItemErrorMsg" class="form-field form-field-error"></div>
+  </div>
+
+  <div class="dialog-actions form-group right">
+    <button id="apply" class="apply btn btn-apply">deja_global_btn_ok</button>
+    <button id="cancel" class="cancel btn btn-cancel">deja_global_btn_cancel</button>
+  </div>
+</body>
+</html>

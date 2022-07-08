@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>deja_upload_title</title>
+
+    <link rel="stylesheet" href="../skin/jquery-ui.css"></link>
+    <script src="jquery.js"></script>
+    <script src="jquery-ui.js"></script>
+
+    <link rel="stylesheet" href="../skin/styles/style.css"></link>
+    <script src="dejaUi.js"></script>
+    <script src="dejaUpload.js"></script>
+  </head>
+  <body id="dejaUpload" class="modal-body">
+    <section>
+      <span class="customerInfo">
+        <div class="field">
+          <span id="customerIdLabel" class="field"></span>
+          <span id="customerIdValue"></span>
+        </div>
+        <div class="field">
+          <span id="customerNameLabel" class="field"></span>
+          <span id="customerNameValue"></span>
+        </div>
+      </span>
+      <div id="uploadItem" style="float:right;" class="main-menu-item uploadItem icon-upload-cloud tooltip-trigger"><span class="tooltip bottom">Upload
+          Recording</span></div>
+    </section>
+
+    <section class="input-label-container">
+      <label for="transactionTypeSelect">deja_upload_transactionTypeLabel</label>
+      <select id="transactionTypeSelect">
+        <option value="TYPE_MONITOR">deja_upload_transactionTypeMonitor</option>
+        <option value="TYPE_REPOSITORY">deja_upload_transactionTypeShare</option>
+      </select>
+    </section>
+
+    <section id="monitorSection">
+      <span>deja_upload_configureTransactionMonitor</span>
+      <fieldset>
+        <legend>deja_upload_transactionMonitor</legend>
+        <div id="createReplaceMonitorDiv" class="input-label-container">
+          <input id="replaceMonitorCheckbox" type="checkbox"></input>
+          <label for="replaceMonitorCheckbox">deja_upload_replaceTransactionMonitor</label>
+        </div>
+        <div id="replaceMonitorDiv" class="input-label-container">
+          <select id="transactionMonitorSelect"></select>
+        </div>
+
+        <div id="addMonitorDiv">
+          <div class="input-label-container">
+              <label for="transactionNameMonitorInput">deja_upload_transactionNameMonitor</label>
+              <input id="transactionNameMonitorInput" type="text"></input>
+          </div>
+          <section></section>
+          <span>
+            <div class="input-label-container">
+              <label for="planMonitorSelect">deja_upload_planCodeMonitor</label>
+              <select id="planMonitorSelect"></select>
+            </div>
+            <div class="input-label-container">
+              <label for="intervalMonitorSelect">deja_upload_intervalMonitor</label>
+              <select id="intervalMonitorSelect"></select>
+            </div>
+          </span>
+          <span>
+            <div class="input-label-container">
+              <label for="timeoutMonitorSelect">deja_upload_timeoutMonitor</label>
+              <select id="timeoutMonitorSelect">
+                <option value="1">deja_upload_timeoutValue1</option>
+              </select>
+            </div>
+          </span>
+        </div>
+        <div id="browserVersionDiv">
+          <span>
+            <div class="input-label-container">
+              <label for="browserMonitorSelect">deja_upload_browserMonitor</label>
+              <select id="browserMonitorSelect"></select>
+            </div>
+            <div class="input-label-container">
+              <label for="browserVersionSelect">deja_upload_browserVersion</label>
+              <select id="browserVersionSelect"></select>
+            </div>
+          </span>
+        </div>
+        
+      </fieldset>
+    </section>
+
+    <section id="repositorySection">
+      <span>deja_upload_configureRepository</span>
+      <fieldset>
+        <legend>deja_upload_transactionRepository</legend>
+        <div id="createReplaceRepositoryDiv" class="input-label-container">
+          <input id="replaceRepositoryCheckbox" type="checkbox"></input>
+          <label for="replaceRepositoryCheckbox">deja_upload_replaceTransactionRepository</label>
+        </div>
+        <div id="replaceRepositoryDiv" class="input-label-container">
+          <select id="transactionRepositorySelect"></select>
+        </div>
+        <div id="addRepositoryDiv" class="input-label-container">
+          <label for="nameRepositoryInput">deja_upload_transactionNameRepository</label>
+          <input id="nameRepositoryInput" type="text"></input>
+        </div>
+        <div class="input-label-container">
+          <label for="descriptionRepositoryInput">deja_upload_descriptionRepository</label>
+          <textarea id="descriptionRepositoryInput" rows="3"></textarea>
+        </div>
+      </fieldset>
+    </section>
+
+    <section>
+      <button id="changeUserButton"></button>
+      <span id="userIdLabel">deja_upload_userName</span>
+      <span id="userIdValue"></span>
+      <button id="connectionButton"></button>
+    </section>
+    <div class="dialog-actions form-group clearfix option-actions right">
+      <button id="okButton" class="btn btn-ok">deja_global_btn_ok</button>
+      <button id="cancelButton" class="btn btn-cancel">deja_global_btn_cancel</button>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+{
+   "background": {
+      "scripts": [ "common/dejaClick.js", "buildId.js", "common/dejaConstants.js", "background/dejaVersionInfo.js", "common/dejaLogger.js", "common/dejaObserverService.js", "common/dejaEventRegistration.js", "common/dejaScript.js", "common/dejaPreferenceService.js", "common/dejaDialogWindow.js", "common/dejaPromptService.js", "common/dejaMd5.js", "common/dejaSha1.js", "common/dejaAes.js", "common/dejaEncryption.js", "common/dejaRestApi.js", "common/dejaCookieManager.js", "background/dejaUtils.js", "common/dejaSearch.js", "common/dejaVariable.js", "common/dejaContentView.js", "background/dejaService.js", "background/dejaMain.js" ]
+   },
+   "browser_action": {
+      "default_icon": {
+         "19": "ui/skin/images/dejaLogo19.png",
+         "38": "ui/skin/images/dejaLogo38.png"
+      },
+      "default_title": "__MSG_extName__"
+   },
+   "content_scripts": [ {
+      "all_frames": true,
+      "js": [ "common/dejaClick.js", "common/dejaConstants.js", "common/dejaLogger.js", "common/dejaSearch.js", "common/dejaVariable.js", "common/dejaEventRegistration.js", "contentScript/dejaPageObserverService.js", "contentScript/dejaShadowDOM.js", "contentScript/dejaContentScript.js", "contentScript/dejaServiceCS.js", "contentScript/dejaValidation.js" ],
+      "match_about_blank": true,
+      "matches": [ "http://*/*", "https://*/*", "file://*/*" ],
+      "run_at": "document_start"
+   } ],
+   "default_locale": "en",
+   "description": "__MSG_extDescription__",
+   "homepage_url": "http://www.dejaclick.com/",
+   "icons": {
+      "128": "ui/skin/images/dejaLogo128.png",
+      "16": "ui/skin/images/dejaLogo16.png",
+      "48": "ui/skin/images/dejaLogo48.png"
+   },
+   "incognito": "spanning",
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAyCf/8ocaBLeR9cp9IfzSvgLOX2Er0fc/sbPQWKdIhE9vcGDphzXnAyT1y3LsqrfBczufCFOYT/0F1MNkg7H829OBZHEaS0eLGzfYvRr9a9LPuRFZ9oPI/O5r9zBrY8oNoLDBVCpGfYgLEiUJsm00AddqGWLznBQJ/p6fGx05p/K88tC1iG7XKK2tezYzZLrfpt6jye8bVmnCFKgh5JPeDYk0pt63ubUyp62bs3AG0lPj/SPGbUlAwq/AUYS/8mMhXt2KM/Cuiw5CJsU8iLdWbEhL1J+zH7J1cc1UhBIvCAqXnbUNeodSHBsTmpg8s8RPxOy9JIWxaOiwIpXspJ9O2wIDAQAB",
+   "manifest_version": 2,
+   "minimum_chrome_version": "23",
+   "name": "__MSG_extName__",
+   "options_ui": {
+      "page": "ui/content/dejaOptions.html"
+   },
+   "permissions": [ "browsingData", "contentSettings", "cookies", "debugger", "downloads", "tabs", "webNavigation", "webRequest", "webRequestBlocking", "proxy", "\u003Call_urls>" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "2.7.8.0"
+}

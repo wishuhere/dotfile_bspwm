@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title></title>
+
+	<link rel="stylesheet" href="../skin/jquery-ui.css"></link>
+	<script src="jquery.js"></script>
+	<script src="jquery-ui.js"></script>
+
+	<link rel="stylesheet" href="../skin/styles/style.css">
+	<link rel="stylesheet" href="../skin/styles/style.css"></link>
+	<script src="dejaUi.js"></script>
+	<script src="dejaDisplayLevelSelector.js"></script>
+	<script src="dejaProxySettings.js"></script>
+</head>
+
+<body id="dejaProxySettings" class="modal-body">
+	<div id="description"></div>
+	<!--
+    <div id="configureProxiesDiv">
+      <label for="configureProxiesDiv">deja_proxy_configure</label>
+      <textarea id="configureProxiesDiv"></textarea>
+    </div>
+-->
+	<fieldset id="proxyParams">
+		<span>deja_proxy_configure</span>
+
+		<div class="form-field input-label-container inline">
+			<input class="custom-input" name="proxysetting" type="radio" id="noProxyConfigured" value="1" />
+			<label for="noProxyConfigured">deja_proxy_none</label>
+		</div>
+
+		<div class="form-field input-label-container inline">
+			<input class="custom-input" t name="proxysetting" type="radio" id="autoDetectProxy" value="2" />
+			<label for="autoDetectProxy">deja_proxy_auto_detect</label>
+		</div>
+
+		<div class="form-field input-label-container inline">
+			<input class="custom-input" name="proxysetting" type="radio" id="useSystemProxy" value="3" />
+			<label for="useSystemProxy">deja_proxy_use_system</label>
+		</div>
+		<div class="form-field input-label-container inline">
+			<input class="custom-input" name="proxysetting" type="radio" id="manualProxy" value="4" />
+			<label for="manualProxy">deja_proxy_manual</label>
+
+			<div class="input-label-container flex">
+				<div>
+					<label for="httpProxy">deja_proxy_http</label>
+					<input class="custom-input" id="httpProxy" type="text">
+				</div>
+				<div>
+					<label for="httpPort">deja_proxy_port</label>
+					<input class="custom-input" id="httpPort" type="number" min="0">
+				</div>
+
+
+			</div>
+			<div class="input-label-container inline">
+				<input class="custom-input" id="allProtocols" type="checkbox">
+				<label for="allProtocols">deja_proxy_all_protocols</label>
+			</div>
+			<div class="input-label-container flex">
+				<div>
+					<label for="sslProxy">deja_proxy_ssl</label>
+					<input class="custom-input" id="sslProxy" type="text">
+				</div>
+				<div>
+					<label for="sslPort">deja_proxy_port</label>
+					<input class="custom-input" id="sslPort" type="number" min="0">
+				</div>
+
+			</div>
+			<div class="input-label-container flex">
+				<div>
+					<label for="ftpProxy">deja_proxy_ftp</label>
+					<input class="custom-input" id="ftpProxy" type="text">
+				</div>
+				<div>
+					<label for="ftpPort">deja_proxy_port</label>
+					<input class="custom-input" id="ftpPort" type="number" min="0">
+				</div>
+			</div>
+			<div class="input-label-container flex">
+				<div>
+					<label for="socksProxy">deja_proxy_socks</label>
+					<input class="custom-input" id="socksProxy" type="text">
+				</div>
+				<div>
+					<label for="socksPort">deja_proxy_port</label>
+					<input class="custom-input" id="socksPort" type="number" min="0">
+				</div>
+
+			</div>
+			<div class="indent1 input-label-container flex inline">
+				<div>
+					<input class="custom-input" name="socksversion" id="socks4" type="radio">
+					<label for="socks4">deja_proxy_socksv4</label>
+				</div>
+				<div>
+					<input class="custom-input" name="socksversion" id="socks5" type="radio">
+					<label for="socks5">deja_proxy_socksv5</label>
+				</div>
+
+			</div>
+			<div class="indent1 input-label-container flex inline">
+				<input class="custom-input" id="remoteDns" type="checkbox">
+				<label for="remoteDns">deja_proxy_remotedns</label>
+			</div>
+			<div class="input-label-container">
+				<label for="bypassList">deja_proxy_not_urls</label>
+				<input class="custom-input" id="bypassList" type="text">
+			</div>
+		</div>
+		<div class="form-field input-label-container inline">
+			<input class="custom-input" name="proxysetting" type="radio" id="autoUrl" value="5" />
+			<label for="autoUrl">deja_proxy_auto_url</label>
+			<input id="autoUrlList" type="text">
+		</div>
+	</fieldset>
+
+	<div id="displayLevel" class="rightAlign"></div>
+	<div class="clear option-actions" style="text-align:right;">
+		<button id="apply" class="btn btn-apply">deja_global_btn_ok</button>
+		<button id="cancel" class="btn btn-cancel">deja_global_btn_cancel</button>
+	</div>
+</body>
+
+</html>

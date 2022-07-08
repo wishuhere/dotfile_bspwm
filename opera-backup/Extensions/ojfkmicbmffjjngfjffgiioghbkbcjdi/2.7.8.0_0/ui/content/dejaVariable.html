@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+
+  <link rel="stylesheet" href="../skin/jquery-ui.css">
+  <script src="jquery.js"></script>
+  <script src="jquery-ui.js"></script>
+
+  <link rel="stylesheet" href="../skin/styles/style.css">
+  <script src="dejaUi.js"></script>
+  <script src="dejaVariable.js"></script>
+</head>
+<body id="dejaVariable" class="modal-body">
+<div id="description" class="description"></div>
+
+<div class="variable-name">
+  <label for="varName">deja_variables_name</label>
+  <input type="text" id="varName"/>
+</div>
+
+<div class="variable-tokens clearfix">
+  <div class="tokens-description">deja_variables_tokensDescription</div>
+  <div class="tokens">
+    <select name="" size="10" id="tokensList" class="tokens-list"></select>
+  </div>
+  <div class="tokens-actions">
+    <button id="add" class="add">deja_global_btn_add</button>
+    <button id="edit" class="edit">deja_global_btn_edit</button>
+    <button id="clone" class="clone">deja_global_btn_clone</button>
+    <button id="remove" class="remove">deja_global_btn_remove</button>
+    <button id="moveUp" class="move-up">deja_global_btn_moveUp</button>
+    <button id="moveDown" class="move-down">deja_global_btn_moveDown</button>
+  </div>
+</div>
+
+<div class="variable-sticky-value input-label-container">
+  <input type="checkbox" id="sticky"/>
+  <label for="sticky">deja_variables_stickyValue</label>
+</div>
+
+<div class="variable-actions">
+  <button id="preview" class="preview">deja_variables_preview</button>
+  <button id="cancel" class="cancel btn btn-cancel">deja_global_btn_cancel</button>
+  <button id="apply" class="apply btn btn-ok">deja_global_btn_ok</button>
+</div>
+</body>
+</html>

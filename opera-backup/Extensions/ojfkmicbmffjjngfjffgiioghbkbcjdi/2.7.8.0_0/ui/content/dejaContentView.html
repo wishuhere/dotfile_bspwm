@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+
+  <link rel="stylesheet" href="../skin/jquery-ui.css">
+  <script src="jquery.js"></script>
+  <script src="jquery-ui.js"></script>
+
+  <link rel="stylesheet" href="../../thirdparty/jstree/themes/default/style.css">
+  <script src="../../thirdparty/jstree/jquery.jstree.js"></script>
+
+  <link rel="stylesheet" href="../skin/dejaGlobalForms.css">
+  <link rel="stylesheet" href="../skin/dejaGlobalDialogs.css">
+  <link rel="stylesheet" href="../skin/styles/style.css">
+  <script src="dejaUi.js"></script>
+  <script src="dejaTreeViewHelpers.js"></script>
+  <script src="dejaContentView.js"></script>
+  <script src="dejaAccordion.js"></script>
+</head>
+<body class="dialog content-view-dialog modal-body" id="dejaContentView">
+  <div id="contentviewDescription" class="dialog-description section-label section-extend-below first"></div>
+
+  <div class="form-group content-view-name">
+    <label for="contentViewName" title="deja_contentView_nameTooltip">deja_contentView_name</label>
+    <input type="text" id="contentViewName" maxlength="80" title="deja_contentView_nameTooltip"/>
+  </div>
+
+  <div class="form-group content-view-components">
+    <div class="components-description">deja_contentView_filterOn</div>
+    <div class="form-field components-actions clearfix">
+        <button id="addComponent" class="item-control" title="deja_contentView_addComponentTooltip"><i class="white icon-plus"></i></button>
+        <button id="editComponent" class="item-control" title="deja_contentView_editComponentTooltip"><i class="white icon-edit"></i></button>
+        <button id="cloneComponent" class="item-control" title="deja_contentView_cloneComponentTooltip"><i class="white icon-docs"></i></button>
+        <button id="removeComponent" class="item-control" title="deja_contentView_deleteComponentTooltip"><i class="white icon-cancel"></i></button>
+        <button id="moveDownComponent" class="item-control" title="deja_contentView_moveDownComponentTooltip"><i class="white icon-down-open"></i></button>
+        <button id="moveUpComponent" class="item-control" title="deja_contentView_moveUpComponentTooltip"><i class="white icon-up-open"></i></button>
+    </div>
+    <div class="form-field components">
+      <select name="" size="10" id="componentList" class="component-list"></select>
+    </div>
+  </div>
+
+  <ul id="accordion" class="contentview-accordion">
+
+      <li data-accordion>
+          <span data-accordion-trigger="" class=" fold script subscript action event basic">deja_contentView_contentTypes</span>
+          <section data-accordion-content>
+            <div class="form-field types-actions">
+              <div class="form-field filter-on-type input-label-container">
+                <input type="checkbox" id="filterOnContentType"/>
+                <label for="filterOnContentType">deja_contentView_filterOnContentType</label>
+              </div>
+              <div class="form-field type-actions">
+                <button id="addType" class="item-control" title="deja_contentView_addContentTypeTooltip"><i class="white icon-plus"></i></button>
+                <button id="editType" class="item-control" title="deja_contentView_editContentTypeTooltip"><i class="white icon-edit"></i></button>
+                <button id="removeType" class="item-control" title="deja_contentView_deleteContentTypeTooltip"><i class="white icon-cancel"></i></button>
+              </div>
+            </div>
+            <div>
+              <select name="" size="10" id="typeList" class="type-list full-width"></select>
+            </div>
+          </section>
+      </li>
+      
+      <li data-accordion>
+        <span data-accordion-trigger="" class=" fold script subscript action event basic">deja_contentView_contentLength</span>
+        <section data-accordion-content>
+          <div class="no-bottom-mar">
+            <label for="minimumSize" class="validation-label" title="deja_contentView_minimumSizeTooltip">deja_contentView_minimumSize</label>
+          </div>
+          <div>
+            <input class="validation-label" type="text" id="minimumSize" title="deja_contentView_minimumSizeTooltip"/>
+          </div>
+          <div class="no-bottom-mar">
+            <label class="section-label first" for="maximumSize" title="deja_contentView_minimumSizeTooltip">deja_contentView_maximumSize</label>
+          </div>
+          <div>
+            <input class="section-label first" type="text" id="maximumSize" title="deja_contentView_maximumSizeTooltip"/>
+          </div>
+        </section>
+      </li> 
+       
+      <li data-accordion class="scope-tree-accordion">
+        <span data-accordion-trigger="" class=" fold script subscript action event basic">deja_contentView_scope</span>
+        <section data-accordion-content>
+          <div class="scope-description">deja_contentView_actionEventApplicable</div>
+          <div id="scopeTreeContainer" class="tree-container tree-container-checkbox scope-tree-container"></div>
+        </section>
+      </li>
+    </ul>
+
+  <div class="form-group replay-options">
+    <div class="section-label section-extend-below">deja_contentView_replayOptions</div>
+    <div class="form-field input-label-container">
+      <input type="checkbox" id="continueOnError"/>
+      <label for="continueOnError">deja_contentView_continueOnError</label>
+    </div>
+  </div>
+
+  <div class="dialog-actions contentview-actions form-group option-actions right">
+    <button id="dejaContentViewApply" class="btn btn-apply apply">deja_global_btn_ok</button>
+    <button id="dejaContentViewCancel" class="btn btn-cancelcancel">deja_global_btn_cancel</button>
+  </div>
+</body>
+</html>

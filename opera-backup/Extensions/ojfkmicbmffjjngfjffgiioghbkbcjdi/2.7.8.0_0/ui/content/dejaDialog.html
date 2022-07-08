@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+
+  <link rel="stylesheet" href="../skin/jquery-ui.css">
+  <script src="jquery.js"></script>
+  <script src="jquery-ui.js"></script>
+
+  <link rel="stylesheet" href="../skin/dejaGlobalForms.css">
+  <link rel="stylesheet" href="../skin/dejaGlobalDialogs.css">
+  <link rel="stylesheet" href="../skin/styles/style.css">
+  <script src="dejaUi.js"></script>
+  <script src="dejaDialog.js"></script>
+</head>
+<body class="dialog dialog-prompts-dialog modal-body" id="dejaDialog">
+  <div id="description" class="dialog-description"></div>
+
+  <div class="form-group dialog-type-selection">
+    <label for="typeSelect">deja_dialogPrompt_dialogType</label>
+
+    <select name="" id="typeSelect" class="dialog-type-list">
+      <option value="1">deja_dialogPrompt_loginPrompt</option>
+      <option value="2">deja_dialogPrompt_inputPrompt</option>
+      <option value="3">deja_dialogPrompt_confirmPrompt</option>
+      <option value="4">deja_dialogPrompt_genericPrompt</option>
+      <option value="5">deja_dialogPrompt_certificateMismatch</option>
+      <option value="6">deja_dialogPrompt_certificateUnknown</option>
+      <option value="7">deja_dialogPrompt_certificateExpired</option>
+      <option value="8">deja_dialogPrompt_certificateInvalid</option>
+      <option value="9">deja_dialogPrompt_clientAuthentication</option>
+    </select>
+  </div>
+
+  <fieldset class="form-group">
+    <div class="form-group input-selection">
+      <div id="input1Container" class="form-field">
+        <div class="form-group-label">deja_dialogPrompt_textInput</div>
+
+        <label for="input1"></label>
+        <input type="text" id="input1"/>
+      </div>
+
+      <div id="input2Container" class="form-field">
+        <label for="input2"></label>
+        <input type="text" id="input2"/>
+      </div>
+
+      <div id="input3Container" class="form-field">
+        <label for="input3"></label>
+        <input type="text" id="input3"/>
+      </div>
+    </div>
+
+    <div id="optionsContainer" class="form-group option-selection">
+      <div class="form-group-label">deja_dialogPrompt_optionSelection</div>
+
+      <div class="form-field input-label-container">
+        <input type="radio" name="optionRadio" value="1" id="option1" title="deja_dialogPrompt_option1Tooltip"/>
+        <label for="option1" title="deja_dialogPrompt_option1Tooltip">deja_dialogPrompt_option1</label>
+      </div>
+
+      <div class="form-field input-label-container">
+        <input type="radio" name="optionRadio" value="2" id="option2" title="deja_dialogPrompt_option2Tooltip"/>
+        <label for="option2" title="deja_dialogPrompt_option2Tooltip">deja_dialogPrompt_option2</label>
+      </div>
+
+      <div class="form-field input-label-container">
+        <input type="radio" name="optionRadio" value="3" id="option3" title="deja_dialogPrompt_option3Tooltip"/>
+        <label for="option3" title="deja_dialogPrompt_option3Tooltip">deja_dialogPrompt_option3</label>
+      </div>
+    </div>
+
+    <div id="check1Container" class="form-group check-selection">
+      <div class="form-group-label">deja_dialogPrompt_optionSelection</div>
+      <div class="input-label-container">
+        <input type="checkbox" id="check1"/>
+        <label for="check1"></label>
+      </div>
+        
+      
+    </div>
+
+    <div id="actionsContainer" class="form-group button-selection">
+      <div class="form-group-label">deja_dialogPrompt_buttonSelection</div>
+
+      <div class="form-field form-field-left actionsContainer input-label-container">
+        <input class="custom-input" type="radio" name="actionRadio" value="1" id="action1" title="deja_dialogPrompt_acceptTooltip"/>
+        <label for="action1" title="deja_dialogPrompt_acceptTooltip">deja_dialogPrompt_accept</label>
+      </div>
+
+      <div class="form-field form-field-left actionsContainer input-label-container">
+        <input class="custom-input" type="radio" name="actionRadio" value="2" id="action2" title="deja_dialogPrompt_cancelTooltip"/>
+        <label for="action2" title="deja_dialogPrompt_cancelTooltip">deja_dialogPrompt_cancel</label>
+      </div>
+
+      <div id="actionExtra1Container" class="form-field form-field-left actionsContainer input-label-container">
+        <input class="custom-input" type="radio" name="actionRadio" value="3" id="action3" title="deja_dialogPrompt_extra1Tooltip"/>
+        <label for="action3" title="deja_dialogPrompt_extra1Tooltip">deja_dialogPrompt_extra1</label>
+      </div>
+
+      <div id="actionExtra2Container" class="form-field form-field-left actionsContainer input-label-container">
+        <input class="custom-input" type="radio" name="actionRadio" value="4" id="action4" title="deja_dialogPrompt_extra2Tooltip"/>
+        <label for="action4" title="deja_dialogPrompt_extra2Tooltip">deja_dialogPrompt_extra2</label>
+      </div>
+    </div>
+  </fieldset>
+
+  <div class="form-group replay-options">
+    <div class="form-group-label">deja_dialogPrompt_replayOptions</div>
+
+    <div class="form-field form-field-left">
+      <label for="dialogOrdinal" title="deja_dialogPrompt_dialogSeqTooltip">deja_dialogPrompt_dialogSeq</label>
+      <input type="number" min="1" id="dialogOrdinal" title="deja_dialogPrompt_dialogSeqTooltip"/>
+    </div>
+
+    <div class="form-field form-field-left">
+      <label for="repeatCount" title="deja_dialogPrompt_repeatCountTooltip">deja_dialogPrompt_repeatCount</label>
+      <input type="number" min="1" max="99" id="repeatCount" title="deja_dialogPrompt_repeatCountTooltip"/>
+    </div>
+  </div>
+
+  <div class="dialog-actions form-group clearfix option-actions" style="text-align:right">
+    <button id="apply" class="apply btn btn-apply">deja_global_btn_ok</button>
+    <button id="cancel" class="cancel btn btn-cancel">deja_global_btn_cancel</button>
+  </div>
+</body>
+</html>

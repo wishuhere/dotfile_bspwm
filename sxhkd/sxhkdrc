@@ -2,11 +2,11 @@
 # wm independent hotkeys
 #
 
-#Reload monitor
+#Run monitor.sh script
 ctrl + alt + q
 	$HOME/.config/bspwm/monitor.sh
 
-#print screen
+#screenshoot
 Print
         flameshot gui
 
@@ -14,9 +14,9 @@ Print
 ctrl + alt + l
 	betterlockscreen -l dim
 
-# open telegram
-#super + q  
-#	$HOME/.config/bspwm/monitor.sh
+#open todo list
+super + shift + n  
+	$HOME/.local/bin/dooit
 
 # terminal emulator
 super + Return

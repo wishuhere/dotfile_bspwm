@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>deja_test_title</title>
+
+    <link rel="stylesheet" href="../skin/jquery-ui.css"></link>
+    <script src="jquery.js"></script>
+    <script src="jquery-ui.js"></script>
+
+    <link rel="stylesheet" href="../skin/styles/style.css"></link>
+
+    <script src="dejaUi.js"></script>
+    <script src="dejaTest.js"></script>
+  </head>
+  <body id="dejaTest" class="modal-body">
+    <section>
+      <span class="customerInfo">
+        <div class="field">
+          <span id="customerIdLabel" class="field">deja_test_customerIdLabel</span>
+          <span id="customerIdValue"></span>
+        </div>
+        <div class="field">
+          <span id="customerNameLabel" class="field">deja_test_customerNameLabel</span>
+          <span id="customerNameValue"></span>
+        </div>
+      </span>
+      <div id="testOnDemandButton" style="float: right;background: none;" class="main-menu-items testOnDemandButton icon-rocket tooltip-trigger"></div>
+    </section>
+
+    <section>
+      <div class="field">
+        <label>deja_test_browserLabel</label>
+        <select id="browserSelect">
+          <option>deja_test_loadingMessage</option>
+        </select>
+      </div>
+      <div class="field">
+        <label>deja_test_browserVersionLabel</label>
+        <select id="browserVersionSelect">
+          <option>deja_test_loadingMessage</option>
+        </select>
+      </div>
+      <div class="field">
+        <label>deja_test_locationsLabel</label>
+        <select id="locationSelect">
+          <option>deja_test_loadingMessage</option>
+        </select>
+      </div>
+    </section>
+
+    <section>
+      <div class="input-label-container">
+        <input id="skipDialogCheckbox" type="checkbox"></input>
+        <label for="skipDialogCheckbox">deja_test_skipDialogLabel</label>
+        <a href="#" title="deja_test_skipDialogHelpHint">deja_test_skipDialogHelpLabel</a>
+      </div>
+    </section>
+
+    <details>
+      <summary>deja_test_expanderLabel</summary>
+      <fieldset>
+        <legend>deja_test_testOptionsLabel</legend>
+        <div>
+          <div>
+            <label for="timeoutSelect">deja_test_timeoutLabel</label>
+            <select id="timeoutSelect">
+              <option value="1">deja_test_timeoutValue1</option>
+            </select>
+          </div>
+            
+          <div class="input-label-container">
+              <input id="fullpageCheckbox" type="checkbox"></input>
+            <label for="fullpageCheckbox">deja_test_fullpageLabel</label>
+          </div>
+        </div>
+        <div>
+          <div>
+            <label for="captureLevelSelect">deja_test_captureLevelLabel</label>
+            <select id="captureLevelSelect">
+              <option value="1">deja_test_errorOnlyValue</option>
+              <option value="0">deja_test_disabledValue</option>
+            </select>
+          </div>
+          <div>
+            <span>deja_test_captureSetLabel</span>
+            <span class="input-label-container capture-set">
+              <div>
+                <input id="captureImagesCheckbox" type="checkbox"></input>
+                <label for="captureImagesCheckbox">deja_test_imagesValue</label>
+              </div>
+              <div>
+                <input id="captureSourceCheckbox" type="checkbox"></input>
+                <label for="captureSourceCheckbox">deja_test_sourceValue</label>
+              </div>
+              <div>
+                <input id="captureHeadersCheckbox" type="checkbox"></input>
+                <label for="captureHeadersCheckbox">deja_test_headersValue</label>
+              </div>
+            </span>
+          </div>
+          <div>deja_test_captureFormatLabel</div>
+          <div class="input-label-container">
+            <input id="captureFormatJpeg" name="captureFormatRadio" type="radio" value="image/jpeg"></input>
+            <label for="captureFormatJpeg">deja_test_jpegValue</label>
+            <input id="captureFormatPng" name="captureFormatRadio" type="radio" value="image/png"></input>
+            <label for="captureFormatPng">deja_test_pngValue</label>
+          </div>
+        </div>
+      </fieldset>
+    </details>
+
+    <section>
+      <button id="changeUserButton"></button>
+      <span id="userIdLabel">deja_test_userIdLabel</span>
+      <span id="userIdValue"></span>
+      <button id="connectionButton"></button>
+    </section>
+    <div class="option-actions" style="text-align: right">
+      <button id="okButton" class="btn btn-ok">deja_test_testButton</button>
+      <button id="cancelButton" class="btn btn-cancel">deja_global_btn_cancel</button>
+    </div>
+  </body>
+</html>

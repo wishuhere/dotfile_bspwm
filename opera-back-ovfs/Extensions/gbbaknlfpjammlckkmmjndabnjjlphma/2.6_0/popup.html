@@ -1,0 +1,112 @@
+<!--
+/**
+ * GeoShift (C) 2018 Beholder Corporation / FoxyProxy
+ * support@getfoxyproxy.org
+ *
+ * This source code is proprietary, and released under the EULA available in the
+ * LICENSE file at the root of this installation. Do not copy or re-use without
+ * written permission.
+ */
+-->
+<!doctype html>
+<html>
+  <head>
+		<link rel="stylesheet" href="styles/fontawesome-4.6.3.css">
+    <link rel="stylesheet" href="styles/foundation-6.2.3/foundation.css">
+		<link rel="stylesheet" href="styles/flagicon-2.4.0.css">
+    <link rel="stylesheet" href="styles/app.css">
+  </head>
+  <body>
+		<div class="row"><p><!-- spacer --></p></div>
+		<div id="loginRow" class="row hide-unimportant">
+			<div class="small-12 columns">
+		      <div id="login-form" class="column callout">
+						<div class="small-3 columns">
+		        	<img src="images/FOXYLogo.svg">
+						</div>
+						<div class="small-9 columns">
+							<h2 style="font-size: 2rem;margin-bottom: 0rem" class="text-center">Welcome to GeoShift</h2><p class="text-center">by FoxyProxy</p><h2 class="text-center">Please login</h2>
+						</div><div class="small-12 columns"><br></div>
+						<div class="small-12 columns">
+							<label>Email or Username <input id="username" name="username" type="text" placeholder="Email or Username" autocomplete="false" required autofocus>
+			        </label>
+					<label>Password</label>
+					<div class="row">
+						<div class="columns small-10"><input id="password" name="password" type="password" placeholder="Password" autocomplete="false" required></div>
+						<div class="columns small-2"><i id="showHidePassword" class="fa fa-eye-slash fa-2x fp-orange" data-input="password"></i></div>
+					</div>
+							<p>
+									<input id="login-button" type="button" class="button" value="Login">&nbsp; <span id="spinner"></span>
+									<input id="viewaccounts-button" type="button" class="button" style="float: right; display: none" value="View Accounts">
+							</p>
+							<p><div class="callout alert" id="login-error" style="display: none">Login failed. Please check the username/password and try again. If this problem continues, please unblock <a href="https://getfoxyproxy.org/">https://getfoxyproxy.org</a> with your current internet connection or <a href="mailto:support@getfoxyproxy.org">email us</a>.</div></p>
+							<p>
+									<a href="https://getfoxyproxy.org/order/">Need Account</a><br>
+									<a href="https://getfoxyproxy.org/panel/recover/">Forgot Username/Password</a><br>
+									<!--<a id="manual-setup-btn">Toggle Manual Setup</a>
+									<p id="manual-setup-container" class="hide-unimportant">
+										Paste configuration here:
+										<textarea id="manual-setup-input"></textarea>
+										<div id="manual-setup-error" class="callout alert hide-unimportant">Invalid configuration. Please <a href="mailto:support@getfoxyproxy.org">email us</a> for your configuration or try again with different text.</div>
+										<input id="manual-setup-submit" type="button" class="button" value="Submit">
+									</p>-->
+							</p>
+						</div>
+		      </div>
+			</div>
+		</div>
+		<div id="accountsRow" class="row hide-unimportant">
+			<div class="small-12 columns">
+				<div id="accountsContainer" class="callout">
+					<div class="row">
+						<div class="small-3 columns">
+		        	<img src="images/FOXYLogo.svg" style="max-width: 80%;">
+						</div>
+						<div class="small-9 columns">
+							<h2 style="font-size: 1.75rem;margin-bottom: 0rem" class="text-center">Welcome to GeoShift</h2><p class="text-center">by FoxyProxy</p>
+								<input id="useSSL" type="checkbox" value="Use SSL Proxy Server"><label>Use SSL Proxy Server (slower but encrypted)</label>
+						</div>
+					</div>
+					<div class="row"><div class="small-12 columns"><br></div></div>
+					<div id="error-row" class="row hide-unimportant error-row">
+						<div class="small-12 columns">
+							<div class="callout alert"><p id="errorContent"></p><button id="close-button" class="close-button" type="button"><span>&times;</span></button></div>
+						</div>
+					</div>
+					<span id="accounts"></span>
+					<div class="row">
+						<div class="small-6 columns">
+							<input id="refresh-button" type="button" class="expanded button" value="Refresh Account Settings">
+						</div>
+						<div class="small-6 columns">
+							<a id="whereami-button" href="https://getfoxyproxy.org/geoip/" class="expanded button">Where Am I?</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<span id="accountRowTemplate" style="display: none">
+			<div class="row callout small %color" style="margin-right: .1rem; margin-left: .1rem">
+				<div class="small-2 columns">
+					<span class="flag-icon flag-icon-%data-cc flag-icon" style="font-size:200%"></span><br>%data-country
+				</div>
+				<div class="small-6 columns">
+					<div class="w3schools-tooltip"><strong>%data-server</strong><span class="w3schools-tooltiptext">Username: <strong>%data-username</strong><br>Password: <strong>%data-password</strong></span></div>%data-ip</div>
+				<div class="small-3 columns"><input type="button" %selected class="expanded button %hideIfInactive" value="%onOrOff" data-server="%data-server" data-port="%data-port" data-username="%data-username" data-password="%data-password" data-cc="%data-cc" data-country="%data-country"><span class="%hideIfActive">Account not active. Renew it <a class="renew-link">here</a>.</span></div>
+			</div>
+		</span>
+		<span id="accountRowTemplateNoNode" style="display: none;">
+			<div class="row callout small secondary" style="margin-right: .1rem; margin-left: .1rem">
+				<div class="small-4 columns">Username: %data-username<br>Password: %data-password</div>
+				<div class="small-8 columns">Please <a class="renew-link">select a country</a> for this account.</div>
+			</div>
+		</span>
+  </body>
+  <script src="scripts/jquery-2.2.4.js"></script>
+  <!-- <script src="scripts/foundation-6.2.3/what-input.js"></script> -->
+  <script src="scripts/foundation-6.2.3/foundation.js"></script>
+	<script src="scripts/popup.js"></script>
+	<script src="scripts/utils.js"></script>
+	<canvas id="flag-icon-canvas-32" width="32" height="32" class="hide"></canvas>
+	<canvas id="flag-icon-canvas-16" width="16" height="16" class="hide"></canvas>
+</html>

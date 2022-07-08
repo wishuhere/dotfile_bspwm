@@ -1,0 +1,6 @@
+2022/04/03-20:14:19.937 ff2e2 Creating DB /home/hermit/.config/opera/IndexedDB/https_whatismyipaddress.com_0.indexeddb.leveldb since it was missing.
+2022/04/03-20:14:20.299 ff2e2 Reusing MANIFEST /home/hermit/.config/opera/IndexedDB/https_whatismyipaddress.com_0.indexeddb.leveldb/MANIFEST-000001
+2022/04/03-20:15:56.865 1072ea Level-0 table #5: started
+2022/04/03-20:15:57.361 1072ea Level-0 table #5: 5713 bytes OK
+2022/04/03-20:15:57.665 1072ea Delete type=0 #3
+2022/04/03-20:15:57.665 1072ea Manual compaction at level-0 from (begin) .. (end); will stop at (end)

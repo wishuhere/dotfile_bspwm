@@ -1,0 +1,588 @@
+<!--
+/*
+* DejaClick by SmartBear Software.
+* Copyright (C) 2006-2022 SmartBear Software.  All Rights Reserved.
+*
+* The contents of this file are subject to the End User License Agreement.
+* Software distributed under the License is distributed on an "AS IS" basis,
+* WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
+* for the specific language governing rights and limitations under the
+* License.
+*/
+ -->
+
+<!DOCTYPE html>
+<html>
+   <head>
+     <title>deja_sidebar_title</title>
+
+     <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+    
+     <link rel="stylesheet" href="../skin/jquery-ui.css">
+     <script src="jquery.js"></script>
+     <script src="jquery-ui.js"></script>
+     <script src="../../thirdparty/jstree/jquery.jstree.js"></script>
+     <script src="../../thirdparty/jstree/_lib/jquery.hotkeys.js"></script>
+
+     <link rel="stylesheet" href="../skin/styles/style.css">
+     <script src="dejaUi.js"></script>
+     <script src="dejaContentView.js"></script>
+     <script src="dejaSidebar.js"></script>
+     <script src="dejaCombobox.js"></script>
+     <script src="dejaTreeViewHelpers.js"></script>
+     <script src="dejaTreeview.js"></script>
+     <script src="dejaKeyword.js"></script>
+     <script src="dejaJavascript.js"></script>
+     <script src="dejaVariableSelector.js"></script>
+     <script src="dejaDisplayLevelSelector.js"></script>
+     <script src="dejaAccordion.js"></script>
+     <script src="dejaModal.js"></script>
+
+    
+
+   </head>
+   <body id="dejaSidebar">
+     <div class="dejaModal">
+        <section class="dejaModalOverlay"></section>
+
+       <div>
+          <section class="modalHeader">
+            <div  class="modalHeaderContent">deja_notify_title</div>
+            <div  class="modalCancel icon-cancel"></div>
+          </section>
+          <section class="modalContent">
+             <div  class="dejaModalContent"></div>
+          </section>
+       </div>
+    </div>
+
+    <div id="dejaModalClone" class="dejaModalClone"></div>
+
+     <header id="header" class="header brand"   style="visibility:hidden">
+        <div id="logoToolbar" class="logoToolbar">
+            <section class="logo-section">
+              <image class="customerInfo" src="../skin/images/as-alertsite-logo.svg"></image>
+            </section> 
+            
+            <section class="menu-section">
+               <ul class="main-menu top-bar-menu">
+                <!-- TOD icon -->
+                <li id="testOnDemandButton" class="main-menu-items icon-rocket single-icon"><span class="tooltip bottom">deja_sidebar_testOnDemandButton</span></li>
+                 <!-- cog icon -->
+            
+                <li class="main-menu-items icon-cog-alt single-icon">
+                  <ul class="main-menu-dropdown" data-accordion-group = "settings">
+                    <li id="chooseReplayModeAccordion" data-accordion class="main-menu-dropdown-items displayLevelItem">
+                      <span class="dropDownSelections" id="selectedReplayModeOption"></span>
+                      <ul class="sub-menu subMenuUl">
+                          <li class="icon-container sub-menu-items inlineSelections" id="replayAllItem" dcvalue="AUTOPAUSE_NONE" title="deja_sidebar_replayAllItemHint">
+                            <span>deja_sidebar_replayAllItem</span>
+                          </li>
+                          <li class="icon-container sub-menu-items inlineSelections" id="replayActionItem" dcvalue="AUTOPAUSE_ACTION" title="deja_sidebar_replayActionItemHint">
+                            <span>deja_sidebar_replayActionItem</span>
+                          </li>
+                          <li class="icon-container sub-menu-items inlineSelections" id="replayEventItem" dcvalue="AUTOPAUSE_EVENT" title="deja_sidebar_replayEventItemHint">
+                            <span >deja_sidebar_replayEventItem</span>
+                          </li>
+                      </ul>
+                    </li> 
+                    <li id="displayLevelItem" data-accordion class="main-menu-dropdown-items displayLevelItem" title="deja_global_displayLevelHint">
+                      <span class="dropDownSelections">deja_global_displayLevel</span>
+                      <ul class="sub-menu subMenuUl">
+                        <li class="icon-container sub-menu-items inlineSelections" id="displayLevelBasicItem" dcvalue="DISPLAYLEVEL_BASIC" title="deja_global_displayLevel_basicHint">
+                          <span>deja_global_displayLevel_basic</span>
+                        </li>
+                        <li class="icon-container sub-menu-items inlineSelections" id="displayLevelAdvancedItem" dcvalue="DISPLAYLEVEL_ADVANCED" title="deja_global_displayLevel_advancedHint">
+                          <span>deja_global_displayLevel_advanced</span>
+                        </li>
+                        <li class="icon-container sub-menu-items diagnostic inlineSelections" id="displayLevelDiagnosticItem" dcvalue="DISPLAYLEVEL_DIAGNOSTIC" title="deja_global_displayLevel_diagnosticHint">
+                          <span>deja_global_displayLevel_diagnostic</span>
+                        </li>
+                      </ul>
+                    </li>
+                    <li  id="newVisitorItem" class="main-menu-dropdown-items icon-container" title="deja_sidebar_newVisitorItemHint">
+                      <span class="icon-ok">deja_sidebar_newVisitorItem</span>
+                    </li>
+                    <li  id="useKeystrokesItem" class="main-menu-dropdown-items icon-container" title="deja_sidebar_useKeystrokesItemHint">
+                      <span class="icon-ok">deja_sidebar_useKeystrokesItem</span>
+                    </li>
+
+                    <li id="replaySpeedItem" data-accordion class="main-menu-dropdown-items" title="deja_sidebar_replaySpeedItemHint">
+                      <span class="dropDownSelections">deja_sidebar_replaySpeedItem</span>
+                      <ul class="sub-menu subMenuUl">
+                        <li class="icon-container sub-menu-items inlineSelections" id="replaySlowerItem" dcvalue="SLOWER" title="deja_sidebar_replaySlowerItemHint">
+                          <span>deja_sidebar_replaySlowerItem</span>
+                        </li>
+                        <li class="icon-container sub-menu-items inlineSelections" id="replayNormalItem" dcvalue="NORMAL" title="deja_sidebar_replayNormalItemHint">
+                          <span>deja_sidebar_replayNormalItem</span>
+                        </li>
+                        <li class="icon-container sub-menu-items inlineSelections" id="replayFasterItem" dcvalue="FASTER" title="deja_sidebar_replayFasterItemHint">
+                          <span>deja_sidebar_replayFasterItem</span>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="icon-container main-menu-dropdown-items" id="highlightItem" title="deja_sidebar_highlightItemHint">
+                     <span class="icon-ok">deja_sidebar_highlightItem</span>
+                   </li>
+                   <li class="icon-container main-menu-dropdown-items" id="scrollToItem" title="deja_sidebar_scrollToItemHint">
+                     <span class="icon-ok">deja_sidebar_scrollToItem</span>
+                   </li>
+                    </li>
+                     <li id="blockPopupsItem" class="main-menu-dropdown-items icon-container" title="deja_sidebar_blockPopupsItemHint">
+                       <span class="icon-ok">deja_sidebar_blockPopupsItem</span>
+                      </li>
+                    <li id="blockCookiesItem" class="main-menu-dropdown-items icon-container" title="deja_sidebar_blockCookiesItemHint">
+                      <span class="icon-ok">deja_sidebar_blockCookiesItem</span>
+                    </li>
+                    <li id="notifyWhenCompleteItem" class="main-menu-dropdown-items icon-container notifyWhenCompleteItem" title="deja_sidebar_notifyWhenCompleteItemHint">
+                      <span class="icon-ok">deja_sidebar_notifyWhenCompleteItem</span>
+                    </li>
+                    <li id="encryptLocalItem" class="main-menu-dropdown-items icon-container" title="deja_sidebar_encryptLocalItemHint">
+                      <span class="icon-ok">deja_sidebar_encryptLocalItem</span>
+                    </li> 
+                    <section id="mobileMenuAccordion" class="record-dropdown mobileMenuAccordion" data-accordion style="width:100%">
+                      <span data-accordion-trigger id="selectedMobileMenuOption"></span>
+                      <ul id="chooseMobileMenu" style="overflow-y: scroll;overflow-x:hidden;height: 200px;" data-accordion-content></ul>
+                    </section>  
+                    <li id="configureItem" class="main-menu-dropdown-items configureItem" title="deja_sidebar_configureItemHint"><a>deja_sidebar_configureItem</a></li>                                   
+                  </ul>
+                  </li>
+
+
+
+
+                 <!-- rhombus icon -->
+                 <li class="main-menu-items icon-link single-icon">
+                   <ul class="main-menu-dropdown">
+                     <li id="SmartBearLinks" class="menu-item-header">Smartbear Links</li>
+                     <li id="smartBearPageItem" class="main-menu-dropdown-items sblogin-menu-item" title="deja_sidebar_smartBearPageItemHint" style="border-bottom: 1px solid #1290eb;"><a href="http://www.smartbear.com/" target="_blank">deja_sidebar_smartBearPageItem</a></li>
+                     <li id="helpLinks" class="menu-item-header">Help Links</li>
+
+                    <li id="helpTopicsItem" class="main-menu-dropdown-items" title="deja_sidebar_helpTopicsItemHint">
+                      <a href="http://dejaclick.alertsite.com/user-guide/chrome.html" target="_blank">deja_sidebar_helpTopicsItem</a></li>
+                    <li id="helpForumItem" class="main-menu-dropdown-items helpForumItem" title="deja_sidebar_helpForumItemHint"><a href="http://forum.dejaclick.com/" target="_blank">deja_sidebar_helpForumItem</a>
+                    </li>
+                    <li class="main-menu-dropdown-items helpForumItem"><a href="https://support.smartbear.com/alertsite/message/" target="_blank">Contact Support</a>
+                    </li>
+                     <li class="main-menu-dropdown-items freeTrialItem" title="deja_sidebar_freeTrialItemHint"><a href="http://smartbear.com/products/web-monitoring/website-monitoring/alertsite-trial-sign-up/" target="_blank">deja_sidebar_freeTrialItem</a></li>
+                   </ul>
+                 </li>
+                 <!-- sign in -->
+                 <li class="main-menu-items icon-user single-icon">
+                   <ul class="main-menu-dropdown">
+                     <li id="logoffItem" class="main-menu-dropdown-items" title="deja_sidebar_logoffItemHint"><a>deja_sidebar_logoffItem</a></li>
+                     <li class="main-menu-dropdown-items loginButton" id="loginButton"><span><a>deja_sidebar_loginButton</a></span></li>
+                     <li class="main-menu-dropdown-items diagnostic" id="changeUserItem" title="deja_sidebar_changeUserItemHint"><a>deja_sidebar_changeUserItem</a></li>
+                     <li id="downloadItem" class="main-menu-dropdown-items downloadItem icon-download-cloud" style="padding: 10px 0px 10px 15px;"><span style="margin-left:6px;">deja_sidebar_downloadItem</span></li>
+                     <li id="uploadItem" class="main-menu-dropdown-items icon-upload-cloud" style="padding: 10px 0px 10px 15px;"><span style="margin-left:6px;">deja_sidebar_uploadItem</span></li>              
+                     <li id="openButton" class="main-menu-dropdown-items icon-folder-open" style="padding: 10px 0px 10px 15px;"><span style="margin-left:6px;">deja_sidebar_openButton</span></li>                            
+                     <li id="saveButton" class="main-menu-dropdown-items icon-floppy" style="padding: 10px 0px 10px 15px;border-bottom: 1px solid #1290eb;"><span style="margin-left:6px;">deja_sidebar_saveButton</span></li>     
+                     <li id="aboutDejaClickItem" class="main-menu-dropdown-items aboutDejaClickItem" title="deja_sidebar_aboutDejaClickItemHint">
+                      <a>deja_sidebar_aboutDejaClickItem</a></li>                    
+                    </ul>
+                 </li>
+               </ul>
+            </section> 
+          </div>
+     
+          <div id="mainToolbar" class="toolbar mainToolbar">
+             <section class="mainToolbar-left-section">
+               <ul class="main-menu record-toolbar">
+                 <li id="recordButton" class="main-menu-items recordButton icon-circle tooltip-trigger">
+                   <span class="tooltip bottom">deja_sidebar_recordButton</span>
+                 </li>
+                 <li id="recordOptions" class="main-menu-items recordOptions icon-circle">
+                   <ul class="main-menu recordOptionsList">
+                     
+                     <li id="recordModeDefault" class="main-menu-items recordModeDefault" title="deja_sidebar_chooseAppendModeDefaultHint">
+                         <label>
+                           <input name="appendmode" type="radio" value="default"/>
+                            deja_sidebar_recordButton
+                         </label>
+                     </li>
+                     <li id="appendModeInsert" class="main-menu-items appendModeInsert inactive" title="deja_sidebar_chooseAppendModeInsertHint">
+                         <label>
+                           <input name="appendmode" type="radio" value="insert"/>
+                           deja_sidebar_chooseAppendModeInsert
+                         </label>
+                     </li>
+                     <li id="appendModeOverwrite" class="main-menu-items appendModeOverwrite" title="deja_sidebar_chooseAppendModeOverwriteHint">
+                         <label>
+                           <input name="appendmode" type="radio" value="append"/>
+                           deja_sidebar_chooseAppendModeOverwrite
+                         </label>
+                     </li>
+                     <li id="continueAppend" class="main-menu-items continueAppend" title="deja_sidebar_chooseAppendModeAppendHint">
+                         <label>
+                           <input name="appendmode" type="radio" value="append"/>
+                           deja_sidebar_chooseAppendModeAppend
+                         </label>
+                     </li>
+                     <li id="appendModeSubscript" class="main-menu-items appendModeSubscript" title="deja_sidebar_chooseAppendModeSubscriptHint">
+                       <label>
+                         <input name="appendmode" type="radio" value="subscript"/>
+                         deja_sidebar_chooseAppendModeSubscript
+                       </label>
+                     </li>
+                   </ul>
+                 </li>
+                 <li id="playButton" class="main-menu-items playButton  icon-play tooltip-trigger">
+                   <span class="tooltip bottom">deja_sidebar_playButton</span>
+                 </li>
+                 <li id="pauseButton" class="main-menu-items pauseButton icon-pause tooltip-trigger">
+                   <span class="tooltip bottom">deja_sidebar_pauseButton</span>
+                 </li>
+                 <li id="stopButton" class="main-menu-items stopButton icon-stop tooltip-trigger">
+                   <span class="tooltip bottom">deja_sidebar_stopButton</span>
+                 </li>
+               </ul>
+             </section>
+             <section class="mainToolbar-left-section">
+                 <ul class="main-menu save-toolbar">                    
+                 </ul>
+             </section>
+          </div>
+     
+        <div class="dropdownToolbar" style="display:none;" id="dropdownToolbar">
+           <section id="keywordMenuAccordion" class="keyword-dropdown" data-accordion data-close-on-mouseleave>
+             <span data-accordion-trigger id="selectedKeywordOption">Add Validation</span>
+             <ul id="keywordMenu" class="keywordMenu" data-accordion-content>
+                 <li class="main-menu-dropdown-items"  id="keywordValidationItem" title="deja_sidebar_keywordValidationItemHint">
+                   <label class="main-menu-dropdown-label"><span>deja_sidebar_keywordValidationItem</span></label>
+                 </li>
+                 <li class="main-menu-dropdown-items"  id="jsValidationItem" title="deja_sidebar_jsValidationItemHint">
+                   <label class="main-menu-dropdown-label"><span>deja_sidebar_jsValidationItem</span></label>
+                 </li>
+                 <li class="main-menu-dropdown-items"  id="contentViewItem" title="deja_sidebar_contentViewItemHint">
+                   <label class="main-menu-dropdown-label"><span>deja_sidebar_contentViewItem</span></label>
+                 </li>
+               </ul>
+           </section>
+           <section id="replayEventStatusContainer" class="replayEventStatusContainer"></section>
+           <section id="replayEventTypeContainer" class="replayEventTypeContainer"></section>
+
+        </div>
+     </header>
+     
+      <div id="jsValidationToolbar" class="jsValidation-toolbar" class="toolbar">
+          <span class="jsValidation-suggestion" title="deja_sidebar_jsSuggestLabel">deja_sidebar_jsSuggestLabel</span>
+          <span class="close-button-panel close-button-panel-width">
+            <button class="jsValidation-help-button" title="deja_sidebar_jsHelpHint"></button>
+            <span id="jsValidationToolbarCloseButton" class="icon-cancel js-close-button dc-icon button-width button-height" title="deja_sidebar_closeValidationHint"></span>
+          </span>
+      </div> 
+
+     <div id="keywordValidationContainer" class="keywordValidationContainer">
+ 
+      <section class="keyword-header section-header">
+        <div id="KeywordDescription" class="keyword-header-description"></div>
+        <div class="keyword-header-buttons">
+            <button id="keywordApply" class="btn btn-small keyword-apply">deja_global_btn_save</button>
+            <button id="keywordRemove" class="keyword-remove icon-trash-empty"></button>
+            <button class="keyword-help-button" title="deja_sidebar_keywordHelpHint"></button>
+            <span id="keywordValidationToolbarCloseButton" class="icon-cancel keyword-close-button dc-icon button-width button-height" title="deja_sidebar_closeValidationHint"></span>
+          </div>
+      </section>
+      <section id="matchTextDiv" class="keyword-matchText-div">
+        <label for="matchText" class="keyword-matchText-label">deja_keyword_matchText</label>
+        <textarea id="matchText" class="keyword-matchText-textarea" title="deja_keyword_matchTextTooltip"></textarea>
+      </section>
+
+      <section id="variableDiv" class="keyword-variablediv"></section>
+
+
+  <section id="keywordMatchOptions" data-accordion class="advancedOnly keyword-match-options">
+      <span data-accordion-trigger>deja_keyword_matchOptions</span>
+      <div data-accordion-content class="keyword-match-options-content">
+        <div class="section-label first section-extend-below">deja_keyword_matchType</div>
+        <div class="validation-input">
+          <input id="plainText" type="radio" name="matchType" value="1" title="deja_keyword_plainTextTooltip"></input>
+          <label for="plainText">deja_keyword_plainText</label>
+        </div>
+        <div class="validation-input">
+          <input id="regExp" type="radio" class="keyword-regExp-input" name="matchType" value="2" title="deja_keyword_regExpTooltip"></input>
+          <label for="regExp">deja_keyword_regExp</label>
+          <a id="regExpHelp" title="deja_keyword_regExpHelpTooltip">deja_keyword_regExpHelp</a>
+        </div>
+        <div class="validation-input validation-input-section">
+          <input id="matchCase" type="checkbox" title="deja_keyword_matchCaseTooltip"></input>
+          <label for="matchCase">deja_keyword_matchCase</label>
+        </div>
+        <div class="validation-input">
+          <input id="allowWrap" type="checkbox" title="deja_keyword_allowWrapTooltip"></input>
+          <label for="allowWrap">deja_keyword_allowWrap</label>
+        </div>
+        <div class="validation-input">
+          <input id="matchWord" type="checkbox" title="deja_keyword_matchWordTooltip"></input>
+          <label for="matchWord">deja_keyword_matchWord</label>
+        </div>
+        <div class="validation-input">
+          <input id="fixSpaces" type="checkbox" title="deja_keyword_fixSpacesTooltip"></input>
+          <label for="fixSpaces">deja_keyword_fixSpaces</label>
+        </div>
+        
+      </div>
+  </section>
+
+  <section id="keywordActionOptions" data-accordion class="advancedOnly keyword-action-options">
+      <span data-accordion-trigger>deja_keyword_actionOptions</span>
+      <div data-accordion-content>
+          <div>
+              <label for="actionType">deja_keyword_actionType</label>
+          </div>
+          <div>
+              <select id="actionType">
+                <option value="1">deja_keyword_actionError</option>
+                <option value="2">deja_keyword_actionWait</option>
+                <option value="3">deja_keyword_actionCustomError</option>
+              </select>
+          </div>
+          <div class="keyword-errortype validation-input-section">deja_keyword_errorType</div>
+          <div class="validation-input">
+            <input id="require" type="radio" name="errorType" value="1" title="deja_keyword_requireTooltip"></input>
+            <label for="require">deja_keyword_require</label>
+          </div>
+          <div class="validation-input">
+            <input id="forbid" type="radio" class="keyword-forbid-input" name="errorType" value="2" title="deja_keyword_forbidTooltip"></input>
+            <label for="forbid">deja_keyword_forbid</label>
+          </div>
+      </div>
+  </section>
+
+  <section id="keywordSearchOptions" data-accordion class="advancedOnly keyword-search-options">
+    <span data-accordion-trigger>deja_keyword_searchOptions</span>
+    <div data-accordion-content>
+      <div>deja_keyword_searchType</div>
+      <div class="validation-input">
+        <input id="searchAll" type="radio" name="searchType" value="1" title="deja_keyword_searchAllTooltip"></input>
+        <label for="searchAll">deja_keyword_searchAll</label>
+      </div>
+      <div class="validation-input">
+        <input id="searchOne" class="keyword-searchOne-input" type="radio" name="searchType" value="2" title="deja_keyword_searchOneTooltip"></input>
+        <label for="searchOne">deja_keyword_searchOne</label>
+      </div>
+      <button id="keywordSelectDocument" title="deja_keyword_selectDocumentTooltip" class="keyword-selectDocument">deja_keyword_selectDocument</button>
+    </div>
+  </section>
+
+  <div id="keywordDisplayLevel" class="keyword-displayLevel"></div>
+ 
+     </div>
+     <!-- keyword ends -->
+
+     <div id="jsValidationContainer" class="jsValidationContainer">
+        <section class="js-header">
+          <div id="jsDescription" class="js-header-description"></div>
+          <div class="js-header-buttons">
+              <button id="jsApply" class="btn btn-small js-apply">deja_global_btn_ok</button>
+              <button id="jsRemove" class="js-remove icon-trash-empty button-width">deja_global_btn_remove</button>
+              <button id="jsCancel" class="js-cancel icon-cancel button-width button-hide-text no-border">deja_global_btn_cancel</button>
+          </div>
+        </section>
+
+        <section id="jsTextDiv" class="js-matchText-div">
+          <label for="jsText" class="js-matchText-label">deja_javascript_jsText</label>
+          <textarea id="jsText" class="js-matchText-textarea" title="deja_javascript_jsTextTooltip"></textarea>
+        </section>
+        
+        <div id="variableDiv" class="js-variablediv"></div>
+        
+        <section id="jsActionOptions" data-accordion class="advancedOnly js-action-options">
+          <span data-accordion-trigger>deja_javascript_actionOptions</span>
+          <div data-accordion-content class="js-action-options-content">
+            <div>
+              <label for="actionType">deja_javascript_actionType</label>
+            </div>
+            <div class="validation-input">
+              <select id="actionType">
+                <option value="1">deja_javascript_actionError</option>
+                <option value="2">deja_javascript_actionWait</option>
+              </select>
+            </div> 
+            <div class="js-errortype validation-input-section">deja_javascript_errorType</div>
+            <div class="validation-input">
+              <input id="isFalse" type="radio" name="errorType" value="1" title="deja_javascript_isFalseTooltip">
+              <label for="isFalse">deja_javascript_isFalse</label>
+            </div>
+            <div class="validation-input">
+              <input id="isTrue" type="radio" name="errorType" value="2" title="deja_javascript_isTrueTooltip">
+              <label for="isTrue">deja_javascript_isTrue</label>
+            </div> 
+          </div>  
+        </section> 
+        <section id="jsEvalOptions" data-accordion class="advancedOnly js-eval-options">
+            <span data-accordion-trigger>deja_javascript_evalOptions</span>
+            <div data-accordion-content class="js-action-options-content">
+              <div class="validation-input">
+                  <input id="evalDefault" type="radio" name="evalType" value="1" title="deja_javascript_evalDefaultTooltip">
+                  <label for="evalDefault">deja_javascript_evalDefault</label>
+              </div>
+              <div class="validation-input">
+                  <input id="evalOne" type="radio" name="evalType" value="2" title="deja_javascript_evalOneTooltip">
+                  <label for="evalOne">deja_javascript_evalOne</label>
+              </div>
+              <button id="jsSelectDocument" title="deja_javascript_selectDocumentTooltip"
+                  class="js-selectDocument">deja_javascript_selectDocument
+              </button>
+            </div>
+        </section> 
+        <div id="jsDisplayLevel" class="js-displayLevel"></div>
+
+      
+     </div>
+     <!--js ends-->
+
+      <div id="contentViewContainer" class="contentViewContainer content-view-dialog">
+        <section class="contentview-header">
+            <div id="contentviewDescription" class='contentview-description'></div>
+            <div class="contentview-header-buttons">
+                <div id="dejaContentViewApply" class="btn btn-small contentview-apply apply">deja_global_btn_ok</div>
+                <div id="dejaContentViewCancel" class="contentview-cancel icon-cancel button-width button-hide-text no-border">deja_global_btn_cancel</div>
+            </div>
+        </section>
+        <section>
+          
+          
+          <div class="validation-input-section">
+            <label class="validation-label" for="contentViewName" title="deja_contentView_nameTooltip">deja_contentView_name</label>
+            <input type="text" id="contentViewName" maxlength="80" class="contentViewNameInput" title="deja_contentView_nameTooltip"/>
+          </div>
+
+          <div class="content-view-components validation-section">
+            <div class="components-description">deja_contentView_filterOn</div>
+            <div class="components-actions clearfix">
+              <button id="addComponent" class="item-control item-control-add" title="deja_contentView_addComponentTooltip"><i class="white icon-plus"></i></button>
+              <button id="editComponent" class="item-control item-control-edit" title="deja_contentView_editComponentTooltip"><i class="white icon-edit"></i></button>
+              <button id="cloneComponent" class="item-control item-control-clone" title="deja_contentView_cloneComponentTooltip"><i class="white icon-docs"></i></button>
+              <button id="removeComponent" class="item-control item-control-remove" title="deja_contentView_deleteComponentTooltip"><i class="white icon-cancel"></i></button>
+              <button id="moveDownComponent" class="item-control item-control-down" title="deja_contentView_moveDownComponentTooltip"><i class="white icon-down-open"></i></button>
+              <button id="moveUpComponent" class="item-control item-control-up" title="deja_contentView_moveUpComponentTooltip"><i class="white icon-up-open"></i></button>
+            </div>
+            <div class="form-field components no-top-margin no-top-pad">
+              <select name="" size="10" id="componentList" class="component-list"></select>
+            </div>
+          </div>
+        </section>
+      
+
+    <ul id="accordion" class="contentview-accordion">
+
+        <li data-accordion>
+            <span data-accordion-trigger="" class=" fold script subscript action event basic">deja_contentView_contentTypes</span>
+            <section data-accordion-content>
+              <div class="form-field types-actions">
+                <div class="form-field filter-on-type validation-input">
+                  <input type="checkbox" id="filterOnContentType"/>
+                  <label for="filterOnContentType">deja_contentView_filterOnContentType</label>
+                </div>
+                <div class="form-field type-actions">
+                  <button id="addType" class="item-control item-control-add" title="deja_contentView_addContentTypeTooltip"><i class="white icon-plus"></i></button>
+                  <button id="editType" class="item-control item-control-edit" title="deja_contentView_editContentTypeTooltip"><i class="white icon-edit"></i></button>
+                  <button id="removeType" class="item-control item-control-remove" title="deja_contentView_deleteContentTypeTooltip"><i class="white icon-cancel"></i></button>
+                </div>
+              </div>
+              <div>
+                <select name="" size="10" id="typeList" class="type-list full-width"></select>
+              </div>
+            </section>
+        </li>
+        
+        <li data-accordion>
+          <span data-accordion-trigger="" class=" fold script subscript action event basic">deja_contentView_contentLength</span>
+          <section data-accordion-content>
+            <div class="no-bottom-mar">
+              <label for="minimumSize" class="validation-label" title="deja_contentView_minimumSizeTooltip">deja_contentView_minimumSize</label>
+            </div>
+            <div>
+              <input class="validation-label" type="text" id="minimumSize" title="deja_contentView_minimumSizeTooltip"/>
+            </div>
+            <div class="no-bottom-mar">
+              <label class="section-label first" for="maximumSize" title="deja_contentView_minimumSizeTooltip">deja_contentView_maximumSize</label>
+            </div>
+            <div>
+              <input class="section-label first" type="text" id="maximumSize" title="deja_contentView_maximumSizeTooltip"/>
+            </div>
+          </section>
+        </li>
+         
+        <li data-accordion class="scope-tree-accordion">
+          <span data-accordion-trigger="" class=" fold script subscript action event basic">deja_contentView_scope</span>
+          <section data-accordion-content>
+            <div class="scope-description">deja_contentView_actionEventApplicable</div>
+            <div id="scopeTreeContainer" class="tree-container tree-container-checkbox scope-tree-container"></div>
+          </section>
+        </li>
+      </ul>
+      <section>
+        <div>
+          <div class="validation-label">deja_contentView_replayOptions</div>
+          <div class="input-label-container">
+            <input type="checkbox" id="continueOnError" class="contentview-error-input"/>
+            <label class="contentview-error-label" for="continueOnError">deja_contentView_continueOnError</label>
+          </div>
+        </div>
+        
+      </section>
+      
+     </div>
+
+     <div id="treeview-container">
+
+      <div id="treeview-content">
+        <div class="scripts-tabs-cnt">
+          <div hashkey="1:script" class="script-tab script-tab-selected">Main</div>
+        </div>
+        <!-- Treeview -->
+        <div id="treeviewBox"   style="visibility:hidden">
+         
+            <div id="treeview"></div>
+        </div>
+
+        <!-- Treeview menu dropdown -->
+        <ul id="treeview-dropdown" class="treeview-dropdown">
+          <li class="menu-act-event menu-kw-validation inactive"><i class="fa icon-kw"></i>deja_sidebar_keywordValidationItem</li>
+          <li class="menu-act-event menu-js-validation inactive"><i class="fa icon-jv"></i>deja_sidebar_jsValidationItem</li>
+          <li class="menu-act-event menu-insert-pause"><i class="fa icon-pause-circle blue"></i><span class="insertRemovePause">deja_sidebar_InsertPauseItem</span></li>
+          <li class="menu-act-event menu-skip"><i class="fa icon-right-circled red"></i>deja_sidebar_SkipItem</li>
+          <li class="menu-act-event menu-play"><i class="fa icon-right-circled red"></i>deja_sidebar_RemoveSkipItem</li>
+          <li class="menu-act-event menu-insert-recording"><i class="fa icon-right-circled red"></i>deja_sidebar_InsertRecordingItem</li>
+          <li class="menu-act-event menu-continue-record"><i class="fa icon-down-circled red"></i>deja_sidebar_ContinueOverwriteItem</li>
+          <li class="menu-act-event menu-add-subscript"><i class="fa icon-plus-circled red"></i>deja_sidebar_AddBranchItem</li>
+          <li class="menu-act-event menu-add-properties inactive"><i class="fa icon-sliders"></i>deja_sidebar_PropertiesItem</li>
+          <li class="menu-act-event menu-insert-step-break"><i class="fa icon-plus-circled blue"></i>deja_sidebar_InsertStepBreak</li>
+          <li class="menu-act-event menu-remove-step-break"><i class="fa icon-minus-circled red"></i>deja_sidebar_RemoveStepBreak</li>
+          <li class="menu-delete"><i class="fa icon-trash"></i>deja_sidebar_DeleteItem</li>
+        </ul>
+
+        <div id="splitter" style="visibility:hidden"><span></span></div>
+
+        <!-- Results panel -->
+        <div id="tabs" style="visibility:hidden">
+          <div id="tabResults">
+            <div class="panelHeader">
+              <span id="resultsLabel" class="tabLabel">deja_sidebar_scriptResults</span>
+              <span class="tabSpace"></span>
+            </div>
+            <iframe id="resultsFrame" class="resultsFrame" src="dejaResults.html"></iframe>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Properties panel -->
+      <div id="properties-content">
+        <div id="tabProperties">
+          <div class="panelHeader">
+            <span id="propertiesLabel" class="tabLabel">deja_sidebar_scriptProperties</span>
+            <span class="tabSpace"></span>
+            <span class="closeProperties icon-cancel"></span>
+          </div>
+          <iframe id="propertiesFrame" class="propertiesFrame" src="dejaProperties.html"></iframe>
+        </div>
+      </div>
+
+    </div>
+   
+  <!-- Status Bar? -->
+  </body>
+</html>

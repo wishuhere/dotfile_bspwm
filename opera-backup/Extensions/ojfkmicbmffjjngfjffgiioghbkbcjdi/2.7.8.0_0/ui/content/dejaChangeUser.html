@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>deja_changeuser_title</title>
+
+    <link rel="stylesheet" href="../skin/jquery-ui.css"></link>
+    <script src="jquery.js"></script>
+    <script src="jquery-ui.js"></script>
+
+    <link rel="stylesheet" href="../skin/styles/style.css"></link>
+    <script src="dejaUi.js"></script>
+    <script src="dejaChangeUser.js"></script>
+  </head>
+  <body id="dejaChangeUser" class="modal-body">
+    <div class="currentInfo">
+      <span class="currentInfo">
+        <div class="field">
+          <span class="field">deja_changeuser_username</span>
+          <span id="userNameCurrent"></span>
+        </div>
+        <div class="field">
+          <span class="field">deja_changeuser_customerid</span>
+          <span id="customerIdCurrent"></span>
+        </div>
+        <div class="field">
+          <span class="field">deja_changeuser_customername</span>
+          <span id="customerNameCurrent"></span>
+        </div>
+      </span>
+      <div style="text-align: right" class="icon-user-tod tooltip-trigger"></div>
+    </div>
+    <fieldset style="clear:both">
+      <legend id="legendLoginInfo">deja_changeuser_enterInfo</legend>
+      <div style="margin-bottom: 5px;">
+        <label for="userIdInput" class="field">deja_changeuser_username</label>
+        <input id="userIdInput" type="text" title="deja_changeuser_usernameHint" />
+      </div>
+      <div>
+        <label for="customerIdInput" class="field">deja_changeuser_customerid</label>
+        <input id="customerIdInput" type="text" title="deja_changeuser_customeridHint" />
+      </div>
+    </fieldset>
+    <div class="option-actions right" style="text-align: right">
+      <button id="okButton" class="btn btn-ok">deja_global_btn_ok</button>
+      <button id="cancelButton" class="btn btn-cancel">deja_global_btn_cancel</button>
+    </div>
+  </body>
+</html>

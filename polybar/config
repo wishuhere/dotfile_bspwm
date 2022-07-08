@@ -1,19 +1,34 @@
 [settings]
 pseudo-transparency = true
 
+[colors]
+background = #1a1b26
+background-alt = #24283b
+foreground = #c0caf5
+primary = #e0af68
+secondary = #9ece6a
+alert = #db4b4b
+disabled = #414868
+blue = #7aa2f7
+
 [bar/top]
 monitor = ${env:MONITOR:}
 width = 100%
 height = 22
 
 wm-restack = bspwm
-
-background = #00000000
-foreground = #ccffffff
-
+enable-ipc = true
+#background = #5c5a9e
+#background = #0000000
+#background-alt = #24283b
+#foreground = #ccffffff
+background = ${colors.background}
+foreground = ${colors.foreground}
+border-color = ${colors.background}
+underline-color = ${colors.foreground}
 #line-color = ${bar/bottom.background}
 line-size = 1
-pseudo-transparency=false
+pseudo-transparency=true
 
 tray-position = right
 tray-maxsize = 14
@@ -32,9 +47,9 @@ font-6 = unifont:size=6;-3
 font-7 = Termsynu:size=8:antialias=false;0
 font-8 = Symbols Nerd Font:style=2048-em:size=13;4
 
-modules-left = powermenu bspwm 
-modules-right = battery memory wireless-network pulseaudio ibus 
-modules-center = popup-calendar
+modules-left = left1 powermenu bspwm right1
+modules-right = left3 battery memory wireless-network pulseaudio ibus right3 
+modules-center = left2 popup-calendar right2
 #modules-center = i3
 
 [module/ibus]
@@ -180,6 +195,53 @@ menu-0-1-exec = systemctl reboot
 menu-0-2 = Power off
 menu-0-2-foreground = #FF0000 
 menu-0-2-exec = systemctl poweroff
+
+[glyph]
+#gright = 
+#gleft = 
+gright = 
+gleft = 
+[module/left1]
+type = custom/text
+content-background = ${colors.background}
+content-foreground = ${colors.background-alt}
+content = ${glyph.gleft}
+content-font = 15
+
+[module/right1]
+type = custom/text
+content-background = ${colors.background}
+content-foreground = ${colors.background-alt}
+content = ${glyph.gright}
+content-font = 15
+
+[module/left2]
+type = custom/text
+content-background = ${colors.background}
+content-foreground = ${colors.background-alt}
+content = ${glyph.gleft}
+content-font = 15
+
+[module/right2]
+type = custom/text
+content-background = ${colors.background}
+content-foreground = ${colors.background-alt}
+content = ${glyph.gright}
+content-font = 15
+
+[module/left3]
+type = custom/text
+content-background = ${colors.background}
+content-foreground = ${colors.background-alt}
+content = ${glyph.gleft}
+content-font = 15
+
+[module/right3]
+type = custom/text
+content-background = ${colors.background}
+content-foreground = ${colors.background-alt}
+content = ${glyph.gright}
+content-font = 15 
 
 ; vim:ft=dosini
 
