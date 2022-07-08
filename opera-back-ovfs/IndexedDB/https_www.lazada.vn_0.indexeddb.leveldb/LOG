@@ -1,7 +1,0 @@
-2022/03/22-22:11:31.450 112d47 Reusing MANIFEST /home/hermit/.config/opera/IndexedDB/https_www.lazada.vn_0.indexeddb.leveldb/MANIFEST-000001
-2022/03/22-22:11:31.450 112d47 Recovering log #3
-2022/03/22-22:11:31.470 112d47 Reusing old log /home/hermit/.config/opera/IndexedDB/https_www.lazada.vn_0.indexeddb.leveldb/000003.log 
-2022/03/22-22:12:34.413 115e06 Level-0 table #5: started
-2022/03/22-22:12:34.466 115e06 Level-0 table #5: 295647 bytes OK
-2022/03/22-22:12:34.503 115e06 Delete type=0 #3
-2022/03/22-22:12:34.504 112d47 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

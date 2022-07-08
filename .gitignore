@@ -23,7 +23,7 @@ QtProject.conf
 GIMP/
 vivaldi*/
 mpv/
-operai*/
+opera*/
 Actiona/
 chromium*/
 pulse/
@@ -36,4 +36,10 @@ inkscape/
 libre*/
 configstore/
 dooit/
-opera-backup/
+copyq/
+chromium
+google-chrome
+opera
+vivaldi
+psd/
+
